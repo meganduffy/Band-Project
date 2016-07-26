@@ -1,0 +1,108 @@
+/*HOME PAGE STYLE*/
+/*home header*/
+.home .header {
+	height:800px;
+	text-align:center;
+	background:url("media/img/home-header.jpg") no-repeat center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+.home .header .container {
+	position:relative;
+	top:200px;
+}
+
+.home .header h1 {
+	font-size:80px;
+	line-height:100px;
+	margin-top:0;
+	margin-bottom:80px;
+	color:white;
+	text-transform:uppercase;
+}
+
+.home .header p {
+	font-weight:500;
+	letter-spacing:8px;
+	margin-bottom:45px;
+	margin-top:0;
+	text-transform:uppercase;
+	color:white;
+}
+
+.btn-music {
+	background-color:black;
+	color:white;
+}
+
+.btn-mustic:hover {
+	background-color: #117bff;
+	cursor:pointer;
+	transition:background .5s;
+}
+
+.btn-book {
+	background-color:black;
+	color:white;
+}
+
+.btn-book:hover {
+	background-color: #117bff;
+	cursor:pointer;
+	transition:background .5s;
+}
+
+/*home main*/
+
+.home .main .container {
+	margin:80px auto;
+}
+
+/*home jumbotron*/
+
+.home .jumbotron {
+	height:500px;
+	text-align:right;
+	background:url("home-jumbotron.jpg") no-repeat center center fixed;
+	background-size:cover;
+	color:white;
+}
+
+.home .jumbotron .container {
+	position:relative;
+	top:220px;
+}
+
+/*home footer*/
+
+.home .footer {
+	font-size:14px;
+	color:white;
+	background-color:black;
+	padding:25px;
+}
+
+/*home media queries*/
+
+@media (max-width:500px) {
+	.home .header h1 {
+		font-size:50px;
+		line-height:64px;
+	}
+
+	.home .main, .home .jumbotron {
+		padding:0 30px;
+	}
+
+	.home .main img {
+		width:100%;
+	}
+}
+
+@media (min-width:850px) {
+	.home .header h1 {
+		font-size:120px;
+	}
+}
