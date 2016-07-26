@@ -1,40 +1,45 @@
 /*HOME PAGE STYLE*/
 /*home header*/
-.home .header {
-	height:800px;
+#home .header {
+	height:685px;
 	text-align:center;
-	background:url("media/img/home-header.jpg") no-repeat center center;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	background-size:cover;
+	background:url(../../media/img/home-header-cropped.png) no-repeat center center;  /*fix background--possibly fixed check on other devices*/
+	-webkit-background-size:contain;
+	-moz-background-size:contain;
+	background-size:contain;
 }
 
-.home .header .container {
+#home .header .container {
 	position:relative;
-	top:200px;
+	top:90px;
 }
 
-.home .header h1 {
-	font-size:80px;
-	line-height:100px;
+#home .header h1 {				/*dropdown animation*/
+	font-size:120px;
+	line-height:120px;
 	margin-top:0;
-	margin-bottom:80px;
+	margin-bottom:50px;
 	color:white;
 	text-transform:uppercase;
 }
 
-.home .header p {
-	font-weight:500;
-	letter-spacing:8px;
-	margin-bottom:45px;
+#home .header p {
+	font-weight:5500;
+	letter-spacing:9px;
+	margin-bottom:180px;
 	margin-top:0;
 	text-transform:uppercase;
 	color:white;
 }
 
-.btn-music {
+.btn-music {										/*fix button alignment*/
 	background-color:black;
 	color:white;
+	display:block;
+	margin:50px auto;
+	padding:40px;
+	position:relative;
+	right:20px;
 }
 
 .btn-mustic:hover {
@@ -46,6 +51,11 @@
 .btn-book {
 	background-color:black;
 	color:white;
+	display:block;
+	margin:20px auto;
+	width:100px;
+	position:relative;
+	right:25px;
 }
 
 .btn-book:hover {
@@ -54,55 +64,92 @@
 	transition:background .5s;
 }
 
-/*home main*/
+/*home main*/													/*hairy from here out*/
+#home .main {
+	background-color:black;
+	height:600px;
+	text-align:center;
+}
 
-.home .main .container {
-	margin:80px auto;
+#home .main .container {
+	margin:0px auto;
+	position:relative;
+	top:200px;
+}
+
+#home .main .container h1 {
+	margin-bottom:20px;
+	color:white;
+	font-size:65px;
+	text-transform:lowercase;
+}
+
+#home .main .container p {
+	margin-bottom:40px;
+	color:white;
+	font-size:20px;
+	text-transform:lowercase;
+	letter-spacing:5px;
+}
+
+#home .main .container audio {
+	width:45%;
 }
 
 /*home jumbotron*/
 
-.home .jumbotron {
-	height:500px;
+#home .jumbotron {
+	height:300px;
 	text-align:right;
-	background:url("home-jumbotron.jpg") no-repeat center center fixed;
+	background:url(../../media/img/home-jumbotron.jpeg) no-repeat center center fixed ;
 	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
 	color:white;
+	margin-bottom:0;
 }
 
-.home .jumbotron .container {
+#home .jumbotron .container {
 	position:relative;
-	top:220px;
+	top:0px;
+}
+
+.btn-newsletter {
+	position:relative;
+	right:45px;
+	margin-top:25px;
 }
 
 /*home footer*/
 
-.home .footer {
+#home .footer {
 	font-size:14px;
 	color:white;
 	background-color:black;
-	padding:25px;
+	height:100px;
 }
 
-/*home media queries*/
+
+
+/*home media queries*
 
 @media (max-width:500px) {
-	.home .header h1 {
+	.home.header h1 {
 		font-size:50px;
 		line-height:64px;
 	}
 
-	.home .main, .home .jumbotron {
+	.home.main, .home.jumbotron {
 		padding:0 30px;
 	}
 
-	.home .main img {
+	.home.main img {
 		width:100%;
 	}
 }
 
 @media (min-width:850px) {
-	.home .header h1 {
+	.home.header h1 {
 		font-size:120px;
 	}
 }
