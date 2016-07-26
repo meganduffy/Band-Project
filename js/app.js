@@ -18,5 +18,13 @@ angular.module("bandApp", ["ngRoute"])
 			templateUrl: "templates/contact.html",
 			controller: "ContactController"
 		})
+		.when("/book", {
+			templateUrl: "templates/book.html",
+			controller: "BookController"
+		})
+		.when("bookconfirm.html", {
+			templateUrl: "templates/bookconfirm.html",
+			controller: "BookConfirmController"
+		})
 		.otherwise({ redirectTo: "/"});
 });

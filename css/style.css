@@ -15,21 +15,57 @@
 }
 
 #home .header h1 {				/*dropdown animation*/
-	font-size:120px;
+	font-size:8em;
 	line-height:120px;
 	margin-top:0;
-	margin-bottom:50px;
+	margin-bottom:150px;
 	color:white;
 	text-transform:uppercase;
+	/*animation*/
+	animation-duration: 2s;
+  	animation-name: explode;
+  	animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes explode {
+  0% {
+    font-size: 30%;
+    opacity: 0;
+    color: white;
+  }
+  95% {
+  	font-size:8.5em;
+  	color:white;
+  }
+  100% {
+    font-size: 7.5em;
+    color: white;
+    opacity: 1;
+  }
 }
 
 #home .header p {
 	font-weight:5500;
 	letter-spacing:9px;
-	margin-bottom:180px;
+	margin-bottom:80px;
 	margin-top:0;
 	text-transform:uppercase;
 	color:white;
+	/*animation*/
+	animation-duration: 3s;
+    animation-name: subhead;
+    animation-fill-mode: forwards;
+}
+
+@keyframes subhead {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    color: white;
+    opacity: 1;
+  }
 }
 
 .btn-music {										/*fix button alignment*/
@@ -64,7 +100,7 @@
 	transition:background .5s;
 }
 
-/*home main*/													/*hairy from here out*/
+/*home main*/													/*background colors needed*/
 #home .main {
 	background-color:black;
 	height:600px;
@@ -96,7 +132,7 @@
 	width:45%;
 }
 
-/*home jumbotron*/
+/*home jumbotron*/												/*alignment needs to be sorted out*/
 
 #home .jumbotron {
 	height:300px;
@@ -120,7 +156,7 @@
 	margin-top:25px;
 }
 
-/*home footer*/
+/*home footer*/				/*iTunes bagdges/amazonn badges -> ask mentor*/
 
 #home .footer {
 	font-size:14px;
