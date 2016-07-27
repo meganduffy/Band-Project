@@ -1,23 +1,23 @@
-angular.module("BandControllers", [])
 
-.controller("HomeController", function($scope) {
+bandApp.controller("HomeController", function($scope) {
+});
 
-})
+bandApp.controller("MusicController", function($scope) {
 
-.controller("MusicController", function($scope) {
+});
 
-})
+bandApp.controller("GigsController", function($scope) {
 
-.controller("GigsController", function($scope) {
+});
 
-})
+bandApp.controller("ContactController", function($scope) {
 
-.controller("ContactController", function($scope) {
+});
 
-})
-.controller("BookController", function($scope) {
+bandApp.controller("BookController", function($scope) {
 	$scope.title= "Book Now";
-})
-.controller("BookConfirmController", function($scope) {
+});
+
+bandApp.controller("BookConfirmController", function($scope) {
 	$scope.title= "Booking Confirmation";
 });
