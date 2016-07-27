@@ -1,4 +1,4 @@
-var bandApp = angular.module("bandApp", ["ngRoute"])
+var bandApp = angular.module("bandApp", ["ngRoute"]);
 
 bandApp.config(function($routeProvider) {
 	$routeProvider
