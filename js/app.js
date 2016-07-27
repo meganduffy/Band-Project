@@ -1,6 +1,6 @@
-angular.module("bandApp", ["ngRoute"])
+var bandApp = angular.module("bandApp", ["ngRoute"]);
 
-.config(function($routeProvider) {
+bandApp.config(function($routeProvider) {
 	$routeProvider
 		.when("/", {
 			templateUrl: "templates/home.html",
