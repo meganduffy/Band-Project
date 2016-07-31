@@ -9,14 +9,14 @@
 				<div class="row names">
 					<div class="col-sm-6">
 						<label for="fname">*Firstname: </label><input autofocus class="form-control" type="text" name="fname" id="fname" ng-model="user.fname" placeholder="Enter your first name" required="" />
-						<div class="col-sm-6 alert" ng-messages="BookForm.fname.$error" ng-if="submitted" role="alert">
+						<div class="col-sm-6 alert" ng-messages="BookForm.fname.$error" ng-if="BookForm.fname.$valid" role="alert">
 							<div ng-message="required">Required Field</div>
 						</div>
 					</div>
 
 					<div class="col-sm-6">
 						<label for="sname">*Surname: </label><input class="form-control" type="text" name="sname" id="sname" ng-model="user.sname" placeholder="Enter your second name" required="" />
-						<div class="col-sm-6 alert" ng-messages="BookForm.sname.$error" ng-if="submitted" role="alert">
+						<div class="col-sm-6 alert" ng-messages="BookForm.sname.$error" ng-if="BookForm.sname.$valid" role="alert">
 							<div ng-message="required">Required Field</div>
 						</div>
 					</div>
