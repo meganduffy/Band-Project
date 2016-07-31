@@ -1,12 +1,13 @@
 /*HOME PAGE STYLE*/
 /*home header*/
 #home .header {
-	height:685px;
+	height:705px;
 	text-align:center;
-	background:url(../../media/img/home-header-cropped.png) no-repeat center center;  /*fix background--possibly fixed check on other devices*/
-	-webkit-background-size:contain;
-	-moz-background-size:contain;
-	background-size:contain;
+	background:url(../../media/img/background-position.jpg) no-repeat ;  /*fix background--possibly fixed check on other devices*/
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	background-position:0px -190px;
 }
 
 #home .header .container {
@@ -15,52 +16,53 @@
 }
 
 #home .header h1 {				/*dropdown animation*/
-	font-size:8em;
+	font-size:9em;
 	line-height:120px;
 	margin-top:0;
-	margin-bottom:150px;
+	margin-bottom:50px;
 	color:white;
 	text-transform:uppercase;
+	
 	/*animation*/
-	animation-duration: 2s;
-  	animation-name: explode;
+	animation-duration: 3s;
+  	animation-name: blurinbig;
   	animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
 
-@keyframes explode {
+@keyframes blurinbig {
   0% {
-    font-size: 30%;
+    font-size:5em;
     opacity: 0;
     color: white;
+
   }
-  95% {
-  	font-size:8.5em;
-  	color:white;
-  }
+
   100% {
-    font-size: 7.5em;
+    font-size: 9em;
     color: white;
     opacity: 1;
   }
 }
 
 #home .header p {
-	font-weight:5500;
+	font-weight:11500;
+	font-size:1.5em;
 	letter-spacing:9px;
 	margin-bottom:80px;
 	margin-top:0;
 	text-transform:uppercase;
 	color:white;
 	/*animation*/
-	animation-duration: 3s;
-    animation-name: subhead;
+	animation-duration: 2s;
+    animation-name: blurinsmall;
     animation-fill-mode: forwards;
 }
 
-@keyframes subhead {
+@keyframes blurinsmall {
   0% {
     opacity: 0;
+    font-size:1em;
   }
   100% {
     color: white;
@@ -137,22 +139,27 @@
 #home .jumbotron {
 	height:300px;
 	text-align:right;
-	background:url(../../media/img/home-jumbotron.jpeg) no-repeat center center fixed ;
+	background:url(../../media/img/record.jpeg) no-repeat center center fixed ;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
-	color:white;
+	background-position:0px 70px;
+	color:#5b5b5b;
 	margin-bottom:0;
 }
 
 #home .jumbotron .container {
 	position:relative;
-	top:0px;
+	bottom:10px;
+}
+
+#home .jumbotron p {
+	font-weight:2.5em;
 }
 
 .btn-newsletter {
 	position:relative;
-	right:45px;
+	right:0px;
 	margin-top:25px;
 }
 
@@ -188,4 +195,46 @@
 	.home.header h1 {
 		font-size:120px;
 	}
+}
+
+
+/*BOOK PAGE STYLE*/
+.book #container {
+	width:650px;
+	margin: 50px auto;
+	border:1px solid black;
+	border-radius:5px;
+	padding:25px;
+	position:relative;
+	top:0px;
+	font-family: Roboto;
+}
+
+
+.book fieldset {
+	padding:15px;
+}
+
+.book .names {
+	margin-bottom:10px;
+}
+
+.book .contacts {
+	margin-bottom:20px;
+}
+
+.book .event1 {
+	margin-bottom:20px;
+}
+
+.book .event2 {
+	margin-bottom:20px;
+}
+
+.book #submit {
+	position: relative;
+	left:220px;
+	top:20px;
+	width:100px;
+
 }

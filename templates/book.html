@@ -1,1 +1,106 @@
-<h1>{{ title }}</h1>
+<nav></nav>
+
+
+<div class="book">
+	<div id="container">
+		<fieldset>
+				<legend>About You</legend>
+				<form id="BookForm" ng-submit="submit()" novalidate>
+				<div class="row names">
+					<div class="col-sm-6">
+					<label for="fname">*Firstname: </label><input autofocus class="form-control" type="text" name="fname" id="fname" ng-model="user.fname" placeholder="Enter your first name" required="" />
+					</div>
+
+					<div class="col-sm-6">
+					<label for="sname">*Surname: </label><input class="form-control" type="text" name="sname" id="sname" ng-model="user.sname" placeholder="Enter your second name" required="" />
+					</div>
+				</div>
+	
+				<div class="row contacts">
+					<div class="col-sm-6">
+					<label for="mobile">*Mobile Number: </label><input class="form-control" type="number" name="mobile" id="mobile" pattern="[0-9]{10}" title="Mobile number expected to be 10 digits" ng-model="user.mobile" placeholder="Enter your mobile number" required="" />
+					</div>
+	
+					<div class="col-md-6">
+					<label for="email">*Email: </label><input class="form-control" type="email" name="email" id="email" ng-model="user.email" placeholder="joe.bloggs@example.com" required="" />
+					</div>
+
+				
+		</fieldset>
+
+		<fieldset>
+			<legend>About Your Event</legend>
+			
+			<div class="row event1">
+				<div class="col-sm-6">
+				<label for="type">*Event Type: </label>
+				<select class="form-control" id="type" ng-model="user.type" >
+					<option value="wedding">Wedding</option>
+					<option value="musicvenue">Music Venue</option>
+					<option value="bar">Bar</option>
+					<option value="hotel">Hotel</option>
+					<option value="reception">Reception</option>
+					<option value="nightclub">Nightclub</option>
+					<option value="festival">Festival</option>
+					<option value="corperate event">Corperate Event</option>
+					<option value="private">Private</option>
+				</select>
+				</div>
+	
+				<div class="col-sm-6">
+				<label for="capacity">*Capacity of Venue</label>
+				<select class="form-control" id="capacity" ng-model="user.capacity" >
+					<option value="100+">100+</option>
+					<option value="200+">200+</option>
+					<option value="300+">300+</option>
+					<option value="400+">400+</option>
+					<option value="500+">500+</option>
+				</select>
+				</div>
+			</div>
+
+			<div class="row event2">
+
+				<div class="col-sm-6">
+				<label for="date">*Event Date: </label><input class="form-control" type="date" name="date" id="date" ng-model="user.date" required="" />
+				</div>
+	
+				<div class="col-sm-6">
+				<label for="location">*Event Location: </label><input class="form-control" type="text" name="location" id="location" ng-model="user.location" placeholder="Event Location" required="" />
+				</div>
+			</div>
+
+			
+		</fieldset>
+
+		<fieldset>
+			<legend>Type of Payment</legend>
+			
+			<div class="row">
+	
+				<div class="col-sm-6">
+				<input type="radio" name="payment" id="visa" ng-model="visa" required="" /><label for="visa">   Visa </label>
+				</div>
+			
+				<div class="col-sm-6">
+				<input type="radio" name="payment" id="mastercard" ng-model="mastercard" required="" /><label for="mastercard">   MasterCard</label>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-sm-6">
+				<input type="radio" name="payment" id="americanexpress" ng-model="americanexpress" required="" /><label for="americanexpress"> American Express</label>
+				</div>
+				
+				<div class="col-sm-6">
+				<input type="radio" name="payment" id="cash" ng-model="cash" required="" /><label for="cash">   Cash </label>
+				</div>
+			</div>
+
+			<input id="submit" type="submit" value="submit" />
+				
+			</form>
+		</fieldset>
+	</div>
+</div>

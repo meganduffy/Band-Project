@@ -16,6 +16,12 @@ bandApp.controller("ContactController", function($scope) {
 
 bandApp.controller("BookController", function($scope) {
 	$scope.title= "Book Now";
+	$scope.user= {};
+	$scope.wasSubmitted = false;
+
+	$scope.submit= function() {
+		$scope.wasSubmitted = true;
+	};
 });
 
 bandApp.controller("BookConfirmController", function($scope) {

@@ -1,0 +1,70 @@
+<div id="book container">
+<form id="BookForm" action="server_side_script.php" method="post">
+<!--Who you are-->
+<fieldset class="form-group">
+<legend>About You</legend>
+	<br/>
+	<label for="fname">*Firstname: </label><input autofocus class="form-control" type="text" name="fname" id="fname" placeholder="Enter your first name" required="" />
+	<br/>
+	<label for="sname">*Surname: </label><input class="form-control" type="text" name="sname" id="sname" placeholder="Enter your second name" required="" />
+	<br/>
+	<label for="mobile">*Mobile Number: </label><input class="form-control" type="number" name="mobile" id="mobile" pattern="[0-9]{10}" title="Mobile number expected to be 10 digits" placeholder="Enter your mobile number" required="" />
+	<br/>
+	<label for="email">*Email: </label><input class="form-control" type="email" name="email" id="email" placeholder="joe.bloggs@example.com" required="" />
+</fieldset>
+
+<!--event information-->
+<fieldset class="form-group">
+<legend>*About Your Event</legend>
+
+	<br/>
+	<label for="type">*Event Type: </label>
+	<select class="form-control" id="type">
+		<option value="wedding">Wedding</option>
+		<option value="musicvenue">Music Venue</option>
+		<option value="bar">Bar</option>
+		<option value="hotel">Hotel</option>
+		<option value="reception">Reception</option>
+		<option value="nightclub">Nightclub</option>
+		<option value="festival">Festival</option>
+		<option value="corperate event">Corperate Event</option>
+		<option value="private">Private</option>
+	</select>
+	<br/>
+	<label for="capacity">*Capacity of Venue</label>
+	<select class="form-control" id="capacity">
+		<option value="100+">100+</option>
+		<option value="200+">200+</option>
+		<option value="300+">300+</option>
+		<option value="400+">400+</option>
+		<option value="500+">500+</option>
+	</select>
+	<br/>
+	<label for="date">*Event Date: </label><input class="form-control" type="date" name="date" id="date" required="" />
+	<br/>
+	<label for="location">*Event Location: </label><input class="form-control" type="text" name="location" id="location" placeholder="Event Location" required="" />
+</fieldset>
+
+<fieldset class="form-group">
+<legend>Type of Payment</legend>
+
+	<br/>
+	<div class="radio">
+	<label for="visa">Visa </label><input type="radio" name="payment" id="visa" required="" />
+	</div><br/>
+	<div class="radio">
+	<label for="mastercard">MasterCard</label><input type="radio" name="payment" id="mastercard" required="" />
+	</div><br/>
+	<div class="radio">
+	<label for="americanexpress">American Express</label><input type="radio" name="payment" id="americanexpress" required="" />
+	</div><br/>
+	<div class="radio">
+	<label for="cash">Cash </label><input type="radio" name="payment" id="cash" required="" />
+	</div><br/>
+
+</fieldset>
+	
+	<br/>
+	<input type="submit" value="submit" />
+</form>
+</div>
