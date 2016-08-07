@@ -4,3 +4,10 @@ bandApp.directive("navigationbar", function() {
 		restrict: "E"
 	};
 });
+
+bandApp.directive("blackfooter", function() {
+	return {
+		templateUrl: "templates/footer.html",
+		restrict: "E"
+	};
+});

@@ -14,13 +14,19 @@ bandApp.controller("ContactController", function($scope) {
 
 });
 
-bandApp.controller("BookController", function($scope) {
+bandApp.controller("BookController", function($scope, $location) {
 	$scope.title= "Book Now";
 	$scope.user= {};
-	$scope.wasSubmitted = false;
+	$scope.submitted = false;
 
-	$scope.submit= function() {
-		$scope.wasSubmitted = true;
+	$scope.formsubmit= function(bookform) {
+		$scope.submitted = false;
+
+		if (bookform.$valid) {
+			$scope.submitted= true;
+			$location.path("#/music");
+
+		}
 	};
 });
 

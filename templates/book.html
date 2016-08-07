@@ -2,10 +2,22 @@
 
 
 <div class="book">
+	<div class="page">
+
+	<div class="book-intro">
+		<div class="container">
+			<h1>Want <span>The Monkees</span> to play live at your event?</h1>
+			<p>With over 20 years experience, we know how to make you jive and swing all through the night.</p>
+			<p>Just fill in this form with your personal and event details and one of our representatives will contact you with a quote.</p><br/>
+			<p id="discount">There is a 10% discount for <span>cash payment</span>.</p>
+		</div>
+	</div>
+
+	<div class="book-form">
 	<div id="container">
 		<fieldset>
 				<legend>About You</legend>
-				<form id="BookForm" ng-submit="submit()" novalidate>
+				<form id="BookForm" name="bookform" ng-submit="formsubmit(bookform)" novalidate>
 				<div class="row names">
 					<div class="col-sm-6">
 						<label for="fname">*Firstname: </label><input autofocus class="form-control" type="text" name="fname" id="fname" ng-model="user.fname" placeholder="Enter your first name" required="" />
@@ -27,7 +39,7 @@
 				<div class="row contacts">
 					<div class="col-sm-6">
 						<label for="mobile">*Mobile Number: </label><input class="form-control" type="number" name="mobile" id="mobile" ng-pattern="[0-9]{10}" title="Mobile number expected to be 10 digits" ng-model="user.mobile" placeholder="Enter your mobile number" required="" />
-						<div class="col-sm-6 alert" ng-messages="BookForm.mobile.$error" ng-if="submitted" role="alert">
+						<div class="col-sm-6 alert" ng-messages="BookForm.mobile.$error" ng-if="BookForm.mobile.$valid" role="alert">
 							<div ng-message="required">Required Field</div>
 							<div ng-message="pattern">Mobile is expected to be 10 digits</div>
 						</div>
@@ -37,7 +49,7 @@
 	
 					<div class="col-md-6">
 						<label for="email">*Email: </label><input class="form-control" type="email" name="email" id="email" ng-model="user.email" placeholder="joe.bloggs@example.com" required="" />
-						<div class="col-sm-6 alert" ng-messages="BookForm.email.$error" ng-if="submitted" role="alert">
+						<div class="col-sm-6 alert" ng-messages="BookForm.email.$error" ng-if="BookForm.email.$valid" role="alert">
 							<div ng-message="required">Required Field</div>
 						</div>
 					</div>
@@ -66,7 +78,7 @@
 					<option value="corperate event">Corperate Event</option>
 					<option value="private">Private</option>
 				</select>
-				<div class="col-sm-6 alert" ng-messages="BookForm.type.$error" ng-if="submitted" role="alert">
+				<div class="col-sm-6 alert" ng-messages="BookForm.type.$error" ng-if="BookForm.type.$valid" role="alert">
 					<div ng-message="required">Required Field</div>
 				</div>
 				</div>
@@ -80,7 +92,7 @@
 					<option value="400+">400+</option>
 					<option value="500+">500+</option>
 				</select>
-				<div class="col-sm-6 alert" ng-messages="BookForm.capacity.$error" ng-if="submitted" role="alert">
+				<div class="col-sm-6 alert" ng-messages="BookForm.capacity.$error" ng-if="BookForm.capacity.$valid" role="alert">
 					<div ng-message="required">Required Field</div>
 				</div>
 				</div>
@@ -90,14 +102,14 @@
 
 				<div class="col-sm-6">
 					<label for="date">*Event Date: </label><input class="form-control" type="date" name="date" id="date" ng-model="user.date" required="" />
-					<div class="col-sm-6 alert" ng-messages="BookForm.date.$error" ng-if="submitted" role="alert">
+					<div class="col-sm-6 alert" ng-messages="BookForm.date.$error" ng-if="BookForm.date.$valid" role="alert">
 						<div ng-message="required">Required Field</div>
 					</div>
 				</div>
 	
 				<div class="col-sm-6">
 					<label for="location">*Event Location: </label><input class="form-control" type="text" name="location" id="location" ng-model="user.location" placeholder="Event Location" required="" />
-					<div class="col-sm-6 alert" ng-messages="BookForm.location.$error" ng-if="submitted" role="alert">
+					<div class="col-sm-6 alert" ng-messages="BookForm.location.$error" ng-if="BookForm.location.$valid" role="alert">
 						<div ng-message="required">Required Field</div>
 					</div>
 				</div>
@@ -107,27 +119,27 @@
 		</fieldset>
 
 		<fieldset>
-			<legend>Type of Payment</legend>
+			<legend class="">Type of Payment</legend>
 			
 			<div class="row">
 	
-				<div class="col-sm-6">
-					<input type="radio" name="payment" id="visa" ng-model="visa" required="" /><label for="visa">   Visa </label>
+				<div class="col-sm-6 radio">
+					<input type="radio" name="payment" id="visa" ng-model="visa" required="" /><label id="visa" for="visa">   Visa </label>
 				</div>
 			
-				<div class="col-sm-6">
+				<div class="col-sm-6 radio">
 				<input type="radio" name="payment" id="mastercard" ng-model="mastercard" required="" /><label for="mastercard">   MasterCard</label>
 				</div>
 			</div>
 
 			<div class="row">
 
-				<div class="col-sm-6">
-				<input type="radio" name="payment" id="americanexpress" ng-model="americanexpress" required="" /><label for="americanexpress"> American Express</label>
+				<div class="col-sm-6 radio">
+				<input type="radio" name="payment" id="americanexpress" ng-model="americanexpress" required="" /><label id="americanexpress" for="americanexpress"> American Express</label>
 				</div>
 				
-				<div class="col-sm-6">
-				<input type="radio" name="payment" id="cash" ng-model="cash" required="" /><label for="cash">   Cash </label>
+				<div class="col-sm-6 radio">
+				<input type="radio" name="payment" id="cash" ng-model="cash" required="" /><label for="cash">   Cash *10% discount</label>
 				</div>
 			</div>
 
@@ -136,4 +148,8 @@
 			</form>
 		</fieldset>
 	</div>
+	</div>
+	</div>
 </div>
+
+<blackfooter></blackfooter>
