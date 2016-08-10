@@ -223,9 +223,41 @@
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------*/
 
+/*~~~~MUSIC STYLE ~~~~~~~*/
 
+.carousel-inner>.item {
+	position: relative;
+    display: none;
+    -webkit-transition: 0.3s ease-in-out left;
+    -moz-transition: 0.3s ease-in-out left;
+    -o-transition: 0.3s ease-in-out left;
+    transition: 0.3s ease-in-out left;
+    height:650px;
+}
 
+.music #carousel {
+	margin-left:auto;
+	margin-right:auto;
+}
 
+.music p {
+	text-align:center;
+	font-size:20px;
+	border:1px solid black;
+	border-radius:20px;
+	margin: 50px auto;
+	width:70%;
+}
+
+.music {
+	height:500px;
+}
+
+iTunesSearch {
+	position:relative;
+	left:200px;
+	border:2px solid red;
+}
 
 
 
