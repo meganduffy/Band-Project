@@ -12,7 +12,7 @@ bandApp.directive("blackfooter", function() {
 	};
 });
 
-bandApp.directive("iTunesSearch", function() {
+bandApp.directive("itunessearch", function() {
 	return {
 		templateUrl: "templates/directives/iTunesSearch.html",
 		restrict: "E",
