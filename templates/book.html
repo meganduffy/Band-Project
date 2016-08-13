@@ -137,6 +137,37 @@
 						</div>
 					</fieldset>
 
+					<fieldset>
+						<legend class="">Type of Payment</legend>
+			
+						<div class="row">
+	
+							<div class="col-sm-6 form-group radio" ng-class="{ 'has-error': BookForm.payment.$invalid && BookForm.payment.$touched}">
+
+								<input type="radio" name="payment" id="visa" ng-model="visa" required />
+								<label id="visa" for="visa">   Visa </label>
+							</div>
+			
+							<div class="col-sm-6 form-group radio">
+								<input type="radio" name="payment" id="mastercard" ng-model="mastercard" required /><label for="mastercard">   MasterCard</label>
+							</div>
+						</div>
+
+						<div class="row">
+
+							<div class="col-sm-6 form-group radio">
+
+								<input type="radio" name="payment" id="americanexpress" ng-model="americanexpress" required /><label id="americanexpress" for="americanexpress"> American Express</label>
+							</div>
+				
+							<div class="col-sm-6 form-group radio">
+
+								<input type="radio" name="payment" id="cash" ng-model="cash" required />
+								<label for="cash">   Cash *10% discount</label>
+							</div>
+						</div>
+					</fieldset>
+
 					<button ng-disabled="BookForm.$invalid" ng-click="submitted=true" class="btn btn-default" id="submit" type="submit" value="submit">Submit</button>
 				</form>
 
