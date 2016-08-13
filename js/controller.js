@@ -23,7 +23,7 @@ bandApp.controller("BookController", function($scope, $location) {
 	$scope.formsubmit= function() {
 		$scope.submitted = false;
 
-		if (bookform.$valid) {
+		if ($scope.BookForm.$valid) {
 			$scope.submitted= true;
 			$location.path("/bookconfirm");
 
