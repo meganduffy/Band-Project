@@ -20,26 +20,26 @@ bandApp.controller("BookController", function($scope, $location) {
 	$scope.user= {};
 	$scope.submitted = false;
 
-	$scope.formsubmit= function(bookform) {
+	$scope.formsubmit= function() {
 		$scope.submitted = false;
 
 		if (bookform.$valid) {
 			$scope.submitted= true;
-			$location.path("#/music");
+			$location.path("/bookconfirm");
 
 		}
 	};
 });
 
 bandApp.controller("BookConfirmController", function($scope) {
-	$scope.title= "Booking Confirmation";
+	$scope.title= "Congratulations!";
 });
 
 bandApp.controller("iTunesController", function($scope, $http) {
 	//define search function called by form
 	$scope.searchiTunes = function(artist) {
 		//use the jsonp callback function from the $http service this
-		$http.jsonp("http://itunes.apple.com/search?limit=15", {
+		$http.jsonp("http://itunes.apple.com/search?limit=10", {
 			params: {
 				"callback" : "JSON_CALLBACK",
 				"term" : artist

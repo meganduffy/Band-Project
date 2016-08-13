@@ -22,7 +22,7 @@ bandApp.config(function($routeProvider) {
 			templateUrl: "templates/book.html",
 			controller: "BookController"
 		})
-		.when("bookconfirm.html", {
+		.when("/bookconfirm", {
 			templateUrl: "templates/bookconfirm.html",
 			controller: "BookConfirmController"
 		})

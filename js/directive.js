@@ -19,3 +19,10 @@ bandApp.directive("itunessearch", function() {
 		scope: "true"
 	};
 });
+
+bandApp.directive("subscribe", function() {
+	return {
+		templateUrl: "templates/directives/subscribe.html",
+		restrict: "E"
+	};
+});
