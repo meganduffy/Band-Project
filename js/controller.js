@@ -12,7 +12,7 @@ bandApp.controller("GigsController", function($scope) {
 });
 
 bandApp.controller("ContactController", function($scope) {
-
+	$scope.title= "Connect With Us";
 });
 
 bandApp.controller("BookController", function($scope, $location) {
