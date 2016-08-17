@@ -58,9 +58,9 @@
 
 	<div class="bigbar">
 		<ul class="nav nav-tabs">
-			<li class="active"><a data-toggle="tab" href="#buymusic">Music</a></li>
-			<li><a data-toggle="tab" href="#video">Videos</a></li>
-			<li><a data-toggle="tab" href="#photos">Photos</a></li>
+			<li class="active"><a data-toggle="tab" data-target="#buymusic">Music</a></li>
+			<li><a data-toggle="tab" data-target="#video">Videos</a></li>
+			<li><a data-toggle="tab" data-target="#photos">Photos</a></li>
 		</ul>
 
 		<div class="tab-content">
@@ -75,8 +75,14 @@
 			</div>
 
 			<div id="photos" class="tab-pane fade">
-				<h3>Photos</h3>
-				<p>Content</p>
+				<div class="photogrid row">
+					<div class="photo col-sm-6" ng-repeat="monkee in myMonkee">
+						<a href="#/music/{{$index}}">
+							<img ng-src="{{monkee.image}}" alt="monkee image" />
+							<h3 class="title"> {{ monkee.title }}</h3>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

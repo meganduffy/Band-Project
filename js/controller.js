@@ -2,10 +2,12 @@
 bandApp.controller("HomeController", function($scope) {
 });
 
-bandApp.controller("MusicController", function($scope) {
+bandApp.controller("MusicController", ["$scope", "monkees", function($scope, monkees) {
+	monkees.success(function(data) {
+		$scope.myMonkee = data;
+	});
 
-
-});
+}]);
 
 bandApp.controller("GigsController", function($scope) {
 
