@@ -404,13 +404,77 @@
 }
 
 .music .words {
-	background-color:silver;
-	height:200px;
+	background-color:#585B5C;
+	height:250px;
 	display:flex;
 	flex-flow:row wrap;
-	align-items: ;
-	justify-content: ;
+	align-items: center ;
+	justify-content: space-around;
+	color:white;
+	font-family:Dosis;
+	font-weight:500;
+	font-size:1.2em;
+	text-align:center;
+	border-radius:10px;
+	margin-top:10px;
 }
+
+.music .words .about {
+	flex:2;
+	font-size:1em;
+}
+
+.music .words .quote {
+	flex:1;
+}
+
+.music .words .sound {
+	flex:2;
+}
+
+.music .words .about p {
+	width:60%;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.music .words .quote #quote1 {
+	font-size:2.5em;
+	font-family:Roboto;
+	color:#2C3539;
+	float:left;
+	margin-top:2px;
+}
+
+.music .words .quote #quote2 {
+	font-size:2.5em;
+	font-family:Roboto;
+	color:#2C3539;
+	float:right;
+}
+
+.music .words .quote p {
+	width:60%
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+	color:#382F2B;
+	font-family:Roboto;
+	font-size:1.6em;
+}
+
+.music .words .quote #Davy {
+	font-size:1.4em;
+	color:white;
+	margin-top:0;
+}
+
+.music .words .sound p {
+	width:60%;
+	margin-right:auto;
+	margin-left:auto;
+}
+
 
 /*.carousel-inner>.item {
 	position: relative;
@@ -456,7 +520,7 @@ iTunesSearch {
 /*REACHOUT STYLE*/
 
 .reachout {
-	background-color:silver;
+	background-color:red;
 	height:100%;
 	width:100vw;
 }
@@ -637,11 +701,17 @@ iTunesSearch {
 	position: relative;
 	/*left:40px;*/
 	right:5px;
+	background-color:#3289C7;
+}
+
+.reachout .direct #phone p {
+	background-color:#3289C7;
 }
 
 .reachout .direct #email p {
 	position:relative;
 	/*left:50px;*/
+	background-color:#3289C7;
 }
 
 .reachout .direct #phone #phonecirc {
