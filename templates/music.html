@@ -4,7 +4,7 @@
 	<div class="header">
 		<h1>for every vibe.</h1>
 
-		<div id="carousel" class="carousel slide" data-ride="carousel">
+		<!-- <div id="carousel" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carousel" data-slide-to="0" class="active"></li>
 				<li data-target="#carousel" data-slide-to="1"></li>
@@ -26,9 +26,9 @@
 					<img class="img-responsive center-block" src="media/img/sophfinal.png" alt="sophisticated slide" />
 				</div>
 			</div>
-
+ -->
 			<!-- Left and right controls-->
-			<span class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+			<!-- <span class="left carousel-control" href="#carousel" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</span>
@@ -37,7 +37,7 @@
 				<span class="sr-only">Next</span>
 			</span>
 
-		</div> 
+		</div>  -->
 
 	</div>
 	
@@ -70,16 +70,26 @@
 			</div>
 
 			<div id="video" class="tab-pane face">
-				<h3>Videos</h3>
-				<p>Content</p>
+				<h1>Videos</h1>
+				<p>Look back through the years, watch us shake and move!</p>
+				<iframe width="960" height="720" src="https://www.youtube.com/embed/xvqeSJlgaNk" frameborder="0" allowfullscreen></iframe>
+				
+				<iframe width="960" height="720" src="https://www.youtube.com/embed/kpp-Ry2ZNhY" frameborder="0" allowfullscreen></iframe>
+
+				<iframe width="960" height="720" src="https://www.youtube.com/embed/sUzs5dlLrm0" frameborder="0" allowfullscreen></iframe>
+
+				<h2>Like What You See?</h2>
+				<h3>Find More On...</h3>
+				<a href="https://www.youtube.com/user/themonkees" target="_blank"><div class="ytplug"></div></a>
 			</div>
 
 			<div id="photos" class="tab-pane fade">
-				<div class="photogrid row">
-					<div class="photo col-sm-6" ng-repeat="monkee in myMonkee">
+				<h1>Photographs</h1>
+				<p>Check out some of our favourite moments!</p>
+				<div class="photogrid">
+					<div class="photo col-sm-4" ng-repeat="monkee in myMonkee">
 						<a href="#/music/{{$index}}">
 							<img ng-src="{{monkee.image}}" alt="monkee image" />
-							<h3 class="title"> {{ monkee.title }}</h3>
 						</a>
 					</div>
 				</div>

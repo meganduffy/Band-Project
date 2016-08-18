@@ -475,7 +475,71 @@
 	margin-left:auto;
 }
 
-/*.music .bigbar {
+.music .tab-content #video {
+	background-color:silver;
+	text-align:center;
+	font-family:Dosis;
+	color:white;
+	text-decoration:underline;
+}
+
+.music .tab-content #video h1 {
+	font-size:4em;
+}
+
+.music .tab-content #video p {
+	font-size:1.9em;
+	margin-bottom:20px;
+}
+
+.music .tab-content #video iframe {
+	margin:20px auto;
+}
+
+.music .tab-content #video .ytplug {
+	background:url(../../media/img/videoyt.png) center;
+	background-size: cover;
+	height:150px;
+	width:150px;
+	border-radius: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+.music .tab-content #photos {
+	text-align:center;
+	font-family:Dosis;
+}
+
+.music .tab-content #photos h1 {
+	font-size:4em;
+}
+
+.music .tab-content #photos p {
+	margin-bottom:20px;
+	font-size:2em;
+	text-decoration:underline;
+}
+
+.music .tab-content #photos .photogrid {
+	width:90%;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.music .tab-content #photos .photogrid img {
+	height:250px;
+	width:290px;
+	border-radius:15px;
+	margin:20px;
+}
+
+/*.music .tab-content #photos .photogrid td {
+	margin:20px;
+}
+
+.music .bigbar {
 	background-color:black;
 	color:white;
 }

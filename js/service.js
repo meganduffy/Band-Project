@@ -1,5 +1,5 @@
 bandApp.factory("monkees", ["$http", function($http) {
-	return $http.get("package.json")
+	return $http.get("monkees.json")
 		.success(function(data) {
 			return data;
 		})
