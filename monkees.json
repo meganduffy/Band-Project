@@ -1,0 +1,6 @@
+{
+  "monkees": { "title": "Monkees", "image": "media/img/monkees.jpg"},
+  "monkeeslive": { "title": "Monkees live", "image": "media/img/monkeeslive.jpg"},
+  "monkeeslive2": { "title": "Monkees live 2", "image": "media/img/monkeeslive2.jpg"},
+  "monkeeslive3": { "title": "Monkees live 3", "image": "media/img/monkeeslive3.jpg"}
+}
