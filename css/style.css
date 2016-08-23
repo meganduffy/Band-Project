@@ -475,25 +475,77 @@
 	margin-left:auto;
 }
 
-.music .tab-content #video {
-	background-color:silver;
+.music .bigbar {
+	margin-top:20px;
+	margin-bottom:0;
+}
+
+/*.music .bigbar .nav-tabs > li {
+	float:none;
+	display:inline-block;
+	zoom: 1.4;
+}
+
+.music .bigbar .nav-tabs {
 	text-align:center;
-	font-family:Dosis;
-	color:white;
-	text-decoration:underline;
+}*/
+
+.music .bigbar .nav-tabs > li {
+	zoom:1.8;
 }
 
-.music .tab-content #video h1 {
+.music .bigbar .nav-tabs a {
+	color:black
+}
+
+.music .bigbar .tab-pane {
+	margin-top:0px;
+}
+
+.music .tab-content #buymusic {
+	border-top:2px solid silver;
+}
+
+.music .tab-content #video {
+	background:url(../../media/img/videoback.jpeg) center center fixed;
+	background-size: cover;
+	text-align:left;
+	font-family:Roboto;
+	color:black;
+	border-top:2px solid silver;
+}
+
+.music .tab-content #video  h1 {
 	font-size:4em;
+	margin-left:50px;
 }
 
-.music .tab-content #video p {
+.music .tab-content #video  p {
 	font-size:1.9em;
 	margin-bottom:20px;
+	margin-left:50px;
 }
 
 .music .tab-content #video iframe {
-	margin:20px auto;
+	margin:40px auto 40px 50px;
+	display:block;
+	opacity: 0.5;
+}
+
+.music .tab-content #video iframe:first-child {
+	margin-top:150px;
+}
+
+.music .tab-content #video iframe:hover {
+	opacity:1;
+}
+
+.music .tab-content #video .seemore {
+	text-align:center;
+}
+
+.music .tab-content #video .seemore h3 {
+	text-decoration:none;
 }
 
 .music .tab-content #video .ytplug {
@@ -504,12 +556,17 @@
 	border-radius: 100%;
 	margin-left:auto;
 	margin-right:auto;
-	
+	opacity: 0.5;
+}
+
+.music .tab-content #video .ytplug:hover {
+	opacity:1;
 }
 
 .music .tab-content #photos {
 	text-align:center;
 	font-family:Dosis;
+	border-top:2px solid silver;
 }
 
 .music .tab-content #photos h1 {
@@ -583,6 +640,17 @@ iTunesSearch {
 	/*border:2px solid red;*/
 }*/
 
+/*---------------------------------------------------------------------------
+---------------------------------------------------------------------------*/
+/*Image.html style*/
+
+.singleimage .single img {
+	margin-top:100px;
+}
+
+.singleimage h3 {
+	color:red;
+}
 
 
 /*---------------------------------------------------------------------------

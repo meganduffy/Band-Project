@@ -10,6 +10,10 @@ bandApp.config(function($routeProvider) {
 			templateUrl: "templates/music.html",
 			controller: "MusicController"
 		})
+		.when("/music/:imageId", {
+			templateUrl: "templates/image.html",
+			controller: "ImageController"
+		})
 		.when("/gigs", {
 			templateUrl: "templates/gigs.html",
 			controller: "GigsController"

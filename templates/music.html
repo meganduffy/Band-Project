@@ -57,7 +57,7 @@
 	</div>
 
 	<div class="bigbar">
-		<ul class="nav nav-tabs">
+		<ul class="nav nav-tabs nav-justified">
 			<li class="active"><a data-toggle="tab" data-target="#buymusic">Music</a></li>
 			<li><a data-toggle="tab" data-target="#video">Videos</a></li>
 			<li><a data-toggle="tab" data-target="#photos">Photos</a></li>
@@ -72,14 +72,14 @@
 			<div id="video" class="tab-pane face">
 				<h1>Videos</h1>
 				<p>Look back through the years, watch us shake and move!</p>
-				<iframe width="960" height="720" src="https://www.youtube.com/embed/xvqeSJlgaNk" frameborder="0" allowfullscreen></iframe>
+				<iframe width="640" height="380" src="https://www.youtube.com/embed/xvqeSJlgaNk" frameborder="0" allowfullscreen></iframe>
 				
-				<iframe width="960" height="720" src="https://www.youtube.com/embed/kpp-Ry2ZNhY" frameborder="0" allowfullscreen></iframe>
+				<iframe width="640" height="480" src="https://www.youtube.com/embed/kpp-Ry2ZNhY" frameborder="0" allowfullscreen></iframe>
 
-				<iframe width="960" height="720" src="https://www.youtube.com/embed/sUzs5dlLrm0" frameborder="0" allowfullscreen></iframe>
+				<iframe width="640" height="480" src="https://www.youtube.com/embed/sUzs5dlLrm0" frameborder="0" allowfullscreen></iframe>
 
-				<h2>Like What You See?</h2>
-				<h3>Find More On...</h3>
+				<h2 class="seemore">Like What You See?</h2>
+				<h3 class="seemore">Find More On...</h3>
 				<a href="https://www.youtube.com/user/themonkees" target="_blank"><div class="ytplug"></div></a>
 			</div>
 
@@ -88,8 +88,8 @@
 				<p>Check out some of our favourite moments!</p>
 				<div class="photogrid">
 					<div class="photo col-sm-4" ng-repeat="monkee in myMonkee">
-						<a href="#/music/{{$index}}">
-							<img ng-src="{{monkee.image}}" alt="monkee image" />
+						<a ng-href="#/music/{{$index}}">
+							<img ng-src="{{monkee.image}}" alt="monkee image" target="_self" />
 						</a>
 					</div>
 				</div>
