@@ -65,8 +65,31 @@
 
 		<div class="tab-content">
 			<div id="buymusic" class="tab-pane fade in active">
-				<h3>Buy Music</h3>
-				<p>Content</p>
+				<div class="header">
+					<h1>Buy Music</h1>
+					<p>Have a scroll through our sound and buy online!</p>
+				</div>
+
+				<div class="itunes-table">
+					<thead>
+						<tr>
+							<th>Album Artwork</th>
+							<th>Track</th>
+							<th>Album</th>
+							<th>Preview</th>
+							<th>Buy Now</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="info in monkeeInfo">
+							<td><img ng-src="{{info.artworkUrl100}}" alt="{{info.collectionName}}" /></td>
+							<td>{{info.trackName}}</td>
+							<td>{{info.collectionName}}</td>
+							<td><a href="{{info.previewUrl}}">Play</a></td>
+							<td><a href="{{info.*viewUrl}}">Buy Now</a></td>
+						</tr>
+					</tbody>
+				</div>
 			</div>
 
 			<div id="video" class="tab-pane face">
@@ -99,5 +122,5 @@
 </div> 
 
 
-<!-- <itunessearch></itunessearch> -->
+
 <!-- <blackfooter></blackfooter> -->

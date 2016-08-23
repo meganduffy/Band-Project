@@ -2,9 +2,13 @@
 bandApp.controller("HomeController", function($scope) {
 });
 
-bandApp.controller("MusicController", ["$scope", "monkees", function($scope, monkees) {
+bandApp.controller("MusicController", ["$scope", "monkees", "monkeeitunes", function($scope, monkees, monkeeitunes) {
 	monkees.success(function(data) {
 		$scope.myMonkee = data;
+	});
+
+	monkeeitunes.success(function(data) {
+		$scope.monkeeInfo = data; 
 	});
 
 }]);
