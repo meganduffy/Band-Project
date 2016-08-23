@@ -9,6 +9,14 @@ bandApp.controller("MusicController", ["$scope", "monkees", function($scope, mon
 
 }]);
 
+bandApp.controller("ImageController", ["$scope", "monkees", "$routeParams", function($scope, monkees, $routeParams) {
+	monkees.success(function(data) {
+		$scope.myMonkeeImg = data[$routeParams.imageId];
+	});
+
+	$scope.currentImageIndex = parseInt($routeParams.imageId);
+}]);
+
 bandApp.controller("GigsController", function($scope) {
 
 });
