@@ -8,7 +8,7 @@ bandApp.controller("MusicController", ["$scope", "monkees", "monkeeitunes", func
 	});
 
 	monkeeitunes.success(function(data) {
-		$scope.monkeeInfo = data; 
+		$scope.monkeeInfo = data.results; 
 	});
 
 }]);

@@ -9,7 +9,7 @@ bandApp.factory("monkees", ["$http", function($http) {
 }]);
 
 bandApp.factory("monkeeitunes", ["$http", function($http) {
-	return $http.jsonp("https://itunes.apple.com/lookup?id=4512388&entity=song&limit=15", {
+	return $http.jsonp("monkeeitunes.json", {
 		params : {
 			"callback" : "JSON_CALLBACK"
 		}
