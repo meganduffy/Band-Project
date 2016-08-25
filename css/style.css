@@ -651,7 +651,7 @@
 /*REACHOUT STYLE*/
 
 .reachout {
-	background-color:red;
+	background-color:silver;
 	height:100%;
 	width:100vw;
 }
@@ -660,6 +660,7 @@
 	background-color:black;
 	height:320px;
 	border-bottom:5px solid #5296C7;
+	border-radius:15px;
 }
 
 .reachout .connect h1 {
@@ -740,6 +741,7 @@
 	height:400px;
 	/*width:100px;*/
 	border:10px solid black;
+	border-radius:15px;
 	flex:1;
 	margin:20px auto;
 	display:flex;
@@ -753,6 +755,7 @@
 .reachout .plugs .mailbox {
 	height:400px;
 	border:10px solid black;
+	border-radius:15px;
 	flex:1;
 	margin:20px auto;
 	display:flex;
@@ -778,7 +781,6 @@
 }
 
 .reachout .newsletter {
-	height:385px;
 	background-color:black;
 	display:flex;
 	flex-flow:row wrap;
@@ -801,14 +803,21 @@
 
 .reachout .newsletter .subform {
 	font-size:1.2em;
-	margin-top:-50px;
-	
+	margin-top:-50px;	
+}
+
+.reachout .newsletter .subform .form-group {
+	height:50px;
+}
+
+.reachout .newsletter .subform .alert {
+	margin-top:-15px;
+	width:100px;
 }
 
 .reachout .newsletter #subin {
-	position:relative;
-	top:10px;
-	left:0px;
+	margin-top:-30px;
+	text-align:center;
 }
 
 .reachout .newsletter input {

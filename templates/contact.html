@@ -37,25 +37,34 @@
 		</div>
 
 		<div class="subform">
-			<form name="subscribeform">
+			<form name="subscribeform" id="subscribeform" ng-submit="formsubmit()" novalidate>
 				<div class="row">
 					<div class="col-sm-6" id="name">
-						<label>Name</label>
+						<label for="name">Name</label>
 					</div>
-					<div class="col-sm-6" id="namein">
-						<input name="name" type="text" placeholder="Enter Name" ng-model="user.name" required />
+					<div class="col-sm-6 form-group" ng-class="{'has-error': subscribeform.name.$invalid && subscribeform.name.$touched}" id="namein">
+						<input name="name" class="form-control" type="text" placeholder="Enter Name" ng-model="user.name" required />
+
+						<div class=" form-group alert" ng-messages="subscribeform.name.$error" ng-if="subscribeform.name.$touched && subscribeform.name.$invalid" role="alert">
+							<div ng-message="required">Required Field</div>
+						</div>
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-sm-6" id="email">
-						<label>Email</label>
+					<div class="col-sm-6"  id="email">
+						<label for="email">Email</label>
 					</div>
-					<div class="col-sm-6" id="emailin">
-						<input name="email" type="email" placeholder="joe@joebloggs.com" ng-model="user.email" required />
-						<button class="btn btn-danger redbtn" id="subin">Submit</button>
+					<div class="col-sm-6 form-group" ng-class="{'has-error': subscribeform.email.$invalid && subscribeform.email.$touched}" id="emailin">
+						<input name="email" class="form-control" type="email" placeholder="joe@joebloggs.com" ng-model="user.email" required />
+
+						<div class=" form-group alert" ng-messages="subscribeform.email.$error" ng-if="subscribeform.email.$touched && subscribeform.email.$invalid" role="alert">
+							<div ng-message="required">Required Field</div>
+						</div>
+						
 					</div>
 				</div>
+				<button ng-disabled="subscribeform.$invalid" ng-click="submitted=true" type="submit" value="submit" class="btn btn-danger redbtn" id="subin">Submit</button>
 			</form>
 		</div>
 	</div>

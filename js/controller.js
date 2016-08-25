@@ -26,8 +26,18 @@ bandApp.controller("GigsController", function($scope) {
 
 });
 
-bandApp.controller("ContactController", function($scope) {
+bandApp.controller("ContactController", function($scope, $location) {
 	$scope.title= "Connect With Us";
+	$scope.submitted = false;
+
+	$scope.formsubmit = fucntion() {
+		$scope.submitted = false;
+
+		if ($scope.subscribeform.$valid) {
+			$scope.sumbitted=true;
+			$location.path("/subscribeconfirm");
+		}
+	};
 });
 
 bandApp.controller("BookController", function($scope, $location) {
@@ -49,6 +59,10 @@ bandApp.controller("BookController", function($scope, $location) {
 bandApp.controller("BookConfirmController", function($scope) {
 	$scope.title= "Congratulations!";
 });
+
+bandApp.controller("SubscribeConfirmController", function($scope) {
+	$scope.title= "Congradulations!";
+})
 
 bandApp.controller("iTunesController", function($scope, $http) {
 	//define search function called by form
