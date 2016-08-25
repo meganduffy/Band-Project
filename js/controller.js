@@ -8,12 +8,8 @@ bandApp.controller("MusicController", ["$scope", "monkees", "monkeeitunes", func
 	});
 
 	monkeeitunes.success(function(data) {
-<<<<<<< HEAD
-		$scope.monkeeInfo = data.results; 
-=======
 		$scope.monkeeInfo = data.results;
 		$scope.numMonkeeResults = data.resultCount;
->>>>>>> 21ca319c23f80c9cefe82035189d707265e040f7
 	});
 
 }]);

@@ -1,60 +1,26 @@
 <navigationbar></navigationbar>
 <div class="music">
 
-	<div class="header">
-		<h1>for every vibe.</h1>
-
-		<!-- <div id="carousel" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel" data-slide-to="1"></li>
-				<li data-target="#carousel" data-slide-to="2"></li>
-				<li data-target="#carousel" data-slide-to="3"></li>
-			</ol>
-
-			<div class="carousel-inner" role="listbox">
-				<div class="item active aslide" data-duration="5" data-audio="media/audio/ImABeliever5s.mp3">
-					<img class="img-responsive center-block" src="media/img/parfinal.png" alt="party slide" />
-				</div>
-				<div class="item aslide" data-duration="5" data-audio="media/audio/SteppingStone5s.mp3">
-					<img class="img-responsive center-block" src="media/img/nosfinal.png" alt="nostalgic slide" />
-				</div>
-				<div class="item aslide" data-duration="5" data-audio="media/audio/SteppingStone5s.mp3">
-					<img class="img-responsive center-block" src="media/img/romfinal.png" alt="romantic slide" />
-				</div>
-				<div class="item aslide" data-duration="5" data-audio="media/audio/SteppingStone5s.mp3">
-					<img class="img-responsive center-block" src="media/img/sophfinal.png" alt="sophisticated slide" />
-				</div>
-			</div>
- -->
-			<!-- Left and right controls-->
-			<!-- <span class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</span>
-			<span class="right carousel-control" href="#carousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</span>
-
-		</div>  -->
-
+	<div class="top">
+		<div class="header">
+			<h1>for every vibe.</h1>
+		</div>
 	</div>
 	
-	<div class="words">
-		<div class="about">
-			<p>Between October 1966 and November 1967, the Monkees put out four albums. All four went to No. 1. The band had six Top 5 singles -  “Daydream Believer” has been recorded by a wide range of musicians, including Paul Westerberg of the Replacements, the Four Tops, Britpop act Robson & Jerome, dance pop singers Atomic Kitten, Canadian songstress Ann Murray and Japanese all-girl rockers Shonen Knife.</p>
-		</div>
+		<div class="words">
+			<div class="about">
+				<p>Between October 1966 and November 1967, the Monkees put out four albums. All four went to No. 1. The band had six Top 5 singles -  “Daydream Believer” has been recorded by a wide range of musicians, including Paul Westerberg of the Replacements, the Four Tops, Britpop act Robson & Jerome, dance pop singers Atomic Kitten, Canadian songstress Ann Murray and Japanese all-girl rockers Shonen Knife.</p>
+			</div>
 
-		<div class="quote">
-		<span id="quote1">"</span><p>Wherever I go, people still shout out: 'Hey, hey, we're The Monkees.' And I never tire of that.</p><span id="quote2">"</span><p id="Davy">Davey Jones</p>
-		</div>
+			<div class="quote">
+				<span id="quote1">"</span><p>Wherever I go, people still shout out: 'Hey, hey, we're The Monkees.' And I never tire of that.</p><span id="quote2">"</span><p id="Davy">Davey Jones</p>
+			</div>
 
-		<div class="sound">
-			<p>The Monkees use a strong rhythm section of double bass and drums as the anchor for a lead section of brass instruments such as trumpets and trombones. Their music creates a "visceral response" such as feet-tapping or head-nodding to get everyone swinging and dancing the night away!</p>
-			<p>You'll be foxtrotting your way to the grooviest night of your life!</p>
+			<div class="sound">
+				<p>The Monkees use a strong rhythm section of double bass and drums as the anchor for a lead section of brass instruments such as trumpets and trombones. Their music creates a "visceral response" such as feet-tapping or head-nodding to get everyone swinging and dancing the night away!</p>
+				<p>You'll be foxtrotting your way to the grooviest night of your life!</p>
+			</div>
 		</div>
-	</div>
 
 	<div class="bigbar">
 		<ul class="nav nav-tabs nav-justified">
@@ -77,17 +43,25 @@
 								<th>Album Artwork</th>
 								<th>Track</th>
 								<th>Album</th>
-								<th>Preview</th>
+								<th class="preview">Preview</th>
 								<th>Buy Now</th>
 							</tr>
 						</thead>
+
 						<tbody>
-							<tr ng-repeat="info in monkeeInfo">
+							<tr>
+								<td class="space"></td>
+								<td class="space"></td>
+								<td class="space"></td>
+								<td class="space"></td>
+								<td class="space"></td>
+							</tr>
+							<tr ng-repeat="info in monkeeInfo | filter : {wrapperType : 'track'}">
 								<td><img ng-src="{{info.artworkUrl100}}" alt="{{info.collectionName}}" /></td>
 								<td>{{info.trackName}}</td>
-								<td>{{info.collectionName}}</td>
-								<td><a href="{{info.previewUrl}}">Play</a></td>
-								<td><a href="{{info.trackViewUrl}}">Buy Now</a></td>
+								<td class="album">{{info.collectionName}}</td>
+								<td><a href="{{info.previewUrl}}" target="_blank" class="btn btn-default btn-sm">Play Preview</a></td>
+								<td><a href="{{info.trackViewUrl}}" target="_blank" class="btn btn-danger buybutton">Buy Now</a></td>
 							</tr>
 						</tbody>
 					</table>
