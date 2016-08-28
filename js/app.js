@@ -27,12 +27,16 @@ bandApp.config(function($routeProvider) {
 			controller: "BookController"
 		})
 		.when("/bookconfirm", {
-			templateUrl: "templates/bookconfirm.html",
+			templateUrl: "templates/confirmations/bookconfirm.html",
 			controller: "BookConfirmController"
 		})
 		.when("/subscribeconfirm", {
-			templateUrl: "templates/subscribeconfirm.html",
+			templateUrl: "templates/confirmations/subscribeconfirm.html",
 			controller: "SubscribeConfirmController"
+		})
+		.when("/mailconfirm", {
+			templateUrl: "templates/confirmations/mailconfirm.html",
+			controller: "MailConfirmController"
 		})
 		.otherwise({ redirectTo: "/"});
 });

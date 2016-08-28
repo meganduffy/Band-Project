@@ -653,14 +653,14 @@
 .reachout {
 	background-color:silver;
 	height:100%;
-	width:100vw;
+	width:98.7vw;
 }
 
 .reachout .connect {
 	background-color:black;
 	height:320px;
 	border-bottom:5px solid #5296C7;
-	border-radius:15px;
+	border-bottom-radius:15px;
 }
 
 .reachout .connect h1 {
@@ -1219,7 +1219,7 @@ subscribe input {
 	height:30px;
 }
 
-.modal-body {
+.subscribe-modal .modal-body {
 	width:50%;
 	margin-left:auto;
 	margin-right:auto;
@@ -1231,3 +1231,9 @@ subscribe input {
 	left:75px;
 }
 
+
+/*MAILLIST*/
+
+.mail-modal .form-group {
+	margin:0 auto 0 220px
+}

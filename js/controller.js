@@ -30,7 +30,7 @@ bandApp.controller("ContactController", function($scope, $location) {
 	$scope.title= "Connect With Us";
 	$scope.submitted = false;
 
-	$scope.formsubmit = fucntion() {
+	$scope.formsubmit = function() {
 		$scope.submitted = false;
 
 		if ($scope.subscribeform.$valid) {
@@ -54,6 +54,24 @@ bandApp.controller("BookController", function($scope, $location) {
 
 		}
 	};
+});
+
+bandApp.controller("MailModalController", function($scope, $location) {
+	$scope.user= {};
+	$scope.submitted=false;
+
+	$scope.formsubmit= function() {
+		$scope.submitted= false;
+
+		if($scope.mailform.$valid) {
+			$scope.submitted= true;
+			$location.path("/mailconfirm");
+		}
+	};
+});
+
+bandApp.controller("SubModalController", function($scope, $location) {
+	
 });
 
 bandApp.controller("BookConfirmController", function($scope) {
@@ -93,3 +111,4 @@ bandApp.controller("iTunesController", function($scope, $http) {
 		$scope.error = reason
 	}
 });
+

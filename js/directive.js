@@ -26,3 +26,10 @@ bandApp.directive("subscribe", function() {
 		restrict: "E"
 	};
 });
+
+bandApp.directive("maillist", function() {
+	return {
+		templateUrl: "templates/directives/maillist.html",
+		restrict: "E"
+	};
+});
