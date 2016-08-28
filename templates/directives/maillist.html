@@ -1,6 +1,7 @@
+<div ng-controller="MailModalController">
 <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target=".mail-modal">Join Maillist</button>
 
-<div class="mail-modal modal fade" tab-index="-1" role="dialog" aria-labelledby="mailModal">
+<div class="mail-modal modal fade" id="mailmodal" tab-index="-1" role="dialog" aria-labelledby="mailModal">
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -15,7 +16,7 @@
 					<fieldset class="text-center">
 						<legend>About You</legend>
 						<div class="row">
-							<div class="col-sm-6 form-group" ng-class="{'has-error':mailform.name.$invalid && mailform.name.$touched}">
+							<div class="col-sm-6 form-group" ng-class="{'has-error': mailform.name.$invalid && mailform.name.$touched}">
 								<label for="name">Name</label>
 							
 								<input autofocus class="form-control" name="name" type="text" id="name" ng-model="user.name" required />
@@ -77,4 +78,5 @@
 			</div>
 		</div>
 	</div>
+</div>
 </div>

@@ -60,18 +60,41 @@ bandApp.controller("MailModalController", function($scope, $location) {
 	$scope.user= {};
 	$scope.submitted=false;
 
+	$("#submit").submit(function() {
+		$("#mailmodal").modal("toggle");
+		return false;
+	});
+	
 	$scope.formsubmit= function() {
 		$scope.submitted= false;
 
 		if($scope.mailform.$valid) {
 			$scope.submitted= true;
 			$location.path("/mailconfirm");
-		}
+		};
 	};
+
+	// $(function () {
+	// 	$("#submit").on("click", function() {
+	// 		$(".mail-modal").modal("hide");
+	// 	});
+	// });
+
+	
 });
 
 bandApp.controller("SubModalController", function($scope, $location) {
-	
+	$scope.user={};
+	$scope.submitted=false;
+
+	$scope.formsubmit = function() {
+		$scope.submitted=false;
+
+		if($scope.subscribeform.$valid) {
+			$scope.submitted=true;
+			$location.path("/subscribeconfirm")
+		}
+	};
 });
 
 bandApp.controller("BookConfirmController", function($scope) {

@@ -1,3 +1,4 @@
+<div ng-controller="SubModalController">
 <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".subscribe-modal">Subscribe</button>
 
 <div class="subscribe-modal modal fade" tab-index="-1" role="dialog" aria-labelledby="subscribeModal">
@@ -8,29 +9,42 @@
 				<h4 class="modal-title">Subscribe To Our Newsletter</h4>
 			</div>
 			<div class="modal-body">
-				<form name="subscribeform">
+
+
+				<form id ="subscribeform" name="subscribeform" ng-submit="formsubmit()" novalidate>
+
+				<fieldset>
 					<div class="row">
-						<div class="col-sm-6">
-							<label>Name</label>
-						</div>
-						<div class="col-sm-6">
-							<input name="name" type="text" ng-model="user.name" required />
+						<div class="col-sm-6 form-group" ng-class="{'has-error': subscribeform.name.$invalid && subscribeform.name.$touched}">
+							<label for="name">Name</label>
+						
+							<input autofocus class="form-control" name="name" type="text" id="name" ng-model="user.name" required />
+
+							<div class="col-sm-6 form-group alert" ng-messages="subscribeform.name.$error" ng-if="subscribeform.name.$touched && subscribeform.name.$invalid" role="alert">
+								<div ng-message="required">Required Field</div>
+							</div> 
 						</div>
 					</div>
+
 					<div class="row">
-						<div class="col-sm-6">
-							<label>Email</label>
-						</div>
-						<div class="col-sm-6">
-							<input name="email" type="email" placeholder="joe@joebloggs.com" ng-model="user.email" required />
+						<div class="col-sm-6 form-group" ng-class="{'has-error': subscribeform.email.$invalid && subscribeform.email.$touched}">>
+							<label for="email">Email</label>
+						
+							<input class="form-control" name="email" type="email" placeholder="joe@joebloggs.com" id="email" ng-model="user.email" required />
+
+							<div class="col-sm-6 form-group alert" ng-messages="subscribeform.email.$error" ng-if="subscribeform.email.$touched && subscribeform.email.$invalid" role="alert">
+								<div ng-message="required">Required Field</div>
+							</div> 
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-6"></div>
 						<div class="col-sm-6">
-							<button class="btn btn-danger redbtn">Submit</button>
+							<button ng-disabled="subscribeform.$invalid" ng-click="submitted=true" class="btn btn-danger redbtn" id="submit" type="submit" value="submit">Submit</button>
 						</div>
 					</div>
+				</fieldset>
+				
 				</form>
 			</div>
 			<div class="modal-footer">
@@ -38,4 +52,5 @@
 			</div>
 		</div>
 	</div>
+</div>
 </div>
