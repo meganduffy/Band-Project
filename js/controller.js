@@ -52,58 +52,45 @@ bandApp.controller("BookController", function($scope, $location) {
 			$scope.submitted= true;
 			$location.path("/bookconfirm");
 
-		}
+		};
 	};
 });
 
 bandApp.controller("MailModalController", function($scope, $location) {
 	$scope.user= {};
 	$scope.submitted=false;
-
-	$("#submit").submit(function() {
-		$("#mailmodal").modal("toggle");
-		return false;
-	});
 	
 	$scope.formsubmit= function() {
 		$scope.submitted= false;
 
 		if($scope.mailform.$valid) {
+			$("#mailmodal").modal("toggle");
 			$scope.submitted= true;
 			$location.path("/mailconfirm");
 		};
 	};
-
-	// $(function () {
-	// 	$("#submit").on("click", function() {
-	// 		$(".mail-modal").modal("hide");
-	// 	});
-	// });
-
-	
 });
 
 bandApp.controller("SubModalController", function($scope, $location) {
 	$scope.user={};
 	$scope.submitted=false;
 
+
+
 	$scope.formsubmit = function() {
 		$scope.submitted=false;
 
 		if($scope.subscribeform.$valid) {
+			$("#subscribemodal").modal("toggle");
 			$scope.submitted=true;
 			$location.path("/subscribeconfirm")
 		}
 	};
 });
 
-bandApp.controller("BookConfirmController", function($scope) {
+bandApp.controller("ConfirmController", function($scope) {
 	$scope.title= "Congratulations!";
 });
-
-bandApp.controller("SubscribeConfirmController", function($scope) {
-	$scope.title= "Congradulations!";
-})
 
 bandApp.controller("iTunesController", function($scope, $http) {
 	//define search function called by form

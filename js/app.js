@@ -28,15 +28,15 @@ bandApp.config(function($routeProvider) {
 		})
 		.when("/bookconfirm", {
 			templateUrl: "templates/confirmations/bookconfirm.html",
-			controller: "BookConfirmController"
+			controller: "ConfirmController"
 		})
 		.when("/subscribeconfirm", {
 			templateUrl: "templates/confirmations/subscribeconfirm.html",
-			controller: "SubscribeConfirmController"
+			controller: "ConfirmController"
 		})
 		.when("/mailconfirm", {
 			templateUrl: "templates/confirmations/mailconfirm.html",
-			controller: "MailConfirmController"
+			controller: "ConfirmController"
 		})
 		.otherwise({ redirectTo: "/"});
 });

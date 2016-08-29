@@ -329,66 +329,6 @@
 }
 
 
-/*~~~~~BOOKCONFIRM STYLE~~~~*/
-.bookconfirm {
-	background:url(../../media/img/book-background2.jpeg) center center;
-	height:100vh;
-}
-.bookconfirm .header {
-	margin:50px auto;
-	font-size:4em;
-	font-family:Dosis;
-	text-align:center;
-	background-color:silver;
-	height:150px;
-}
-
-.bookconfirm .bookbody {
-	width:90%;
-	margin:30px auto 150px auto;
-	text-align:center;
-	font-family:Dosis;
-	color:white;
-}
-
-
-
-/*media queries for desktop*/
-
-@media (min-width:1200px) {
-	.bookconfirm .header {
-		font-size:15em;
-		margin:0 auto;
-		height:auto;
-	}
-
-	.bookconfirm .bookbody {
-		font-size:auto;
-		width:50%;
-		margin:100px auto;
-	}
-
-	.bookconfirm .bookbody span {
-		color:#323232;
-	}
-}
-
-@media (min-width:690px) and (max-width:1199px) {
-	.bookconfirm .header {
-		font-size:8em;
-		height:200px;
-	}
-
-	.bookconfirm .bookbody {
-		width:70%;
-	}
-
-	.bookconfirm .bookbody span {
-		color:#323232;
-	}
-}
-
-
 /*---------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------*/
@@ -1237,3 +1177,133 @@ subscribe input {
 .mail-modal .form-group {
 	margin:0 auto 0 220px
 }
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/*Confirmation Pages*/
+
+/*~~~~~BOOKCONFIRM STYLE~~~~*/
+.bookconfirm {
+	background:url(../../media/img/book-background2.jpeg) center center;
+	height:100vh;
+}
+.bookconfirm .header {
+	margin:50px auto;
+	
+	font-family:Dosis;
+	text-align:center;
+	background-color:silver;
+	height:150px;
+}
+
+.bookconfirm .header h1 {
+	font-size:4em;
+}
+
+.bookconfirm .bookbody {
+	width:90%;
+	margin:30px auto 150px auto;
+	text-align:center;
+	font-family:Dosis;
+	color:white;
+}
+
+
+
+/*media queries for desktop*/
+
+@media (min-width:1200px) {
+	.bookconfirm .header {
+		font-size:15em;
+		margin:0 auto;
+		height:auto;
+	}
+
+	.bookconfirm .bookbody {
+		font-size:auto;
+		width:50%;
+		margin:100px auto;
+	}
+
+	.bookconfirm .bookbody span {
+		color:#323232;
+	}
+}
+
+@media (min-width:690px) and (max-width:1199px) {
+	.bookconfirm .header {
+		font-size:8em;
+		height:200px;
+	}
+
+	.bookconfirm .bookbody {
+		width:70%;
+	}
+
+	.bookconfirm .bookbody span {
+		color:#323232;
+	}
+}
+
+/*MAILCONFIRM STYLE*/
+
+.mailconfirm {
+	background:url("../../media/img/mailconfirm.jpg") center;
+	height:100vh;
+}
+
+.mailconfirm .header {
+	margin:50px auto;
+	font-size:4em;
+	font-family:Dosis;
+	text-align:center;
+	background-color:silver;
+	height:150px;
+}
+
+.mailconfirm .mailbody {
+	width:90%;
+	margin:30px auto 150px auto;
+	text-align:center;
+	font-family:Dosis;
+	color:white;
+}
+
+@media (min-width:1200px) {
+	.mailconfirm .header {
+		font-size:15em;
+		margin:0 auto;
+		height:auto;
+	}
+
+	.mailconfirm .mailbody {
+		font-size:auto;
+		width:50%;
+		margin:100px auto;
+	}
+
+	.mailconfirm .mailbody span {
+		color:#323232;
+	}
+}
+
+@media (min-width:690px) and (max-width:1199px) {
+	.mailconfirm .header {
+		font-size:8em;
+		height:200px;
+	}
+
+	.mailconfirm .mailbody {
+		width:70%;
+	}
+
+	.mailconfirm .mailbody span {
+		color:#323232;
+	}
+}
+
+
+/*SUBSCRIBECONFIRM STYLE*/
