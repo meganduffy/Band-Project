@@ -188,7 +188,7 @@
 	justify-content:space-between;
 	text-align:center;
 	color:white;
-	/*background:url(../../media/img/monkeeslive3.jpg) center center fixed;*/
+	background:url(../../media/img/cwater.jpg) center;
 	background-size:cover;
 	background-color:silver;
 	height:13em;
@@ -1137,45 +1137,107 @@
 }
 
 /*SUBSCRIBE*/
-subscribe {
+
+.subscribe-modal {
 	color:black;
 	text-align:center;
 }
 
-subscribe label {
-	font-size:25px;
-	margin-bottom:20px;
-	margin-top:30px;
-	margin-right:-15px;
-	font-family:Dosis;
-}
-
-subscribe input {
-	border-radius:5px;
-	margin-bottom:20px;
-	margin-top:20px;
-	margin-left:-25px;
-	width:250px;
-	height:30px;
-}
-
 .subscribe-modal .modal-body {
-	width:50%;
-	margin-left:auto;
-	margin-right:auto;
+	font-family:Dosis;
+	font-size:6em;
+	width:100%;
+	/*margin:0 auto 0 220px;*/
 }
 
-.redbtn {
-	width:100px;
-	position:relative;
-	left:75px;
+.subscribe-modal .modal-body label {
+	margin:1em auto;
+	font-size:2em;
 }
+
+.subscribe-modal .redbtn {
+	width:100px;
+	/*position:relative;
+	right:60px;*/
+}
+
+@media (min-width:1050px) {
+	.subscribe-modal .modal-body {
+		font-size:2em;
+		width:100%;
+		margin:0 auto 0 220px;
+	}
+
+	.subscribe-modal .modal-body label {
+		margin:1em auto;
+		font-size:1em;
+	}
+
+	.subscribe-modal .redbtn {
+		width:100px;
+		position:relative;
+		right:60px;
+	}
+
+}
+
+@media (min-width:766px) and (max-width:1049px) {
+	.subscribe-modal .modal-body {
+		
+		margin:0 auto 0 150px;
+	}
+
+	.subscribe-modal .redbtn {
+		position:relative;
+		right:100px;
+	}
+}
+
 
 
 /*MAILLIST*/
 
-.mail-modal .form-group {
-	margin:0 auto 0 220px
+.mail-modal {
+	color:black;
+	text-align:center;
+}
+
+.mail-modal .modal-body{
+	font-family:Dosis;
+	font-size:2em;
+	width:100%;
+}
+
+.mail-modal .modal-body label {
+	margin:1em auto;
+}
+
+.mail-modal .redbtn {
+	margin-top:1em;
+}
+
+@media (min-width:991px) {
+	.mail-modal .modal-body {
+		font-size:2em;
+	}
+	.mail-modal .modal-body label {
+		margin:1em auto;
+		font-size:1em;
+	}
+
+	.mail-modal .form-group {
+		margin:0 auto 0 220px;
+	}
+
+	.mail-modal .redbtn {
+		margin-top:1em;
+	}
+}
+
+@media (min-width:766px) and (max-width:990px) {
+	.mail-modal .form-group {
+		margin:0 auto 0 150px;
+	}
 }
 
 
@@ -1307,3 +1369,65 @@ subscribe input {
 
 
 /*SUBSCRIBECONFIRM STYLE*/
+
+.subscribeconfirm {
+	background:url(../../media/img/subscribeconfirm.jpg) center;
+	height:100vh;
+}
+.subscribeconfirm .header {
+	margin:50px auto;
+	
+	font-family:Dosis;
+	text-align:center;
+	background-color:silver;
+	height:150px;
+}
+
+.subscribeconfirm .header h1 {
+	font-size:4em;
+}
+
+.subscribeconfirm .subscribebody {
+	width:90%;
+	margin:30px auto 150px auto;
+	text-align:center;
+	font-family:Dosis;
+	color:white;
+}
+
+
+
+/*media queries for desktop*/
+
+@media (min-width:1200px) {
+	.subscribeconfirm .header {
+		font-size:15em;
+		margin:0 auto;
+		height:auto;
+	}
+
+	.subscribeconfirm .subscribebody {
+		font-size:auto;
+		width:50%;
+		margin:100px auto;
+	}
+
+	.subscribeconfirm .subscribebody span {
+		color:silver;
+	}
+}
+
+@media (min-width:690px) and (max-width:1199px) {
+	.subscribeconfirm .header {
+		font-size:8em;
+		height:200px;
+	}
+
+	.subscribeconfirm .subscribebody {
+		width:70%;
+	}
+
+	.subscribeconfirm .subscribebody span {
+		color:silver;
+	}
+}
