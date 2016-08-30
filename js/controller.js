@@ -96,7 +96,7 @@ bandApp.controller("iTunesController", function($scope, $http) {
 	//define search function called by form
 	$scope.searchiTunes = function(artist) {
 		//use the jsonp callback function from the $http service this
-		$http.jsonp("http://itunes.apple.com/search?limit=10", {
+		$http.jsonp("http://itunes.apple.com/search?limit=5", {
 			params: {
 				"callback" : "JSON_CALLBACK",
 				"term" : artist

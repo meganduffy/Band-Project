@@ -490,6 +490,10 @@
 
 }
 
+.music .tab-content #buymusic .itunes-search-table h1 {
+	margin-top:20px;
+}
+
 .music .tab-content #video {
 	background:url(../../media/img/lights.jpeg) center center fixed;
 	background-size: cover;
@@ -1240,8 +1244,9 @@
 	}
 }
 
+/*ITUNESSEARCH*/
+
 .itunessearch {
-	border:1px solid red;
 	margin:50px auto;
 	width:100%;
 }
@@ -1251,6 +1256,21 @@
 	height:50px;
 }
 
+.itunessearch table {
+	width:90%;
+	height:auto;
+	margin:10px auto;
+	text-align:center;
+}
+
+.itunessearch th {
+	font-size:1.5em;
+	text-align:center;
+}
+
+.itunessearch td {
+	font-size:1.5em;
+}
 /*---------------------------------------------------------------------
 -----------------------------------------------------------------------
 ----------------------------------------------------------------------*/

@@ -21,15 +21,19 @@
 			<tr>
 				<th>Album Artwork</th>
 				<th>Track</th>
+				<th>Album</th>
 				<th>Preview</th>
+				<th>Buy Now</th>
 			</tr>
 		</thead>
 		<tbody>
 			<!-- ng-repeat directive to loop over each song in the songs list. -->
 			<tr ng-repeat="song in songs">
-				<td><img ng-src="{{song.artworkUrl60}}" alt="{{song.collectionName}}" /></td>
+				<td><img ng-src="{{song.artworkUrl100}}" alt="{{song.collectionName}}" /></td>
 				<td>{{song.trackName}}</td>
-				<td><a href="{{song.previewUrl}}">Play</a></td>
+				<td>{{song.collectionName}}</td>
+				<td><a href="{{song.previewUrl}}" target="_blank" class="btn btn-default btn-sm">Play Preview</a></td>
+				<td><a href="{{song.trackViewUrl}}" target="_blank" class="btn btn-danger">Buy Now</a></td>
 			</tr>
 		</tbody>
 	</table>
