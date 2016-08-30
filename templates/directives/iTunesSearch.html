@@ -1,5 +1,5 @@
 
-<div class="iTunes" ng-controller="iTunesController">
+<div class="itunessearch" ng-controller="iTunesController">
 
 <!-- show an error if there is a search error-->
 {{ error }}
@@ -10,8 +10,8 @@
 
 <!-- Artist/band required, use the ng-model directive to pass the artist name back into the controller/model-->
 
-		<input type="search" required placeholder="eg. The Monkees" ng-model="artist" />
-		<input type="submit" value="Search" />
+		<input id="itunes-input" type="search" required placeholder="eg. The Monkees" ng-model="artist" />
+		<input type="submit" value="Search" id="itunes-search-button" />
 	</form>
 
 <!-- ng-show directive to decide when to show results-->

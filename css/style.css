@@ -1052,6 +1052,10 @@
 	color:#222222;
 }
 
+.navbar-default:hover {
+	opacity:1;
+}
+
 .navbar-default .navbar-header .navbar-brand {
 	font-weight:700;
 	text-transform:uppercase;
@@ -1070,10 +1074,12 @@
 /*BLACKFOOTER DIRECTIVE STYLE*/	
 
 .footer {
-	font-size:1px;
+	text-align:center;
 	color:white;
-	background-color:black;
-	height:40vh;	
+	background-color:#070b0b;
+	height:100%;
+	border-top:5px solid black;
+	border-bottom:1px solid black;
 }
 
 .footer .container {
@@ -1081,58 +1087,57 @@
 	flex-flow:row wrap;
 	align-items: center;
 	justify-content: center;
+	height:100px;
+	
 }
 
 .footer .community {
 	flex:1;
-	margin-top:-25px;
+	height:80px;
 }
 
 .footer .buymusic {
 	flex:1;
-	margin-top:30px;
+	height:80px;
 }
 
 .footer .subscribe {
 	flex:1;
-	margin-top:35px;
+	height:80px;
 }
 
 .footer .itunes {
-	margin-right:-45px;
 	text-align:center;
 }
 
-.footer p {
-	text-decoration:underline;
-	margin-bottom:25px;
-	font-family:Dosis;
-	font-size:20px;
+.footer subscribe {
+	height:20px;
 }
 
-.footer a {
+.footer p {
 	color:white;
 	font-family:Dosis;
 	font-size:20px;
-	text-decoration:underline;
-	margin-bottom:25px;
+	display:block;
 }
 
-/*media queries for desktop*/
-/*@media (min-width:480px) and (max-width:1149px) {
-	.footer {
-		height:30vh;
-	}
-}*/
+.footer a {
+	text-decoration:none;
+}
 
-@media (min-width:1050px) {
-	.footer {
-		font-size:14px;
-		height:18vh;
-	}
+.footer img {
+	height:30px;
+}
 
-	.footer .community {
-		margin-top:10px;
+.footer .underline {
+	text-decoration:underline;
+	margin-bottom:5px;
+	margin-top:10px;
+}
+
+@media (max-width:660px) {
+	.footer .container {
+		height:180px;
 	}
 }
 
@@ -1147,7 +1152,6 @@
 	font-family:Dosis;
 	font-size:6em;
 	width:100%;
-	/*margin:0 auto 0 220px;*/
 }
 
 .subscribe-modal .modal-body label {
@@ -1157,8 +1161,6 @@
 
 .subscribe-modal .redbtn {
 	width:100px;
-	/*position:relative;
-	right:60px;*/
 }
 
 @media (min-width:1050px) {
@@ -1193,8 +1195,6 @@
 	}
 }
 
-
-
 /*MAILLIST*/
 
 .mail-modal {
@@ -1204,7 +1204,7 @@
 
 .mail-modal .modal-body{
 	font-family:Dosis;
-	font-size:2em;
+	font-size:24px;
 	width:100%;
 }
 
@@ -1218,11 +1218,11 @@
 
 @media (min-width:991px) {
 	.mail-modal .modal-body {
-		font-size:2em;
+		font-size:24px;
 	}
 	.mail-modal .modal-body label {
 		margin:1em auto;
-		font-size:1em;
+		/*font-size:1em;*/
 	}
 
 	.mail-modal .form-group {
@@ -1240,6 +1240,16 @@
 	}
 }
 
+.itunessearch {
+	border:1px solid red;
+	margin:50px auto;
+	width:100%;
+}
+
+.itunessearch .itunes-input {
+	width:350px;
+	height:50px;
+}
 
 /*---------------------------------------------------------------------
 -----------------------------------------------------------------------
@@ -1247,152 +1257,61 @@
 
 /*Confirmation Pages*/
 
-/*~~~~~BOOKCONFIRM STYLE~~~~*/
-.bookconfirm {
+.confirm .bookconfirm {
 	background:url(../../media/img/book-background2.jpeg) center center;
 	height:100vh;
 }
-.bookconfirm .header {
-	margin:50px auto;
-	
-	font-family:Dosis;
-	text-align:center;
-	background-color:silver;
-	height:150px;
-}
-
-.bookconfirm .header h1 {
-	font-size:4em;
-}
-
-.bookconfirm .bookbody {
-	width:90%;
-	margin:30px auto 150px auto;
-	text-align:center;
-	font-family:Dosis;
-	color:white;
-}
-
-
-
-/*media queries for desktop*/
-
-@media (min-width:1200px) {
-	.bookconfirm .header {
-		font-size:15em;
-		margin:0 auto;
-		height:auto;
-	}
-
-	.bookconfirm .bookbody {
-		font-size:auto;
-		width:50%;
-		margin:100px auto;
-	}
-
-	.bookconfirm .bookbody span {
-		color:#323232;
-	}
-}
-
-@media (min-width:690px) and (max-width:1199px) {
-	.bookconfirm .header {
-		font-size:8em;
-		height:200px;
-	}
-
-	.bookconfirm .bookbody {
-		width:70%;
-	}
-
-	.bookconfirm .bookbody span {
-		color:#323232;
-	}
-}
-
-/*MAILCONFIRM STYLE*/
 
 .mailconfirm {
-	background:url("../../media/img/mailconfirm.jpg") center;
+	background:url("../../media/img/cwater.jpg") center;
+	background-size:cover;
 	height:100vh;
 }
-
-.mailconfirm .header {
-	margin:50px auto;
-	font-size:4em;
-	font-family:Dosis;
-	text-align:center;
-	background-color:silver;
-	height:150px;
-}
-
-.mailconfirm .mailbody {
-	width:90%;
-	margin:30px auto 150px auto;
-	text-align:center;
-	font-family:Dosis;
-	color:white;
-}
-
-@media (min-width:1200px) {
-	.mailconfirm .header {
-		font-size:15em;
-		margin:0 auto;
-		height:auto;
-	}
-
-	.mailconfirm .mailbody {
-		font-size:auto;
-		width:50%;
-		margin:100px auto;
-	}
-
-	.mailconfirm .mailbody span {
-		color:#323232;
-	}
-}
-
-@media (min-width:690px) and (max-width:1199px) {
-	.mailconfirm .header {
-		font-size:8em;
-		height:200px;
-	}
-
-	.mailconfirm .mailbody {
-		width:70%;
-	}
-
-	.mailconfirm .mailbody span {
-		color:#323232;
-	}
-}
-
-
-/*SUBSCRIBECONFIRM STYLE*/
 
 .subscribeconfirm {
-	background:url(../../media/img/subscribeconfirm.jpg) center;
+	background:url(../../media/img/cwater.jpg) center center;
+	background-size:cover;
 	height:100vh;
 }
-.subscribeconfirm .header {
+
+.confirm .header {
 	margin:50px auto;
-	
 	font-family:Dosis;
 	text-align:center;
 	background-color:silver;
 	height:150px;
+	animation-name:bigconfirm;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
 }
 
-.subscribeconfirm .header h1 {
+.confirm .header h1 {
 	font-size:4em;
 }
 
-.subscribeconfirm .subscribebody {
+.confirm .body {
 	width:90%;
 	margin:30px auto 150px auto;
 	text-align:center;
 	font-family:Dosis;
 	color:white;
+}
+
+.confirm .body a {
+	margin-top:20px;
+}
+
+/*ANIMATION*/
+@keyframes bigconfirm {
+	0% {
+		font-size:0em;
+		opacity:0;
+		background-color:white;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 
@@ -1400,34 +1319,34 @@
 /*media queries for desktop*/
 
 @media (min-width:1200px) {
-	.subscribeconfirm .header {
+	.confirm .header {
 		font-size:15em;
 		margin:0 auto;
 		height:auto;
 	}
 
-	.subscribeconfirm .subscribebody {
+	.confirm .body {
 		font-size:auto;
 		width:50%;
 		margin:100px auto;
 	}
 
-	.subscribeconfirm .subscribebody span {
-		color:silver;
+	.bookconfirm .body span {
+		color:#323232;
 	}
 }
 
 @media (min-width:690px) and (max-width:1199px) {
-	.subscribeconfirm .header {
+	.confirm .header {
 		font-size:8em;
 		height:200px;
 	}
 
-	.subscribeconfirm .subscribebody {
+	.confirm .body {
 		width:70%;
 	}
 
-	.subscribeconfirm .subscribebody span {
-		color:silver;
+	.confirm .body span {
+		color:#323232;
 	}
 }

@@ -84,7 +84,7 @@ bandApp.controller("SubModalController", function($scope, $location) {
 			$("#subscribemodal").modal("toggle");
 			$scope.submitted=true;
 			$location.path("/subscribeconfirm")
-		}
+		};
 	};
 });
 
