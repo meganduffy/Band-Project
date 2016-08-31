@@ -22,9 +22,11 @@ bandApp.controller("ImageController", ["$scope", "monkees", "$routeParams", func
 	$scope.currentImageIndex = parseInt($routeParams.imageId);
 }]);
 
-bandApp.controller("GigsController", function($scope) {
-
-});
+bandApp.controller("GigsController", ["$scope", "events", function($scope, events) {
+	events.success(function(data) {
+		$scope.myEvents = data;
+	})
+}]);
 
 bandApp.controller("ContactController", function($scope, $location) {
 	$scope.title= "Connect With Us";

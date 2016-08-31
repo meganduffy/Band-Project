@@ -13,7 +13,8 @@
 	align-content:center;
 	margin:-10px;
 	line-height:0;
-	width:99.5vw;
+	width:99.51vw;
+	/*width:100%;*/
 }
 
 /*~~~~~~~~~~HEADER STYLE~~~~~~~~~~~*/
@@ -99,8 +100,12 @@
 
 /*~~~~~~~~#media queries for desktop~~~~~~~~~~*/
 @media (max-width: 480px) {
+	.home {
+		/*width:97vw;*/
+	}
+
 	.home .header h1 {
-		font-size:4.5em;
+		font-size:3.7em;
 		line-height:90px;
 	}
 }
@@ -304,28 +309,45 @@
 	color:white;
 } 
 
-.book #visa {
-	position:relative;
-	bottom:15.5px;
-	left:25px;
-}
-
-.book #americanexpress {
-	position:relative;
-	bottom:15.5px;
-	left:25px;
-}
-
 .book #submit {
-	position: relative;
-	left:220px;
-	top:20px;
-	width:100px;
+	margin-left:auto;
+	margin-right:auto;
 }
+
 
 .alert {
 	font-size:10px;
 	color:red;
+}
+
+@media (min-width:768px) {
+	.book #visa {
+		position:relative;
+		bottom:15.5px;
+		left:25px;
+	}
+
+	.book #americanexpress {
+		position:relative;
+		bottom:15.5px;
+		left:25px;
+	}
+	.book #submit {
+		position: relative;
+		left:220px;
+		top:20px;
+		width:100px;
+	}
+
+}
+
+@media (max-width:670px) {
+	.book-form #container {
+		width:80%;
+		height:80%;
+	}
+
+
 }
 
 
@@ -1251,9 +1273,15 @@
 	width:100%;
 }
 
-.itunessearch .itunes-input {
+.itunessearch #itunes-input {
 	width:350px;
 	height:50px;
+	border-radius:10px;
+}
+
+.itunessearch #itunes-search-button {
+	width:60px;
+	margin-left:10px;
 }
 
 .itunessearch table {
