@@ -232,58 +232,103 @@
 /*GIGS PAGE STYLE*/
 
 .gigs {
-	text-decoration:none!important;
-	background-color:silver;
+	background:url("../../media/img/gigs1.jpg") center fixed;
+	background-size:cover;
 }
 
 .gigs .header {
 	text-align:center;
-	font-family:Dosis;
-}
-
-.gigs .header .container {
-	margin-top:30px;
+	font-family:Roboto;
+	color:white;
+	position:relative;
+	top:90px;
 }
 
 .gigs .header h1 {
-	font-size:7em;
+	font-size:9em;
+}
+
+.gigs .header p {
+	font-size:1.5em;
+}
+
+.gigs .header #subhead {
+	margin-bottom:150px;
+}
+
+.gigs .header .book {
+	margin-bottom:100px;
 }
 
 .gigs .calendar {
-	margin:50px auto;
-	text-decoration:none!important;
+	margin:100px 100px;
 	display:inline-flex;
 	flex-flow:row wrap;
-	justify-content:center;
+	justify-content:space-around;
 	align-items:center;
+	background:rgba(255,255,255,0.3);
+	border-radius: 30px
 }
 
-.gigs .calendar .container {
-	border:2px solid black;
-	width:20%;
+.gigs .calendar .box {
+	width:23%;
+	height:300px;
 	margin:20px 20px;
-	height:250px;
-	text-decoration:none!important;
-	color:black;
+	border:6px solid #ff1919;
+	border-radius: 30px;
 	text-align:center;
-	background-color:white;
+}
+
+.gigs .calendar .box a {
+	height:300px;
+	flex:1;
 	display:flex;
 	flex-flow:column nowrap;
 	justify-content: space-between;
 	align-items: stretch;
+	text-decoration:none!important;
 }
 
-.gigs .calendar .container .box {
-
-}
-
-.gigs .calendar .container .date {
+.gigs .calendar .box .date {
 	background-color:#ff1919;
 	color:white;
-	flex:2;
-	width:100%;
+	border-top-right-radius: 20px;
+	border-top-left-radius:20px; 
+	font-family:Arvo;
 }
 
+.gigs .calendar .box .where {
+	flex:2;
+	font-family:Dosis;
+	color:black;
+	background-color:white;
+	transition: 1s;
+}
+
+.gigs .calendar .box .where:hover {
+	background-color:#d7e6fa;
+}
+
+.gigs .calendar .box .when {
+	font-family: Arvo;
+	color:black;
+	background-color:#d7e6fa;
+	flex:1;
+	border:;
+	border-radius:0px 0px 25px 25px;
+	position:relative;
+	bottom:10px;
+}
+
+#lift {
+	position:relative;
+	bottom:50px;
+	text-align:auto;
+	font-family:Roboto;
+	text-align:center;
+	color:white;
+	font-size:1.5em;
+}
 
 
 /*------------------------------------------------------------------------

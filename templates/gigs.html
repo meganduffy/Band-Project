@@ -2,21 +2,26 @@
 <div class="gigs">
 	<div class="header">
 		<div class="container">
-			<h1>Calendar</h1>
-			<h2>Never miss a good time with our event calendar!</h2>
-			<h2>Up To Date and Ready To Rock!</h2>
+			<h1>CALENDAR</h1>
+			<p id="subhead">NEVER MISS A GOOD TIME WITH OUR EVENT CALENDAR<br/>
+			   UP TO DATE AND READY TO ROCK!</p>
+			<a href="#/book" class="btn btn-default btn-lg book">BOOK NOW</a>
 		</div>
 	</div>
 	<div class="calendar">
-		<div class="container" ng-repeat="event in myEvents">
+		<div class="box" ng-repeat="event in myEvents">
 			
 			<a ng-href="#/gigs/{{$index}}">
-				<h3 class="date">{{event.when | date: "fullDate"}}</h3>
-				<h4 class="name">{{event.where}}</h4>
-				<p class="time">{{event.when | date: "shortTime"}}</p>
+				<div class="date"><h3>{{event.when | date: "fullDate"}}</h3></div>
+				<div class="where"><h2>{{event.where}}</h2></div>
+				<div class="when"><br/><h4>{{event.when | date: "shortTime"}}</h4></div>
 			</a>
 			
 		</div>
+	</div>
+	<div id="lift">
+		<p>WANT THE MONKEES TO PLAY LIVE AT YOUR EVENT?</p>
+		<a href="#/book" class="btn btn-default btn-lg book">BOOK NOW</a>
 	</div>
 </div>
 <blackfooter></blackfooter>
