@@ -1,0 +1,14 @@
+<navigationbar></navigationbar>
+
+	<div class="event">
+		<div class="image">
+			<img ng-src="{{myEvent.photo}}" alt="venue photo" />
+		</div>
+		<div class="details">
+			<h1 class="where">{{myEvent.where}}</h1>
+			<h3 class="when">{{myEvent.when | date: "fullDate"}}</h3>
+			<h3 class="time">{{myEvent.when | date: "shortTime"}}</h3>
+		</div>
+	</div>
+
+<blackfooter></blackfooter>

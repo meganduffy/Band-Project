@@ -28,6 +28,14 @@ bandApp.controller("GigsController", ["$scope", "events", function($scope, event
 	})
 }]);
 
+bandApp.controller("EventController", ["$scope", "events", "$routeParams", function($scope, events, $routeParams) {
+	events.success(function(data) {
+		$scope.myEvent = data[$routeParams.eventId];
+	});
+
+	$scope.currentEventIndex = parseInt($routeParams.eventId);
+}]);
+
 bandApp.controller("ContactController", function($scope, $location) {
 	$scope.title= "Connect With Us";
 	$scope.submitted = false;

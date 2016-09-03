@@ -18,6 +18,10 @@ bandApp.config(function($routeProvider) {
 			templateUrl: "templates/gigs.html",
 			controller: "GigsController"
 		})
+		.when("/gigs/:eventId", {
+			templateUrl: "templates/event.html",
+			controller: "EventController"
+		})
 		.when("/contact", {
 			templateUrl: "templates/contact.html",
 			controller: "ContactController"

@@ -1,10 +1,22 @@
 <navigationbar></navigationbar>
-
-<h1>Calendar</h1>
-
-<div ng-repeat="event in myEvents">
-	
+<div class="gigs">
+	<div class="header">
+		<div class="container">
+			<h1>Calendar</h1>
+			<h2>Never miss a good time with our event calendar!</h2>
+			<h2>Up To Date and Ready To Rock!</h2>
+		</div>
+	</div>
+	<div class="calendar">
+		<div class="container" ng-repeat="event in myEvents">
+			
+			<a ng-href="#/gigs/{{$index}}">
+				<h3 class="date">{{event.when | date: "fullDate"}}</h3>
+				<h4 class="name">{{event.where}}</h4>
+				<p class="time">{{event.when | date: "shortTime"}}</p>
+			</a>
+			
+		</div>
+	</div>
 </div>
-
-
 <blackfooter></blackfooter>
