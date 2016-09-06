@@ -28,9 +28,10 @@ bandApp.controller("GigsController", ["$scope", "events", function($scope, event
 	})
 }]);
 
-bandApp.controller("EventController", ["$scope", "events", "$routeParams", function($scope, events, $routeParams) {
+bandApp.controller("EventController", ["$scope", "events", "$routeParams", "$sce", function($scope, events, $routeParams, $sce) {
 	events.success(function(data) {
 		$scope.myEvent = data[$routeParams.eventId];
+		$scope.myEventMap = $sce.trustAsResourceUrl($scope.myEvent.map);
 	});
 
 	$scope.currentEventIndex = parseInt($routeParams.eventId);

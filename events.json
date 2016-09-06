@@ -2,60 +2,70 @@
 		{
 			"where": "Whelan's, Wexford Street, Dublin",
 			"when": 1491505200,
-			"photo": "http://www.patrickdonald.com/images/default-source/photos/whelans-bar-wexford-street-dublin-ip-d035.jpg?Status=Master&sfvrsn=0"
+			"photo": "http://www.patrickdonald.com/images/default-source/photos/whelans-bar-wexford-street-dublin-ip-d035.jpg?Status=Master&sfvrsn=0",
+			"map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.370672048118!2d-6.267909384665767!3d53.336620583141524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9fd11792dd%3A0xd2bd2af6e4b97913!2s25+Wexford+St%2C+Dublin+2!5e0!3m2!1sen!2sie!4v1472990464012"
 		},
 
 		{
 			"where": "Sin E', 8 Coburg Street, Cork",
 			"when": 1494793800,
-			"photo": "https://media-cdn.tripadvisor.com/media/photo-s/09/b9/35/e5/20151027-231210-largejpg.jpg"
+			"photo": "https://media-cdn.tripadvisor.com/media/photo-s/09/b9/35/e5/20151027-231210-largejpg.jpg",
+			"map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.7649983590736!2d-8.472995584727487!3d51.90175258961445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4844900e123e2243%3A0x7912af2badfe58c4!2s8+Coburg+St%2C+Cork!5e0!3m2!1sen!2sie!4v1472990638502"
 		},
 
 		{
 			"where": "Roisin Dubh, Lower Dominick Street, Galway",
 			"when": 1494961200,
-			"photo": "http://nitelife.ie/wp-content/uploads/2015/11/roisindubhp.jpg"
+			"photo": "http://nitelife.ie/wp-content/uploads/2015/11/roisindubhp.jpg",
+			"map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.043005741586!2d-9.059319384668633!3d53.270849088065376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96fa52a6248b%3A0xaa363f7e1a291be4!2sDominick+Street+Lower%2C+Galway!5e0!3m2!1sen!2sie!4v1472990702966"
 		},
 
 		{
 			"where": "Dolan's, 3/4 Dock Road, Limerick",
 			"when": 1496091600,
-			"photo": "http://www.metalireland.com/common/images/reviews/dolans.jpg"
+			"photo": "http://www.metalireland.com/common/images/reviews/dolans.jpg",
+			"map" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2420.04136993855!2d-8.63994988469505!3d52.659230333654776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5c89cfbc617d%3A0xc11fe1c0bf591e97!2s4+Dock+Rd%2C+Limerick!5e0!3m2!1sen!2sie!4v1472990548352"
 		},
 
 		{
 			"where": "Cyprus Avenue, Caroline Street, Cork",
 			"when": 1494187200,
-			"photo": "http://images.ratemyarea.com.s3.amazonaws.com/assets/0274/9883/DSC09902_large.JPG?picture=2749883"
+			"photo": "http://images.ratemyarea.com.s3.amazonaws.com/assets/0274/9883/DSC09902_large.JPG?picture=2749883",
+			"map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1230.968893185715!2d-8.47098324185317!3d51.89859944999693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4844900fc258e5b7%3A0x7a1be8c2456bf1b1!2sCaroline+St%2C+Centre%2C+Cork!5e0!3m2!1sen!2sie!4v1472990848008"
 		},
 		
 		{
 			"where": "The Cobblestone, 77 King Street North, Smithfield, Dublin",
 			"when": 1494703800,
-			"photo": "https://res.cloudinary.com/jar-ie/image/upload/h_900,c_limit,fl_progressive,f_auto/place/photos/dba18fce-50fc-4619-8fac-098087caafca"
+			"photo": "https://res.cloudinary.com/jar-ie/image/upload/h_900,c_limit,fl_progressive,f_auto/place/photos/dba18fce-50fc-4619-8fac-098087caafca",
+			"map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.640789521524!2d-6.280186484665163!3d53.34968608216294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670c2958285e87%3A0x2b2dee2771794c4!2s77+King+St+N%2C+Smithfield%2C+Dublin!5e0!3m2!1sen!2sie!4v1472990912662"
 		},
 
 		{
 			"where": "De Barra's Folk Club, Clonakilty, Co. Cork",
 			"when": 1495227600,
-			"photo": "http://static.panoramio.com/photos/large/20095702.jpg"
+			"photo": "http://static.panoramio.com/photos/large/20095702.jpg",
+			"map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.0049976237015!2d-8.891984284739376!3d51.62311761005749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x484456e84c92b1c5%3A0xf7ac0033d8ff553!2sPearse+St%2C+Clonakilty%2C+Co.+Cork!5e0!3m2!1sen!2sie!4v1472991005993"
 		},
 
 		{
 			"where": "O'Sullivan's Courthouse, Dingle, Co. Kerry",
 			"when": 1495746000,
-			"photo": "https://media-cdn.tripadvisor.com/media/photo-s/04/ba/a5/66/o-sullivan-s-courthouse.jpg"
+			"photo": "https://media-cdn.tripadvisor.com/media/photo-s/04/ba/a5/66/o-sullivan-s-courthouse.jpg",
+			"map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.6930266131762!2d-10.270860584717385!3d52.139905272080895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x484ffbc668c6c3b3%3A0x550d8162ad457105!2sThe+Mall%2C+Dingle%2C+Co.+Kerry!5e0!3m2!1sen!2sie!4v1472991090487"
 		},
 
 		{
 			"where": "O'Donoghue's, 15 Merrion Row, Dublin",
 			"when": 1499025600,
-			"photo": "http://www.patrickdonald.com/images/default-source/photos/odonoghues-bar-merrion-row-dublin-ip-d023.jpg?Status=Master&sfvrsn=0"
+			"photo": "http://www.patrickdonald.com/images/default-source/photos/odonoghues-bar-merrion-row-dublin-ip-d023.jpg?Status=Master&sfvrsn=0",
+			"map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.2777614282054!2d-6.256287684665669!3d53.338283883016906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99c8d2099f%3A0x2ded8979d6edbd18!2s15+Merrion+Row%2C+Dublin!5e0!3m2!1sen!2sie!4v1472991165253"
 		},
 
 		{
 			"where": "The Reel Inn, Donegal Town, Co. Donegal",
 			"when": 1499368500,
-			"photo": "http://www.welovedates.com/wp-content/uploads/2013/10/Donegal-Photo-5.jpg"
+			"photo": "http://www.welovedates.com/wp-content/uploads/2013/10/Donegal-Photo-5.jpg",
+			"map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.4426483818047!2d-8.112353752696018!3d54.65480750358881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485fa83aa66b21ab%3A0x961c33a43f38162e!2sR925%2C+Co.+Donegal!5e0!3m2!1sen!2sie!4v1472991262546"
 		}
 ]
