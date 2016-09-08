@@ -1,0 +1,279 @@
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+/*Index: 
+	1. Home
+	2. Music 
+		2.1 Image
+	3. Gigs
+		3.1 Event
+	4. Contact
+	5. Book
+	6. Confirms
+	7. Directives
+		7.1 Navigation Bar
+		7.2 Footer 
+		7.3 Subscribe Modal
+		7.4 Maillist Modal
+		7.5 iTunes Search*/
+
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+/*1. HOME*/
+
+@media (max-width: 480px) {
+
+	.home .header h1 {
+		font-size:3.7em;
+		line-height:90px;
+	}
+}
+
+@media (min-width:1200px) {
+	.home .header {
+		height:50em;
+	}
+
+	.home .header .container {
+		position:relative;
+		top:90px;
+	}
+
+	.home .header h1 {
+		font-size:9em;
+		margin-bottom:50px;
+	}
+
+	.home .header p {
+		font-size:1.5em;
+		margin-bottom:80px;
+	}
+
+	.home .header .btn-music {
+		top:50px;
+	}
+
+	.home .header .btn-book {
+		top:50px;
+	}
+
+	/*~~~animation~~~*/
+	@keyframes blurinbig {
+		0% {
+			font-size:1em;
+			opacity:0;
+		}
+		100% {
+			opacity:1;
+		}
+	}
+
+	.home .main h1 {
+		font-size:4em;
+	}
+
+	.home .jumbotron {
+		height:19em;
+		text-align:right;
+	}
+
+	.home .jumbotron .container {
+		bottom:10px;
+	}
+}
+
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+/*2. MUSIC*/
+
+@media (min-width:1300px) {
+	.music .top {
+		opacity:1;
+	}
+
+	.music .header h1 {
+		font-size:7.5em;
+		margin-bottom:160px;
+	}
+
+	.music .words {
+		display:flex;
+	}
+}
+
+/*2.5 IMAGE*/
+
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+/*3. GIGS*/
+
+/*3.5 EVENT*/
+
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+/*4. CONTACT*/
+
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+/*5.BOOK*/
+
+
+@media (min-width:768px) {
+	.book #visa {
+		position:relative;
+		bottom:15.5px;
+		left:25px;
+	}
+
+	.book #americanexpress {
+		position:relative;
+		bottom:15.5px;
+		left:25px;
+	}
+	.book #submit {
+		position: relative;
+		left:220px;
+		top:20px;
+		width:100px;
+	}
+}
+
+@media (max-width:670px) {
+	.book-form #container {
+		width:80%;
+		height:80%;
+	}
+}
+
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+/*6. CONFIRMS*/
+
+
+@media (min-width:1200px) {
+	.confirm .header {
+		font-size:15em;
+		margin:0 auto;
+		height:auto;
+	}
+
+	.confirm .body {
+		font-size:auto;
+		width:50%;
+		margin:100px auto;
+	}
+
+	.bookconfirm .body span {
+		color:#323232;
+	}
+}
+
+@media (min-width:690px) and (max-width:1199px) {
+	.confirm .header {
+		font-size:8em;
+		height:200px;
+	}
+
+	.confirm .body {
+		width:70%;
+	}
+
+	.confirm .body span {
+		color:#323232;
+	}
+}
+
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+/*7. DIRECTIVES*/
+
+/*7.1 NAVIGATION BAR */
+
+/*7.2 FOOTER */
+
+@media (max-width:660px) {
+	.footer .container {
+		height:180px;
+	}
+}
+
+/*7.3 SUBSCRIBE MODAL*/
+
+@media (min-width:1050px) {
+	.subscribe-modal .modal-body {
+		font-size:2em;
+		width:100%;
+		margin:0 auto 0 220px;
+	}
+
+	.subscribe-modal .modal-body label {
+		margin:1em auto;
+		font-size:1em;
+	}
+
+	.subscribe-modal .redbtn {
+		width:100px;
+		position:relative;
+		right:60px;
+	}
+
+}
+
+@media (min-width:766px) and (max-width:1049px) {
+	.subscribe-modal .modal-body {
+		
+		margin:0 auto 0 150px;
+	}
+
+	.subscribe-modal .redbtn {
+		position:relative;
+		right:100px;
+	}
+}
+
+/*7.4 MAILLIST MODAL */
+
+@media (min-width:991px) {
+	.mail-modal .modal-body {
+		font-size:24px;
+	}
+	.mail-modal .modal-body label {
+		margin:1em auto;
+		/*font-size:1em;*/
+	}
+
+	.mail-modal .form-group {
+		margin:0 auto 0 220px;
+	}
+
+	.mail-modal .redbtn {
+		margin-top:1em;
+	}
+}
+
+@media (min-width:766px) and (max-width:990px) {
+	.mail-modal .form-group {
+		margin:0 auto 0 150px;
+	}
+}
+
+/*7.5 iTUNES SEARCH*/
+
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/

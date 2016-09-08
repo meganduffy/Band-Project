@@ -1,9 +1,28 @@
-* {
-	margin:0;
-	padding:0;
-}
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
 
-/*~~~~~~FLEXBOX HOME STYLE~~~~~*/
+/*Index: 
+	1. Home
+	2. Music 
+		2.1 Image
+	3. Gigs
+		3.1 Event
+	4. Contact
+	5. Book
+	6. Confirms
+	7. Directives
+		7.1 Navigation Bar
+		7.2 Footer 
+		7.3 Subscribe Modal
+		7.4 Maillist Modal
+		7.5 iTunes Search*/
+
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+/*1. HOME*/
 
 .home {
 	display: flex;
@@ -14,10 +33,9 @@
 	margin:-10px;
 	line-height:0;
 	width:99.51vw;
-	/*width:100%;*/
 }
 
-/*~~~~~~~~~~HEADER STYLE~~~~~~~~~~~*/
+/*~HEADER STYLE~*/
 .home .header {
 	height:30em;
 	background:url("../../media/img/background-position2.jpg") no-repeat;
@@ -77,7 +95,7 @@
 	bottom:15px;
 }
 
-/*~~~~~~~animation~~~~~~~~~~*/
+/*~ANIMATION~*/
 @keyframes blurinbig {
 	0% {
 		font-size:5em;
@@ -97,60 +115,7 @@
 	}
 }
 
-
-/*~~~~~~~~#media queries for desktop~~~~~~~~~~*/
-@media (max-width: 480px) {
-	.home {
-		/*width:97vw;*/
-	}
-
-	.home .header h1 {
-		font-size:3.7em;
-		line-height:90px;
-	}
-}
-
-@media (min-width:1200px) {
-	.home .header {
-		height:50em;
-	}
-
-	.home .header .container {
-		position:relative;
-		top:90px;
-	}
-
-	.home .header h1 {
-		font-size:9em;
-		margin-bottom:50px;
-	}
-
-	.home .header p {
-		font-size:1.5em;
-		margin-bottom:80px;
-	}
-
-	.home .header .btn-music {
-		top:50px;
-	}
-
-	.home .header .btn-book {
-		top:50px;
-	}
-
-	/*~~~animation~~~*/
-	@keyframes blurinbig {
-	0% {
-		font-size:1em;
-		opacity:0;
-	}
-	100% {
-		opacity:1;
-	}
-	}
-}
-
-/*~~~~~~~~~~MAIN STYLE~~~~~~~~~~~*/
+/*~MAIN STYLE~*/
 
 .home .main {
 	background-color:black;
@@ -175,16 +140,9 @@
 
 .home .main audio {
 	width:60%;
-
 }
 
-@media(min-width:1200px) {
-	.home .main h1 {
-		font-size:4em;
-	}
-}
-
-/*~~~~JUMBOTRON STYLE ~~~~~*/
+/*~JUMBOTRON STYLE~*/
 
 .home .jumbotron {
 	display:flex;
@@ -213,28 +171,279 @@
 	margin-bottom:25px;
 }
 
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
 
-@media (min-width:1200px) {
-	.home .jumbotron {
-		height:19em;
-		text-align:right;
-	}
+/*2. MUSIC*/
 
-	.home .jumbotron .container {
-		bottom:10px;
-	}
+/*MUSIC TOP STYLE*/
+.music {
+	max-width:100%;
 }
+
+/*~HEADER STYLE~*/
+
+.music .top {
+	background:url("../../media/img/mike.jpg") center;
+	background-size:cover;
+	height:98vh;
+	margin-top:-20px;
+	opacity:0.85;
+	
+}
+
+.music .top:hover {
+	opacity:1;
+}
+
+.music .header h1 {
+	text-align:center;
+	font-family:Roboto;
+	text-transform:uppercase;
+	font-weight:500;
+	font-size:5em;
+	position:relative;
+	top:90px;
+	margin-bottom:360px;
+	color:white;
+}
+
+.music .words {
+	width:99%;
+	display:none;
+	flex-flow:row wrap;
+	align-items: center ;
+	justify-content: space-around;
+	color:white;
+	font-family:Roboto;
+	font-weight:700;
+	font-size:1.2em;
+	text-align:center;
+	margin:10px auto;
+}
+
+.music .words .about {
+	flex:2;
+	font-size:1em;
+}
+
+.music .words .sound {
+	flex:2;
+}
+
+.music .words .about p {
+	width:50%;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.music .words .sound p {
+	width:50%;
+	margin:4px auto
+}
+
+.music .words .sound span {
+	color:#382F2B;
+}
+
+.music .top .book {
+	margin:5px auto;
+	display:block;
+	width:130px;
+	margin-top:20px;
+}
+
+/*~TAB NAV STYLE~*/
+
+.music .bigbar {
+	margin-top:0px;
+	margin-bottom:0;
+	font-family:Dosis;
+	font-weight:bold;
+}
+
+.music .bigbar .nav-tabs > li {
+	zoom:1.8;
+}
+
+.music .bigbar .nav-tabs a {
+	color:black
+}
+
+.music .bigbar .tab-pane {
+	margin-top:0px;
+}
+
+/*~TAB CONTENT STYLE~*/
+
+.music .tab-content {
+	text-align:center;
+	font-family:Dosis;
+}
+
+.music .tab-content h1 {
+	font-size:4em;
+	color:black;
+	animation-name:blurinbig;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+.music .tab-content p {
+	font-size:1.5em;
+	font-weight:400;
+	margin-bottom:20px;
+}
+
+/*~#BUYMUSIC STYLE~*/
+
+#buymusic {
+	border-top:2px solid silver;
+}
+
+#buymusic .itunes-table table {
+	width:90%;
+	height:auto;
+	margin:10px auto;
+}
+
+#buymusic .itunes-table th {
+	font-size:2.5em;
+	text-align:center;
+}
+
+#buymusic .itunes-table tbody {
+	position: relative;
+	top:50px;
+}
+
+#buymusic .itunes-table td {
+	border-bottom:1px solid red;
+	font-size:1.3em;
+}
+
+#buymusic .itunes-table .space {
+	height:20px;
+}
+
+#buymusic .itunes-search-table h1 {
+	margin-top:20px;
+}
+
+/*~#VIDEO STYLE~*/
+
+#video {
+	background:url(../../media/img/lights.jpeg) center center fixed;
+	background-size: cover;
+	color:black;
+	border-top:2px solid silver;
+}
+
+#video iframe {
+	margin:40px auto;
+	display:block;
+	border-radius:15px;
+	border:4px solid black;
+}
+
+#video iframe:first-of-type {
+	margin-top:100px;
+}
+
+#video .seemore h3 {
+	margin-bottom:50px;
+}
+
+#video .ytplug {
+	background:url(../../media/img/plugyt.png) center;
+	background-size: cover;
+	height:100px;
+	width:100px;
+	border-radius: 100%;
+	margin:20px auto;
+	opacity: 0.5;
+}
+
+#video .ytplug:hover {
+	opacity:1;
+}
+
+#photos {
+	border-top:2px solid silver;
+}
+
+/*~#PHOTOS STYLE~*/
+
+#photos .photogrid {
+	width:95%;
+	margin-left: auto;
+	margin-right:auto;
+	display:inline-flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:center;
+
+}
+
+#photos .photogrid img {
+	height:250px;
+	width:290px;
+	border-radius:15px;
+	margin:20px;
+}
+
+#photos .igplug {
+	background:url(../../media/img/pluginsta.png) center;
+	background-size: cover;
+	height:100px;
+	width:100px;
+	border-radius: 100%;
+	margin:20px auto;
+	opacity: 0.5;
+}
+
+#photos .igplug:hover {
+	opacity:1;
+}
+
+
+/*2.1 IMAGE*/
+
+.singleimage {
+	text-align:center;
+}
+
+.singleimage img {
+	margin:50px auto;
+	height:auto;
+	width:60%;
+	display:block;
+}
+
+.singleimage h3 {
+	font-family:Dosis;
+	margin-bottom:30px;
+}
+
+.singleimage a {
+	margin-bottom:40px;
+}
+
 
 /*------------------------------------------------------------------------
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------*/
 
-/*GIGS PAGE STYLE*/
+/*3. GIGS*/
 
 .gigs {
 	background:url("../../media/img/gigs1.jpg") center fixed;
 	background-size:cover;
 }
+
+/*~HEADER STYLE~*/
 
 .gigs .header {
 	text-align:center;
@@ -259,6 +468,8 @@
 .gigs .header .book {
 	margin-bottom:100px;
 }
+
+/*~CALENDAR STYLE~*/
 
 .gigs .calendar {
 	margin:100px 100px;
@@ -336,10 +547,8 @@
 	font-size:1.5em;
 }
 
-/*------------------------------------------------------------------------
---------------------------------------------------------------------------
---------------------------------------------------------------------------*/
-/*EVENT STYLE*/
+
+/*3.1 EVENT*/
 
 .event {
 	height:100vh;
@@ -350,6 +559,8 @@
 	align-items: center;
 	justify-content: center;
 }
+
+/*~IMAGE AND GOOGLE MAPS STYLE~*/
 
 .event .visual {
 	display:flex;
@@ -372,6 +583,8 @@
 	border:10px solid white;
 	border-radius:15px;
 }
+
+/*~CALENDAR DAY STYLE~*/
 
 .event .details {
 	display:flex;
@@ -419,6 +632,8 @@
 	border-radius: 0px 0px 25px 25px;
 }
 
+/*~SOCAL MEDIA PLUGS STYLE~*/
+
 .event .details .plugs {
 	text-align:center;
 	color:white;
@@ -459,419 +674,13 @@
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------*/
 
-/*BOOK PAGE STYLE*/
-.book .page {
-	width:100%;
-	height:100%;
-	background:url(../../media/img/book-background2.jpeg) center center;
-	background-size:cover;
-	left:0;
-	top:0;
-	z-index:-1;
-	padding-top:100px;
-
-}
-
-/*book intro style*/
-
-.book .book-intro {
-	text-align:center;
-	color:white;
-	font-family:Dosis;
-
-}
-
-.book .book-intro #discount {
-	font-size:15px;
-	color:red;
-	letter-spacing:4px;
-}
-
-.book .book-intro h1 {
-	font-size:3.5em;
-}
-
-.book .book-intro p {
-	font-size:1.5em;
-}
-
-/*book-form style*/
-
-.book #container {
-	width:650px;
-	margin: 10px auto 150px auto;
-	border:1px solid black;
-	border-radius:5px;
-	padding:25px;
-	position:relative;
-	top:0px;
-	font-family: Roboto;
-	opacity: 0.5;
-}
-
-.book #container:hover {
-	opacity:1.0;
-}
-
-
-.book fieldset {
-	padding:15px;
-}
-
-.book .names {
-	margin-bottom:10px;
-}
-
-.book .contacts {
-	margin-bottom:20px;
-}
-
-.book .event1 {
-	margin-bottom:20px;
-}
-
-.book .event2 {
-	margin-bottom:20px;
-}
-
-.book .radio {
-	color:white;
-} 
-
-.book #submit {
-	margin-left:auto;
-	margin-right:auto;
-}
-
-
-.alert {
-	font-size:10px;
-	color:red;
-}
-
-@media (min-width:768px) {
-	.book #visa {
-		position:relative;
-		bottom:15.5px;
-		left:25px;
-	}
-
-	.book #americanexpress {
-		position:relative;
-		bottom:15.5px;
-		left:25px;
-	}
-	.book #submit {
-		position: relative;
-		left:220px;
-		top:20px;
-		width:100px;
-	}
-
-}
-
-@media (max-width:670px) {
-	.book-form #container {
-		width:80%;
-		height:80%;
-	}
-
-
-}
-
-
-/*---------------------------------------------------------------------------
------------------------------------------------------------------------------
------------------------------------------------------------------------------*/
-
-
-/*~~~~MUSIC STYLE ~~~~~~~*/
-
-/*MUSIC TOP STYLE*/
-.music {
-	max-width:100%;
-}
-
-.music .top {
-	background:url("../../media/img/mike.jpg") center;
-	background-size:cover;
-	height:98vh;
-	margin-top:-20px;
-	opacity:0.85;
-	
-}
-
-.music .top:hover {
-	opacity:1;
-}
-
-.music .header h1 {
-	text-align:center;
-	font-family:Roboto;
-	text-transform:uppercase;
-	font-weight:500;
-	font-size:5em;
-	position:relative;
-	top:90px;
-	margin-bottom:360px;
-	color:white;
-	/*animation-name:blurinbig;
-	animation-duration: 2s;
-	animation-timing-function: ease;
-	animation-fill-mode: forwards;*/
-}
-
-.music .words {
-	width:99%;
-	display:none;
-	flex-flow:row wrap;
-	align-items: center ;
-	justify-content: space-around;
-	color:white;
-	font-family:Roboto;
-	font-weight:700;
-	font-size:1.2em;
-	text-align:center;
-	margin:10px auto;
-}
-
-.music .words .about {
-	flex:2;
-	font-size:1em;
-}
-
-.music .words .sound {
-	flex:2;
-}
-
-.music .words .about p {
-	width:50%;
-	margin-right:auto;
-	margin-left:auto;
-}
-
-.music .words .sound p {
-	width:50%;
-	margin:4px auto
-}
-
-.music .words .sound span {
-	color:#382F2B;
-}
-
-.music .top .book {
-	margin:5px auto;
-	display:block;
-	width:130px;
-	margin-top:20px;
-}
-
-@media (min-width:1300px) {
-	.music .top {
-		opacity:1;
-	}
-
-	.music .header h1 {
-		font-size:7.5em;
-		margin-bottom:160px;
-	}
-
-	.music .words {
-		display:flex;
-	}
-}
-
-/*MUSIC BIGBAR STYLE*/
-
-.music .bigbar {
-	margin-top:0px;
-	margin-bottom:0;
-	font-family:Dosis;
-	font-weight:bold;
-}
-
-.music .bigbar .nav-tabs > li {
-	zoom:1.8;
-}
-
-.music .bigbar .nav-tabs a {
-	color:black
-}
-
-.music .bigbar .tab-pane {
-	margin-top:0px;
-}
-
-/*MUSIC TAB CONTENT STYLE*/
-
-.music .tab-content {
-	text-align:center;
-	font-family:Dosis;
-}
-
-.music .tab-content h1 {
-	font-size:4em;
-	color:black;
-	animation-name:blurinbig;
-	animation-duration: 2s;
-	animation-timing-function: ease;
-	animation-fill-mode: forwards;
-}
-
-.music .tab-content p {
-	font-size:1.5em;
-	font-weight:400;
-	margin-bottom:20px;
-}
-
-
-
-/*#BUYMUSIC STYLE*/
-
-#buymusic {
-	border-top:2px solid silver;
-}
-
-#buymusic .itunes-table table {
-	width:90%;
-	height:auto;
-	margin:10px auto;
-}
-
-#buymusic .itunes-table th {
-	font-size:2.5em;
-	text-align:center;
-}
-
-#buymusic .itunes-table tbody {
-	position: relative;
-	top:50px;
-}
-
-#buymusic .itunes-table td {
-	border-bottom:1px solid red;
-	font-size:1.3em;
-}
-
-#buymusic .itunes-table .space {
-	height:20px;
-}
-
-#buymusic .itunes-search-table h1 {
-	margin-top:20px;
-}
-
-/*#VIDEO STYLE*/
-
-#video {
-	background:url(../../media/img/lights.jpeg) center center fixed;
-	background-size: cover;
-	color:black;
-	border-top:2px solid silver;
-}
-
-#video iframe {
-	margin:40px auto;
-	display:block;
-	border-radius:15px;
-	border:4px solid black;
-}
-
-#video iframe:first-of-type {
-	margin-top:100px;
-}
-
-#video .seemore h3 {
-	margin-bottom:50px;
-}
-
-#video .ytplug {
-	background:url(../../media/img/plugyt.png) center;
-	background-size: cover;
-	height:100px;
-	width:100px;
-	border-radius: 100%;
-	margin:20px auto;
-	opacity: 0.5;
-}
-
-#video .ytplug:hover {
-	opacity:1;
-}
-
-#photos {
-	border-top:2px solid silver;
-}
-
-/*#PHOTOS STYLE*/
-
-#photos .photogrid {
-	width:95%;
-	margin-left: auto;
-	margin-right:auto;
-	display:inline-flex;
-	flex-flow:row wrap;
-	justify-content:center;
-	align-items:center;
-
-}
-
-#photos .photogrid img {
-	height:250px;
-	width:290px;
-	border-radius:15px;
-	margin:20px;
-}
-
-#photos .igplug {
-	background:url(../../media/img/pluginsta.png) center;
-	background-size: cover;
-	height:100px;
-	width:100px;
-	border-radius: 100%;
-	margin:20px auto;
-	opacity: 0.5;
-}
-
-#photos .igplug:hover {
-	opacity:1;
-}
-
-
-/*---------------------------------------------------------------------------
----------------------------------------------------------------------------*/
-/*Image.html style*/
-
-.singleimage {
-	text-align:center;
-}
-
-.singleimage img {
-	margin:50px auto;
-	height:auto;
-	width:60%;
-	display:block;
-}
-
-.singleimage h3 {
-	font-family:Dosis;
-	margin-bottom:30px;
-}
-
-.singleimage a {
-	margin-bottom:40px;
-}
-
-
-/*---------------------------------------------------------------------------
------------------------------------------------------------------------------
------------------------------------------------------------------------------*/
-
-/*REACHOUT STYLE*/
+/*4. CONTACT*/
 
 .reachout {
 	height:100%;
 }
+
+/*~HEADER STYLE~*/
 
 .reachout .connect {
 	height:98vh;
@@ -960,6 +769,8 @@
 	background-size:cover;
 }
 
+/*~MID-SECTION STYLE~*/
+
 .reachout .mid-section {
 	background:url(../../media/img/bbwrecord.jpeg) center fixed;
 	background-size:cover;
@@ -1028,6 +839,8 @@
 	color:#545454;
 }
 
+/*~DIRECT STYLE~*/
+
 .reachout .direct {
 	display:flex;
 	flex-flow:row wrap;
@@ -1093,14 +906,175 @@
 	color:white;
 }
 
-/*---------------------------------------------------------------------------
------------------------------------------------------------------------------
------------------------------------------------------------------------------*/
 
-/*~~~~DIRECTIVES~~~~*/
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+/*5. BOOK*/
+
+.book .page {
+	width:100%;
+	height:100%;
+	background:url(../../media/img/book-background2.jpeg) center center;
+	background-size:cover;
+	left:0;
+	top:0;
+	z-index:-1;
+	padding-top:100px;
+
+}
+
+/*~INTRO STYLE~*/
+
+.book .book-intro {
+	text-align:center;
+	color:white;
+	font-family:Dosis;
+
+}
+
+.book .book-intro #discount {
+	font-size:15px;
+	color:red;
+	letter-spacing:4px;
+}
+
+.book .book-intro h1 {
+	font-size:3.5em;
+}
+
+.book .book-intro p {
+	font-size:1.5em;
+}
+
+/*~FORM STYLE~*/
+
+.book #container {
+	width:650px;
+	margin: 10px auto 150px auto;
+	border:1px solid black;
+	border-radius:5px;
+	padding:25px;
+	position:relative;
+	top:0px;
+	font-family: Roboto;
+	opacity: 0.5;
+}
+
+.book #container:hover {
+	opacity:1.0;
+}
 
 
-/* NAVIGATIONBAR DIRECTIVE STYLE */
+.book fieldset {
+	padding:15px;
+}
+
+.book .names {
+	margin-bottom:10px;
+}
+
+.book .contacts {
+	margin-bottom:20px;
+}
+
+.book .event1 {
+	margin-bottom:20px;
+}
+
+.book .event2 {
+	margin-bottom:20px;
+}
+
+.book .radio {
+	color:white;
+} 
+
+.book #submit {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.alert {
+	font-size:10px;
+	color:red;
+}
+
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+/*6. CONFIRMS*/
+
+.confirm .bookconfirm {
+	background:url(../../media/img/book-background2.jpeg) center center;
+	height:100vh;
+}
+
+.mailconfirm {
+	background:url("../../media/img/cwater.jpg") center;
+	background-size:cover;
+	height:100vh;
+}
+
+.subscribeconfirm {
+	background:url(../../media/img/cwater.jpg) center center;
+	background-size:cover;
+	height:100vh;
+}
+
+/*~HEADER STYLE*/
+
+.confirm .header {
+	margin:50px auto;
+	font-family:Dosis;
+	text-align:center;
+	background-color:silver;
+	height:150px;
+	animation-name:bigconfirm;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.confirm .header h1 {
+	font-size:4em;
+}
+
+/*~BODY STYLE~*/
+
+.confirm .body {
+	width:90%;
+	margin:30px auto 150px auto;
+	text-align:center;
+	font-family:Dosis;
+	color:white;
+}
+
+.confirm .body a {
+	margin-top:20px;
+}
+
+/*ANIMATION*/
+@keyframes bigconfirm {
+	0% {
+		font-size:0em;
+		opacity:0;
+		background-color:white;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+/*7. DIRECTIVES*/
+
+/* 7.1 NAVIGATIONBAR */
 .navbar-default {
 	background-color:white;
 	opacity: 0.5;
@@ -1132,7 +1106,7 @@
 	cursor:pointer;
 }
 
-/*BLACKFOOTER DIRECTIVE STYLE*/	
+/* 7.2 FOOTER */	
 
 .footer {
 	text-align:center;
@@ -1196,13 +1170,7 @@
 	margin-top:10px;
 }
 
-@media (max-width:660px) {
-	.footer .container {
-		height:180px;
-	}
-}
-
-/*SUBSCRIBE*/
+/* 7.3 SUBSCRIBE MODAL*/
 
 .subscribe-modal {
 	color:black;
@@ -1224,39 +1192,7 @@
 	width:100px;
 }
 
-@media (min-width:1050px) {
-	.subscribe-modal .modal-body {
-		font-size:2em;
-		width:100%;
-		margin:0 auto 0 220px;
-	}
-
-	.subscribe-modal .modal-body label {
-		margin:1em auto;
-		font-size:1em;
-	}
-
-	.subscribe-modal .redbtn {
-		width:100px;
-		position:relative;
-		right:60px;
-	}
-
-}
-
-@media (min-width:766px) and (max-width:1049px) {
-	.subscribe-modal .modal-body {
-		
-		margin:0 auto 0 150px;
-	}
-
-	.subscribe-modal .redbtn {
-		position:relative;
-		right:100px;
-	}
-}
-
-/*MAILLIST*/
+/* 7.4 MAILLIST MODAL */
 
 .mail-modal {
 	color:black;
@@ -1277,31 +1213,7 @@
 	margin-top:1em;
 }
 
-@media (min-width:991px) {
-	.mail-modal .modal-body {
-		font-size:24px;
-	}
-	.mail-modal .modal-body label {
-		margin:1em auto;
-		/*font-size:1em;*/
-	}
-
-	.mail-modal .form-group {
-		margin:0 auto 0 220px;
-	}
-
-	.mail-modal .redbtn {
-		margin-top:1em;
-	}
-}
-
-@media (min-width:766px) and (max-width:990px) {
-	.mail-modal .form-group {
-		margin:0 auto 0 150px;
-	}
-}
-
-/*ITUNESSEARCH*/
+/* 7.5 iTUNES SEARCH*/
 
 .itunessearch {
 	margin:50px auto;
@@ -1334,102 +1246,7 @@
 .itunessearch td {
 	font-size:1.5em;
 }
-/*---------------------------------------------------------------------
------------------------------------------------------------------------
-----------------------------------------------------------------------*/
 
-/*Confirmation Pages*/
-
-.confirm .bookconfirm {
-	background:url(../../media/img/book-background2.jpeg) center center;
-	height:100vh;
-}
-
-.mailconfirm {
-	background:url("../../media/img/cwater.jpg") center;
-	background-size:cover;
-	height:100vh;
-}
-
-.subscribeconfirm {
-	background:url(../../media/img/cwater.jpg) center center;
-	background-size:cover;
-	height:100vh;
-}
-
-.confirm .header {
-	margin:50px auto;
-	font-family:Dosis;
-	text-align:center;
-	background-color:silver;
-	height:150px;
-	animation-name:bigconfirm;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-}
-
-.confirm .header h1 {
-	font-size:4em;
-}
-
-.confirm .body {
-	width:90%;
-	margin:30px auto 150px auto;
-	text-align:center;
-	font-family:Dosis;
-	color:white;
-}
-
-.confirm .body a {
-	margin-top:20px;
-}
-
-/*ANIMATION*/
-@keyframes bigconfirm {
-	0% {
-		font-size:0em;
-		opacity:0;
-		background-color:white;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-
-
-/*media queries for desktop*/
-
-@media (min-width:1200px) {
-	.confirm .header {
-		font-size:15em;
-		margin:0 auto;
-		height:auto;
-	}
-
-	.confirm .body {
-		font-size:auto;
-		width:50%;
-		margin:100px auto;
-	}
-
-	.bookconfirm .body span {
-		color:#323232;
-	}
-}
-
-@media (min-width:690px) and (max-width:1199px) {
-	.confirm .header {
-		font-size:8em;
-		height:200px;
-	}
-
-	.confirm .body {
-		width:70%;
-	}
-
-	.confirm .body span {
-		color:#323232;
-	}
-}
+/*------------------------------------------------------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
