@@ -32,7 +32,8 @@
 	align-content:center;
 	margin:-10px;
 	line-height:0;
-	width:99.51vw;
+	/*width:100vw;*/
+	width:99.455vw;
 }
 
 /*~HEADER STYLE~*/
@@ -413,6 +414,7 @@
 
 .singleimage {
 	text-align:center;
+	height:100vh;
 }
 
 .singleimage img {
