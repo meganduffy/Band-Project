@@ -699,7 +699,7 @@
 }
 
 .reachout .connect h1 {
-	font-size:8em;
+	font-size:10vw;
 	color:white;
 	text-transform:uppercase;
 	font-family:Roboto;
@@ -803,9 +803,13 @@
 	color:white;
 }
 
+.reachout .mid-section .plugs .bookbox h1, .mailbox h1 {
+	font-size:3vw;
+}
+
 .reachout .mid-section .plugs .bookbox p, .mailbox p {
 	max-width:90%;
-	font-size:1.5em;
+	font-size:1.6vw;
 }
 
 .reachout .mid-section .plugs .bookbox {

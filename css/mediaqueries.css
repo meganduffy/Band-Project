@@ -220,6 +220,111 @@
 
 /*4. CONTACT*/
 
+@media (max-width:520px) {
+
+	.reachout .connect h1 {
+		font-size:15vw;
+		text-align:center;
+	}
+
+	.reachout .connect .links {
+		justify-content: center;
+	}
+
+	.reachout .connect .links div {
+		height:80px;
+		width:80px;
+	}
+
+	.reachout .mid-section .plugs {
+		flex-flow:column nowrap;
+	}
+
+	.reachout .mid-section .plugs .bookbox, .mailbox {
+		min-width:80%;
+	}
+
+	.reachout .mid-section .plugs .bookbox h1, .mailbox h1 {
+		font-size:8vw;
+	}	
+
+	.reachout .mid-section .plugs .bookbox p, .mailbox p {
+		font-size:4vw;
+	}
+
+	.reachout .direct div {
+		height:80px;
+		width:80px;
+		line-height:80px;
+	}
+
+	.reachout .direct div p {
+		font-size:3vw;
+	}
+
+	#skype p {
+		font-size:2.5vw;
+	}
+
+	#emailcirc p {
+		font-size:1.5vw;
+	}
+}
+
+@media (max-width:607px) {
+
+	.reachout .mid-section .newsletter .head {
+		text-align:center;
+		margin-bottom:0px;
+	}
+}
+
+@media (min-width:521px) and (max-width:820px) {
+
+	.reachout .connect .links {
+		justify-content: center;
+	}
+
+	.reachout .connect .links div {
+		height:100px;
+		width:100px;
+	}
+
+	.reachout .mid-section .plugs {
+		flex-flow:column nowrap;
+	}
+
+	.reachout .mid-section .plugs .bookbox, .mailbox {
+		min-width:80%;
+	}
+
+	.reachout .mid-section .plugs .bookbox h1, .mailbox h1 {
+		font-size:6vw;
+	}	
+
+	.reachout .mid-section .plugs .bookbox p, .mailbox p {
+		font-size:2vw;
+	}
+
+	.reachout .direct div {
+		height:100px;
+		width:100px;
+		line-height:100px;
+	}
+
+	.reachout .direct div p {
+		font-size:2vw;
+	}
+
+	#emailcirc p, #skype p {
+		font-size:1.5vw;
+	}
+
+	#skype p {
+		letter-spacing:1px;
+	}
+}
+
 /*------------------------------------------------------------------------
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------*/
