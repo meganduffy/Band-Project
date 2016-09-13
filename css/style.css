@@ -177,7 +177,7 @@
 
 /*2. MUSIC*/
 
-/*MUSIC TOP STYLE*/
+/*~MUSIC TOP STYLE~*/
 .music {
 	max-width:100%;
 }
@@ -454,15 +454,12 @@
 }
 
 .gigs .header h1 {
-	font-size:9em;
-}
-
-.gigs .header p {
-	font-size:1.5em;
+	font-size:10.5vw;
 }
 
 .gigs .header #subhead {
 	margin-bottom:150px;
+	font-size:1.5em;
 }
 
 .gigs .header .book {
@@ -509,6 +506,10 @@
 	transition:1s;
 }
 
+.gigs .calendar .box .date h3 {
+	font-size:2vw;
+}
+
 .gigs .calendar .box a:hover .date {
 	color:#ff1919;
 	background-color:white;
@@ -517,9 +518,14 @@
 .gigs .calendar .box .where {
 	flex:2;
 	font-family:Dosis;
+	font-size:5px;
 	color:black;
 	background-color:white;
 	transition: 1s;
+}
+
+.gigs .calendar .box .where h2 {
+	font-size:2vw;
 }
 
 .gigs .calendar .box .where:hover {
@@ -1113,8 +1119,10 @@
 	color:white;
 	background-color:#070b0b;
 	height:100%;
+	width:100%;
 	border-top:5px solid black;
 	border-bottom:1px solid black;
+	padding-bottom:10px;
 }
 
 .footer .container {
@@ -1179,7 +1187,7 @@
 
 .subscribe-modal .modal-body {
 	font-family:Dosis;
-	font-size:6em;
+	font-size:1em;
 	width:100%;
 }
 

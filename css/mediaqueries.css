@@ -106,6 +106,38 @@
 	}
 }
 
+@media (max-width:500px) {
+	#buymusic .itunes-table th {
+		font-size:1.5em;
+	}
+
+	#buymusic .itunes-table td {
+		font-size:1em;
+	}
+
+	#buymusic .itunes-table img {
+		height:60px;
+		width:60px;
+	}
+
+	#buymusic .itunes-table .previewbutton {
+		font-size:0.6em;
+		font-weight: bold;
+	}
+
+	#buymusic .itunes-table .buybutton {
+		font-size:0.5em;
+		font-weight: bold;
+	}
+}
+
+@media (max-width:660px) {
+	#video iframe {
+		width:340px;
+		height:200px;
+	}
+}
+
 /*2.5 IMAGE*/
 
 /*------------------------------------------------------------------------
@@ -115,6 +147,72 @@
 /*3. GIGS*/
 
 /*3.5 EVENT*/
+
+@media (max-width:450px) {
+	.gigs .header h1 {
+		font-size:17.5vw;
+	}
+
+	.gigs .header #subhead {
+		font-size:4vw;
+	}
+
+	.gigs .calendar {
+		margin:50px 20px;
+	}
+
+	.gigs .calendar .box {
+		width:60%;
+	}
+
+	.gigs .calendar .box .date h3 {
+		font-size:5vw;
+	}
+
+	.gigs .calendar .box .where h2 {
+		font-size:6vw;
+	}
+
+	#lift {
+		margin-top:50px;
+	}
+}
+
+@media (min-width:451px) and (max-width:890px) {
+	.gigs .header h1 {
+		font-size:14vw;
+	}
+
+	.gigs .header #subhead {
+		font-size:2vw;
+	}
+
+	.gigs .calendar {
+		margin:50px 20px;
+	}
+
+	.gigs .calendar .box {
+		width:40%;
+	}
+
+	.gigs .calendar .box .date h3 {
+		font-size:3vw;
+	}
+
+	.gigs .calendar .box .where h2 {
+		font-size:4vw;
+	}
+
+	#lift {
+		margin-top:50px;
+	}
+}
+
+
+
+
+
+
 
 /*------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -204,7 +302,8 @@
 
 /*7.1 NAVIGATION BAR */
 
-/*7.2 FOOTER */
+/*7.2 FOOTER */ 
+
 
 @media (max-width:660px) {
 	.footer .container {
@@ -273,6 +372,37 @@
 }
 
 /*7.5 iTUNES SEARCH*/
+
+@media (max-width:500px) {
+	.itunessearch th {
+		font-size:1.5em;
+	}
+
+	.itunessearch td {
+		font-size:1em;
+	}
+
+	.itunessearch img {
+		height:60px;
+		width:60px;
+	}
+
+	.itunessearch .previewbutton {
+		font-size:0.6em;
+		font-weight: bold;
+	}
+
+	.itunessearch .buybutton {
+		font-size:0.5em;
+		font-weight: bold;
+	}
+}
+
+@media (max-width:370px) {
+	.itunessearch #itunes-input {
+		width:200px;
+	}
+}
 
 /*------------------------------------------------------------------------
 --------------------------------------------------------------------------
