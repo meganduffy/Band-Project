@@ -99,8 +99,9 @@ bandApp.controller("SubModalController", function($scope, $location) {
 	};
 });
 
-bandApp.controller("ConfirmController", function($scope) {
+bandApp.controller("ConfirmController", function($scope, $routeParams) {
 	$scope.title= "Congratulations!";
+	$scope.wherefrom = $routeParams.page;
 });
 
 bandApp.controller("iTunesController", function($scope, $http) {

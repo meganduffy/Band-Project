@@ -91,6 +91,12 @@
 
 /*2. MUSIC*/
 
+@media (max-height:360px) {
+	.music .top .book {
+		margin-top:-120px;
+	}
+}
+
 @media (min-width:1300px) {
 	.music .top {
 		opacity:1;
@@ -107,17 +113,21 @@
 }
 
 @media (max-width:500px) {
+	.music .top .book {
+		margin-top:-120px;
+	}
+
 	#buymusic .itunes-table th {
 		font-size:1.5em;
 	}
 
 	#buymusic .itunes-table td {
-		font-size:1em;
+		font-size:0.8em;
 	}
 
 	#buymusic .itunes-table img {
-		height:60px;
-		width:60px;
+		height:40px;
+		width:40px;
 	}
 
 	#buymusic .itunes-table .previewbutton {
@@ -136,7 +146,13 @@
 		width:340px;
 		height:200px;
 	}
+
+	.music .top .book {
+		margin-top:-120px;
+	}
 }
+
+
 
 /*2.5 IMAGE*/
 

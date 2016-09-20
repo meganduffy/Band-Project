@@ -477,7 +477,7 @@
 	justify-content:space-around;
 	align-items:center;
 	background:rgba(255,255,255,0.3);
-	border-radius: 30px
+	border-radius: 30px;
 }
 
 .gigs .calendar .box {
@@ -559,7 +559,6 @@
 /*3.1 EVENT*/
 
 .event {
-	height:100vh;
 	background:url(../../media/img/gigs1.jpg) center;
 	background-size:cover;
 	display:flex;
@@ -568,9 +567,121 @@
 	justify-content: center;
 }
 
+.event .details {
+	display: flex;
+	flex-flow:row wrap;
+	align-items: center;
+	justify-content: center;
+	background:rgba(255,255,255,0.3);
+	border-radius: 30px;
+	width:60%;
+	margin:100px 100px;
+	padding:20px;
+}
+
+/*~CALENDAR DAY STYLE~*/
+
+.event .details .note {
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: stretch;
+	justify-content: space-between;
+	color:black;
+	max-width: 350px;
+	border:6px solid #ff1919;
+	border-radius:30px;
+	text-align: center;
+	height:10%;
+	margin:20px;
+}
+
+.event .details .note .when {
+	background-color:#ff1919;
+	color:white;
+	border-radius: 20px 20px 0 0;
+}
+
+.event .details .note .where {
+	background-color:white; 
+	color:black;
+	flex:2;
+}
+
+.event .details .note .where h1 {
+	max-width:90%;
+	margin:20px auto;
+}
+
+.event .details .note .time {
+	font-family: Arvo;
+	color:black;
+	background-color:#d7e6fa;
+	border-radius: 0px 0px 25px 25px;
+}
+
+/*~GOOGLE MAPS STYLE~*/
+
+.event .details .map iframe {
+	width:90%;
+	height:200px;
+	border:6px solid white;
+	border-radius:15px;
+	margin:20px;
+}
+
+/*~IMAGE STYLE~*/
+
+.event .details .image img {
+	/*width:60%;*/
+	width:250px;
+	border-radius:15px;
+	margin-left:50px;
+}
+
+/*~SOCAL MEDIA PLUGS STYLE~*/
+
+.event .details .plugs {
+	text-align:center;
+	color:white;
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.event .details .plugs .plug {
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.event .details .plugs .plug div {
+	height: 50px;
+	width:50px;
+	border-radius:100%;
+	margin:5px 5px;
+}
+
+.event .details .plugs .plug #fb {
+	background:url(../../media/img/facebook.png) center;
+	background-size:contain;
+}
+
+.event .details .plugs .plug #twit {
+	background:url(../../media/img/twitter.png) center;
+	background-size:contain;
+}
+
+.event .details .plugs .plug #ig {
+	background:url(../../media/img/instagram.png) center;
+	background-size:contain;
+}
+
+
+
 /*~IMAGE AND GOOGLE MAPS STYLE~*/
 
-.event .visual {
+/*.event .visual {
 	display:flex;
 	flex-flow:column wrap;
 	align-items: center;
@@ -590,11 +701,11 @@
 	height:250px;
 	border:10px solid white;
 	border-radius:15px;
-}
+}*/
 
 /*~CALENDAR DAY STYLE~*/
 
-.event .details {
+/*.event .details {
 	display:flex;
 	flex-flow:column wrap;
 	justify-content: space-between;
@@ -638,11 +749,11 @@
 	color:black;
 	background-color:#d7e6fa;
 	border-radius: 0px 0px 25px 25px;
-}
+}*/
 
 /*~SOCAL MEDIA PLUGS STYLE~*/
 
-.event .details .plugs {
+/*.event .details .plugs {
 	text-align:center;
 	color:white;
 }
@@ -675,7 +786,7 @@
 .event .details .plugs .plug #ig {
 	background:url(../../media/img/instagram.png) center;
 	background-size:contain;
-}
+}*/
 
 
 /*------------------------------------------------------------------------
