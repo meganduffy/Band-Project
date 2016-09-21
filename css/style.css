@@ -30,10 +30,7 @@
 	justify-content: space-between;
 	align-items: stretch;
 	align-content:center;
-	margin:-10px;
 	line-height:0;
-	/*width:100vw;*/
-	width:99.455vw;
 }
 
 /*~HEADER STYLE~*/
@@ -321,7 +318,6 @@
 }
 
 #buymusic .itunes-table td {
-	border-bottom:1px solid red;
 	font-size:1.3em;
 }
 
@@ -330,7 +326,7 @@
 }
 
 #buymusic .itunes-search-table h1 {
-	margin-top:20px;
+	margin-top:100px;
 }
 
 /*~#VIDEO STYLE~*/
