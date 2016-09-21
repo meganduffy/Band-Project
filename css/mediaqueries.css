@@ -32,9 +32,25 @@
 	}
 }
 
+@media(min-width:768px) and (min-height:1024px) {
+
+	.home .header {
+		height:40vh;
+	}
+
+	.home .jumbotron {
+		height:40vh;
+	}
+
+	.jumbotron .container {
+		position:relative;
+		top:9vh;
+	}
+}
+
 @media (min-width:1200px) {
 	.home .header {
-		height:50em;
+		height:49em;
 	}
 
 	.home .header .container {
