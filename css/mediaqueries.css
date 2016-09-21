@@ -107,31 +107,7 @@
 
 /*2. MUSIC*/
 
-@media (max-height:360px) {
-	.music .top .book {
-		margin-top:-120px;
-	}
-}
-
-@media (min-width:1300px) {
-	.music .top {
-		opacity:1;
-	}
-
-	.music .header h1 {
-		font-size:7.5em;
-		margin-bottom:160px;
-	}
-
-	.music .words {
-		display:flex;
-	}
-}
-
 @media (max-width:500px) {
-	.music .top .book {
-		margin-top:-120px;
-	}
 
 	#buymusic .itunes-table th {
 		font-size:1.5em;
@@ -155,19 +131,69 @@
 		font-size:0.5em;
 		font-weight: bold;
 	}
-}
 
-@media (max-width:660px) {
 	#video iframe {
-		width:340px;
+		width:320px;
 		height:200px;
 	}
+}
 
-	.music .top .book {
-		margin-top:-120px;
+@media(min-width:360px) and (min-height:1024px) {
+	.music .header {
+		position:relative;
+		top:100px;
+	}
+
+	.music .book {
+		position: relative;
+		top:100px;
 	}
 }
 
+@media (min-width:768px) {
+	.music .top {
+		height:60vh;
+	}
+
+	.music .header, .book {
+		position:relative;
+		top:100px;
+	}
+
+	.music .header h1 {
+		font-size:6em;
+	}
+}
+
+@media (min-width:1280px) {
+	.music .top {
+		opacity:1;
+		height:98vh;
+	}
+
+	.music .header, .book {
+		position:static;
+	}
+
+	.music .header h1 {
+		font-size:7.5em;
+		margin-bottom:160px;
+	}
+
+	.music .words {
+		display:flex;
+	}
+
+	.music .book {
+		margin-top:20px;
+	}
+}
+
+@media(min-height:1200px) {
+	.music .top {
+		height:60vh;
+	}
+}
 
 
 /*2.5 IMAGE*/
@@ -238,13 +264,34 @@
 	}
 }
 
-/*3.1 EVENT*/
+@media (min-width:768px) {
+	#lift {
+		position:relative;
+		bottom:90px;
+	}
 
-@media (min-width:1250px) {
-	.event  {
-		height:110vh;
+	#lift p {
+		margin-bottom:-50px;
 	}
 }
+
+@media(min-width:1280px) {
+	#lift {
+		display:static;
+	}
+
+	#lift p {
+		margin-bottom:50px;
+	}
+}
+
+@media(min-width:1920px) {
+	.gigs .calendar .box .where h2 {
+		font-size:1.5vw;
+	}
+}
+
+/*3.1 EVENT*/
 
 @media (min-height:1024px) and (max-height:1479px) {
 	.event {
@@ -258,10 +305,22 @@
 	}
 }
 
+@media(min-height:1920px) {
+	.event {
+		height:110vh;
+	}
+}
+
 @media (max-width:920px) {
 
 	.event .details {
 		width:90%;
+	}
+}
+
+@media(min-width:1920px) {
+	.event {
+		height:100vh;
 	}
 }
 

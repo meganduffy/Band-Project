@@ -249,7 +249,7 @@
 	margin:5px auto;
 	display:block;
 	width:130px;
-	margin-top:20px;
+	margin-top: -180px;
 }
 
 /*~TAB NAV STYLE~*/
@@ -259,6 +259,7 @@
 	margin-bottom:0;
 	font-family:Dosis;
 	font-weight:bold;
+	cursor:pointer;
 }
 
 .music .bigbar .nav-tabs > li {
@@ -456,12 +457,12 @@
 }
 
 .gigs .header #subhead {
-	margin-bottom:150px;
+	margin-bottom:100px;
 	font-size:1.5em;
 }
 
 .gigs .header .book {
-	margin-bottom:100px;
+	margin-bottom:200px;
 }
 
 /*~CALENDAR STYLE~*/
@@ -542,13 +543,15 @@
 }
 
 #lift {
-	position:relative;
-	bottom:50px;
 	text-align:auto;
 	font-family:Roboto;
 	text-align:center;
 	color:white;
 	font-size:1.5em;
+}
+
+#lift a {
+	margin-bottom:100px;
 }
 
 
@@ -624,23 +627,11 @@
 	margin:20px;
 }
 
-/*~IMAGE STYLE~*/
-
-.event .details .image {
-	margin-left:auto;
-	margin-right:auto;
-}
-
-.event .details .image img {
-	width:250px;
-	border-radius:15px;
-}
-
 /*~SOCAL MEDIA PLUGS STYLE~*/
 
 .event .details .plugs {
 	text-align:center;
-	color:white;
+	color:grey;
 	margin-bottom:20px;
 	margin-left:auto;
 	margin-right:auto;
@@ -674,118 +665,6 @@
 	background:url(../../media/img/instagram.png) center;
 	background-size:contain;
 }
-
-
-
-/*~IMAGE AND GOOGLE MAPS STYLE~*/
-
-/*.event .visual {
-	display:flex;
-	flex-flow:column wrap;
-	align-items: center;
-	justify-content: space-between;
-	margin-left:50px;
-}
-
-.event .visual .image img {
-	max-width:400px;
-	border-radius:15px;
-
-}
-
-.event .visual .map iframe {
-	margin-top:25px;
-	width:400px;
-	height:250px;
-	border:10px solid white;
-	border-radius:15px;
-}*/
-
-/*~CALENDAR DAY STYLE~*/
-
-/*.event .details {
-	display:flex;
-	flex-flow:column wrap;
-	justify-content: space-between;
-	align-items: center
-}
-
-.event .details .note {
-	display:flex;
-	flex-flow: column nowrap;
-	align-items: stretch;
-	justify-content: space-between;
-	color:black;
-	max-width: 350px;
-	border:6px solid #ff1919;
-	border-radius:30px;
-	text-align: center;
-	height:15%;
-	position:relative;
-	bottom:35px;
-}
-
-.event .details .note .when {
-	background-color:#ff1919;
-	color:white;
-	border-radius: 20px 20px 0 0;
-}
-
-.event .details .note .where {
-	background-color:white; 
-	color:black;
-	flex:2;
-}
-
-.event .details .note .where h1 {
-	max-width:90%;
-	margin:20px auto;
-}
-
-.event .details .note .time {
-	font-family: Arvo;
-	color:black;
-	background-color:#d7e6fa;
-	border-radius: 0px 0px 25px 25px;
-}*/
-
-/*~SOCAL MEDIA PLUGS STYLE~*/
-
-/*.event .details .plugs {
-	text-align:center;
-	color:white;
-}
-
-.event .details .plugs .plug {
-	display:flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: center;
-	margin-bottom:20px;
-}
-
-.event .details .plugs .plug div {
-	height: 60px;
-	width:60px;
-	border-radius:100%;
-	margin:10px 10px;
-}
-
-.event .details .plugs .plug #fb {
-	background:url(../../media/img/facebook.png) center;
-	background-size:contain;
-}
-
-.event .details .plugs .plug #twit {
-	background:url(../../media/img/twitter.png) center;
-	background-size:contain;
-}
-
-.event .details .plugs .plug #ig {
-	background:url(../../media/img/instagram.png) center;
-	background-size:contain;
-}*/
-
 
 /*------------------------------------------------------------------------
 --------------------------------------------------------------------------
