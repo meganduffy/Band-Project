@@ -411,11 +411,10 @@
 
 .singleimage {
 	text-align:center;
-	height:100vh;
 }
 
 .singleimage img {
-	margin:50px auto;
+	margin:100px auto 20px auto;
 	height:auto;
 	width:60%;
 	display:block;

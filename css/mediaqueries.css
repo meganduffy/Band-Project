@@ -201,6 +201,12 @@
 
 /*2.5 IMAGE*/
 
+@media (min-height:1000px) {
+	.singleimage {
+		height:90vh;
+	}
+}
+
 /*------------------------------------------------------------------------
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------*/
@@ -520,45 +526,11 @@
 
 /*6. CONFIRMS*/
 
-
-/*@media (min-width:1200px) {
-	.confirm .header {
-		font-size:15em;
-		margin:0 auto;
-	}
-
-	.confirm .body {
-		font-size:auto;
-		width:50%;
-		margin:100px auto;
-	}
-
-	.bookconfirm .body span {
-		color:#323232;
-	}
-}
-
-@media (min-width:690px) and (max-width:1199px) {
-	.confirm .header {
-		font-size:8em;
-	}
-
-	.confirm .body {
-		width:70%;
-	}
-
-	.confirm .body span {
-		color:#323232;
-	}
-}*/
-
 @media (min-height:857px) {
 	.confirm .body {
 		height:90vh;
 	}
 }
-
-@media (min-width:520px) and () {}
 
 /*------------------------------------------------------------------------
 --------------------------------------------------------------------------
