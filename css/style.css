@@ -182,7 +182,7 @@
 
 /*~HEADER STYLE~*/
 
-.music .top {
+.music .music-top {
 	background:url("../../media/img/mike4.jpeg") center;
 	background-size:cover;
 	height:98vh;
@@ -191,7 +191,7 @@
 	
 }
 
-.music .top:hover {
+.music .music-top:hover {
 	opacity:1;
 }
 
@@ -207,7 +207,7 @@
 	color:white;
 }
 
-.music .words {
+.music .paragraph {
 	width:99%;
 	display:none;
 	flex-flow:row wrap;
@@ -221,31 +221,31 @@
 	margin:10px auto;
 }
 
-.music .words .about {
+.music .paragraph .about {
 	flex:2;
 	font-size:1em;
 }
 
-.music .words .sound {
+.music .paragraph .sound {
 	flex:2;
 }
 
-.music .words .about p {
+.music .paragraph .about p {
 	width:50%;
 	margin-right:auto;
 	margin-left:auto;
 }
 
-.music .words .sound p {
+.music .paragraph .sound p {
 	width:50%;
 	margin:4px auto
 }
 
-.music .words .sound span {
+.music .paragraph .sound span {
 	color:#382F2B;
 }
 
-.music .top .book {
+.music .music-top .book {
 	margin:5px auto;
 	display:block;
 	width:130px;
@@ -409,23 +409,23 @@
 
 /*2.1 IMAGE*/
 
-.singleimage {
+.image-page {
 	text-align:center;
 }
 
-.singleimage img {
+.image-page img {
 	margin:100px auto 20px auto;
 	height:auto;
 	width:60%;
 	display:block;
 }
 
-.singleimage h3 {
+.image-page h3 {
 	font-family:Dosis;
 	margin-bottom:30px;
 }
 
-.singleimage a {
+.image-page a {
 	margin-bottom:40px;
 }
 
@@ -541,7 +541,7 @@
 	bottom:10px;
 }
 
-#lift {
+#gigs-end {
 	text-align:auto;
 	font-family:Roboto;
 	text-align:center;
@@ -549,7 +549,7 @@
 	font-size:1.5em;
 }
 
-#lift a {
+#gigs-end a {
 	margin-bottom:100px;
 }
 
@@ -671,13 +671,13 @@
 
 /*4. CONTACT*/
 
-.reachout {
+.contact {
 	height:100%;
 }
 
 /*~HEADER STYLE~*/
 
-.reachout .connect {
+.contact .header {
 	height:98vh;
 	background:url(../../media/img/connectdiv.jpeg) center;
 	background-size:cover;
@@ -687,7 +687,7 @@
 	align-items: center;
 }
 
-.reachout .connect h1 {
+.contact .header h1 {
 	font-size:10vw;
 	color:white;
 	text-transform:uppercase;
@@ -698,7 +698,7 @@
 	margin-bottom:50px;
 }
 
-.reachout .connect .links {
+.contact .header .links {
 	display:flex;
 	flex-flow:row wrap;
 	justify-content: space-around;
@@ -707,7 +707,7 @@
 	bottom:60px;
 }
 
-.reachout .connect .links div {
+.contact .header .links div {
 	height:160px;
 	width:160px;
 	border-radius:100%;
@@ -715,71 +715,71 @@
 	
 }
 
-.reachout #facebook {
+.contact #facebook {
 	background:url(../../media/img/big-facebook.png) center;
 	background-size:cover;
 }
 
-.reachout #facebook:hover {
+.contact #facebook:hover {
 	background: url(../../media/img/invertfb.png) center;
 	background-size:cover;
 }
 
-.reachout #twitter {
+.contact #twitter {
 	background:url(../../media/img/big-twitter.png) center;
 	background-size:cover;
 }
 
-.reachout #twitter:hover {
+.contact #twitter:hover {
 	background:url(../../media/img/inverttwit.png) center;
 	background-size:cover;
 }
 
-.reachout #google {
+.contact #google {
 	background:url(../../media/img/big-google.png) center;
 	background-size:cover;
 }
 
-.reachout #google:hover {
+.contact #google:hover {
 	background:url(../../media/img/invertgp.png) center;
 	background-size:cover;
 }
 
-.reachout #insta {
+.contact #insta {
 	background:url(../../media/img/big-insta.png) center;
 	background-size:cover;
 }
 
-.reachout #insta:hover {
+.contact #insta:hover {
 	background:url(../../media/img/invertig.png) center;
 	background-size: cover;
 }
 
-.reachout #youtube {
+.contact #youtube {
 	background:url(../../media/img/big-youtube2.png) center;
 	background-size:cover;
 }
 
-.reachout #youtube:hover {
+.contact #youtube:hover {
 	background:url(../../media/img/invertyt.png) center;
 	background-size:cover;
 }
 
 /*~MID-SECTION STYLE~*/
 
-.reachout .mid-section {
+.contact .mid-section {
 	background:url(../../media/img/bbwrecord.jpeg) center fixed;
 	background-size:cover;
 }
 
-.reachout .mid-section .plugs {
+.contact .mid-section .plugs {
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
 }
 
-.reachout .mid-section .plugs .bookbox, .mailbox {
+.contact .mid-section .plugs .bookbox, .mailbox {
 	display:flex;
 	flex-flow:column nowrap;
 	align-items: center;
@@ -793,28 +793,28 @@
 	color:white;
 }
 
-.reachout .mid-section .plugs .bookbox h1, .mailbox h1 {
+.contact .mid-section .plugs .bookbox h1, .mailbox h1 {
 	font-size:3vw;
 }
 
-.reachout .mid-section .plugs .bookbox p, .mailbox p {
+.contact .mid-section .plugs .bookbox p, .mailbox p {
 	max-width:90%;
 	font-size:1.6vw;
 }
 
-.reachout .mid-section .plugs .bookbox {
+.contact .mid-section .plugs .bookbox {
 	background:url(../../media/img/bookbox.jpg) center;
 	background-size: cover;
 	color:white;
 }
 
-.reachout .mid-section .plugs .mailbox {
+.contact .mid-section .plugs .mailbox {
 	background:url(../../media/img/cwater.jpg) center;
 	background-size:cover;
 	color:black;
 }
 
-.reachout .mid-section .newsletter {
+.contact .mid-section .newsletter {
 	display:flex;
 	flex-flow:row wrap;
 	align-items: center;
@@ -822,16 +822,16 @@
 	color:white;
 }
 
-.reachout .mid-section .newsletter .head, .subform {
+.contact .mid-section .newsletter .head, .subform {
 	max-width:60%;
 	margin:50px auto;
 }
 
-.reachout .mid-section .newsletter .head {
+.contact .mid-section .newsletter .head {
 	text-align: right;
 }
 
-.reachout .mid-section .newsletter .subform {
+.contact .mid-section .newsletter .subform {
 	background:rgba(255,255,255,0.3);
 	padding:20px;
 	border-radius:15px;
@@ -841,7 +841,7 @@
 
 /*~DIRECT STYLE~*/
 
-.reachout .direct {
+.contact .direct {
 	display:flex;
 	flex-flow:row wrap;
 	justify-content: space-around;
@@ -851,7 +851,7 @@
 	height:300px;
 }
 
-.reachout .direct div {
+.contact .direct div {
 	height:180px;
 	width:180px;
 	border-radius: 100%;
@@ -860,7 +860,7 @@
 	transition:1s;
 }
 
-.reachout .direct div p {
+.contact .direct div p {
 	font-family:Arvo;
 	font-size:1.5em;
 	font-weight:bold;
@@ -897,11 +897,11 @@
 	right:20px;
 }
 
-.reachout .direct #phone:hover, #skype:hover, #emailcirc:hover {
+.contact .direct #phone:hover, #skype:hover, #emailcirc:hover {
 	background:rgba(255,255,255,0.3);
 }
 
-.reachout .direct div:hover p {
+.contact .direct div:hover p {
 	display:inline;
 	color:black;
 }
@@ -1044,7 +1044,7 @@
 
 /*~BODY STYLE~*/
 
-.confirm .body {
+.confirm .confirm-body {
 	width:90%;
 	margin:0px auto;
 	padding-top:30px;
@@ -1054,7 +1054,7 @@
 	color:white;
 }
 
-.confirm .body a {
+.confirm .confirm-body a {
 	margin-top:20px;
 }
 

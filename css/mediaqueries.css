@@ -154,7 +154,7 @@
 }
 
 @media (min-width:768px) and (min-height:546px) {
-	.music .top {
+	.music .music-top {
 		height:60vh;
 	}
 
@@ -169,7 +169,7 @@
 }
 
 @media (min-width:1280px)  and (min-height:546px){
-	.music .top {
+	.music .music-top {
 		opacity:1;
 		height:98vh;
 	}
@@ -183,7 +183,7 @@
 		margin-bottom:160px;
 	}
 
-	.music .words {
+	.music .paragraph {
 		display:flex;
 	}
 
@@ -193,7 +193,7 @@
 }
 
 @media(min-height:1200px) {
-	.music .top {
+	.music .music-top {
 		height:60vh;
 	}
 }
@@ -202,7 +202,7 @@
 /*2.5 IMAGE*/
 
 @media (min-height:1000px) {
-	.singleimage {
+	.image-page {
 		height:90vh;
 	}
 }
@@ -341,7 +341,7 @@
 /*4. CONTACT*/
 
 @media (max-height:385px) {
-	.reachout .connect .links {
+	.contact .header .links {
 		margin-top:70px;
 	}
 }
@@ -354,43 +354,43 @@
 
 @media (max-width:520px) {
 
-	.reachout .connect h1 {
+	.contact .header h1 {
 		font-size:15vw;
 		text-align:center;
 	}
 
-	.reachout .connect .links {
+	.contact .header .links {
 		justify-content: center;
 	}
 
-	.reachout .connect .links div {
+	.contact .header .links div {
 		height:80px;
 		width:80px;
 	}
 
-	.reachout .mid-section .plugs {
+	.contact .mid-section .plugs {
 		flex-flow:column nowrap;
 	}
 
-	.reachout .mid-section .plugs .bookbox, .mailbox {
+	.contact .mid-section .plugs .bookbox, .mailbox {
 		min-width:80%;
 	}
 
-	.reachout .mid-section .plugs .bookbox h1, .mailbox h1 {
+	.contact .mid-section .plugs .bookbox h1, .mailbox h1 {
 		font-size:8vw;
 	}	
 
-	.reachout .mid-section .plugs .bookbox p, .mailbox p {
+	.contact .mid-section .plugs .bookbox p, .mailbox p {
 		font-size:4vw;
 	}
 
-	.reachout .direct div {
+	.contact .direct div {
 		height:100px;
 		width:100px;
 		line-height:100px;
 	}
 
-	.reachout .direct div p {
+	.contact .direct div p {
 		font-size:2.5vw;
 	}
 
@@ -406,7 +406,7 @@
 
 @media (max-width:607px) {
 
-	.reachout .mid-section .newsletter .head {
+	.contact .mid-section .newsletter .head {
 		text-align:center;
 		margin-bottom:0px;
 	}
@@ -414,32 +414,32 @@
 
 @media (min-width:521px) and (max-width:820px) {
 
-	.reachout .connect .links {
+	.contact .header .links {
 		justify-content: center;
 	}
 
-	.reachout .connect .links div {
+	.contact .header .links div {
 		height:100px;
 		width:100px;
 	}
 
-	.reachout .mid-section .plugs {
+	.contact .mid-section .plugs {
 		flex-flow:column nowrap;
 	}
 
-	.reachout .mid-section .plugs .bookbox, .mailbox {
+	.contact .mid-section .plugs .bookbox, .mailbox {
 		min-width:80%;
 	}
 
-	.reachout .mid-section .plugs .bookbox h1, .mailbox h1 {
+	.contact .mid-section .plugs .bookbox h1, .mailbox h1 {
 		font-size:6vw;
 	}	
 
-	.reachout .mid-section .plugs .bookbox p, .mailbox p {
+	.contact .mid-section .plugs .bookbox p, .mailbox p {
 		font-size:2vw;
 	}
 
-	.reachout .direct div {
+	.contact .direct div {
 		height:100px;
 		width:100px;
 		line-height:100px;
@@ -459,7 +459,7 @@
 }
 
 @media (min-width:768px) and (min-height:745px) {
-	.reachout .connect {
+	.contact .header {
 		height:60vh;
 	}
 
@@ -469,13 +469,13 @@
 }
 
 @media (min-height:760px) and (max-width:850px) {
-	.reachout .connect {
+	.contact .header {
 		height:50vh;
 	}
 }
 
 @media (min-width:1500px) {
-	.reachout .connect {
+	.contact .header {
 		height:70vh;
 		}
 }
@@ -527,7 +527,7 @@
 /*6. CONFIRMS*/
 
 @media (min-height:857px) {
-	.confirm .body {
+	.confirm .confirm-body {
 		height:90vh;
 	}
 }

@@ -1,13 +1,13 @@
-bandApp.directive("navigationbar", function() {
+bandApp.directive("monkeesNav", function() {
 	return {
-		templateUrl: "templates/directives/nav.html",
+		templateUrl: "templates/directives/monkees-nav.html",
 		restrict: "E"
 	};
 });
 
-bandApp.directive("blackfooter", function() {
+bandApp.directive("monkeesFooter", function() {
 	return {
-		templateUrl: "templates/directives/footer.html",
+		templateUrl: "templates/directives/monkees-footer.html",
 		restrict: "E"
 	};
 });
