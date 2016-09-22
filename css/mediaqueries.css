@@ -107,6 +107,8 @@
 
 /*2. MUSIC*/
 
+
+
 @media (max-width:500px) {
 
 	#buymusic .itunes-table th {
@@ -138,26 +140,27 @@
 	}
 }
 
-@media(min-width:360px) and (min-height:1024px) {
-	.music .header {
-		position:relative;
-		top:100px;
-	}
-
+@media (max-width:359px) and (max-height: 386px) {
 	.music .book {
-		position: relative;
+		display: none;
+	}
+}
+
+@media(min-width:360px) and (min-height:1024px) {
+	.music .header, .book {
+		position:relative;
 		top:100px;
 	}
 }
 
-@media (min-width:768px) {
+@media (min-width:768px) and (min-height:546px) {
 	.music .top {
 		height:60vh;
 	}
 
 	.music .header, .book {
 		position:relative;
-		top:100px;
+		top:60px;
 	}
 
 	.music .header h1 {
@@ -165,7 +168,7 @@
 	}
 }
 
-@media (min-width:1280px) {
+@media (min-width:1280px)  and (min-height:546px){
 	.music .top {
 		opacity:1;
 		height:98vh;
@@ -325,16 +328,23 @@
 }
 
 
-
-
-
-
-
 /*------------------------------------------------------------------------
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------*/
 
 /*4. CONTACT*/
+
+@media (max-height:385px) {
+	.reachout .connect .links {
+		margin-top:70px;
+	}
+}
+
+@media (max-width:350px) {
+	#emailcirc p {
+		right:0px;
+	}
+}
 
 @media (max-width:520px) {
 
@@ -369,21 +379,22 @@
 	}
 
 	.reachout .direct div {
-		height:80px;
-		width:80px;
-		line-height:80px;
+		height:100px;
+		width:100px;
+		line-height:100px;
 	}
 
 	.reachout .direct div p {
-		font-size:3vw;
+		font-size:2.5vw;
 	}
 
 	#skype p {
-		font-size:2.5vw;
+		font-size:2vw;
 	}
 
 	#emailcirc p {
 		font-size:1.5vw;
+		right:10px;
 	}
 }
 
@@ -428,12 +439,12 @@
 		line-height:100px;
 	}
 
-	.reachout .direct div p {
-		font-size:2vw;
+	#phone p {
+		font-size:1.6vw;
 	}
 
 	#emailcirc p, #skype p {
-		font-size:1.5vw;
+		font-size:1.4vw;
 	}
 
 	#skype p {
@@ -441,11 +452,39 @@
 	}
 }
 
+@media (min-width:768px) and (min-height:745px) {
+	.reachout .connect {
+		height:60vh;
+	}
+
+	#phonecirc p {
+		font-size:1vw;
+	}
+}
+
+@media (min-height:760px) and (max-width:850px) {
+	.reachout .connect {
+		height:50vh;
+	}
+}
+
+@media (min-width:1500px) {
+	.reachout .connect {
+		height:70vh;
+		}
+}
+
 /*------------------------------------------------------------------------
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------*/
 
 /*5.BOOK*/
+
+@media (min-width:360px) {
+	.book .page {
+		/*padding-top:-100px;*/
+	}
+}
 
 
 @media (min-width:768px) {
@@ -482,11 +521,10 @@
 /*6. CONFIRMS*/
 
 
-@media (min-width:1200px) {
+/*@media (min-width:1200px) {
 	.confirm .header {
 		font-size:15em;
 		margin:0 auto;
-		height:auto;
 	}
 
 	.confirm .body {
@@ -503,7 +541,6 @@
 @media (min-width:690px) and (max-width:1199px) {
 	.confirm .header {
 		font-size:8em;
-		height:200px;
 	}
 
 	.confirm .body {
@@ -513,7 +550,15 @@
 	.confirm .body span {
 		color:#323232;
 	}
+}*/
+
+@media (min-height:857px) {
+	.confirm .body {
+		height:90vh;
+	}
 }
+
+@media (min-width:520px) and () {}
 
 /*------------------------------------------------------------------------
 --------------------------------------------------------------------------

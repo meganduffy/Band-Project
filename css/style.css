@@ -696,6 +696,7 @@
 	flex:1;
 	position:relative;
 	top:50px;
+	margin-bottom:50px;
 }
 
 .reachout .connect .links {
@@ -903,7 +904,7 @@
 
 .reachout .direct div:hover p {
 	display:inline;
-	color:white;
+	color:black;
 }
 
 
@@ -1009,43 +1010,46 @@
 
 .confirm .bookconfirm {
 	background:url(../../media/img/book-background2.jpeg) center center;
-	height:100vh;
+	/*height:100vh;*/
 }
 
 .mailconfirm {
 	background:url("../../media/img/cwater.jpg") center;
 	background-size:cover;
-	height:100vh;
+	/*height:100vh;*/
 }
 
 .subscribeconfirm {
 	background:url(../../media/img/cwater.jpg) center center;
 	background-size:cover;
-	height:100vh;
+	/*height:100vh;*/
 }
 
 /*~HEADER STYLE*/
 
 .confirm .header {
-	margin:50px auto;
 	font-family:Dosis;
 	text-align:center;
 	background-color:silver;
-	height:150px;
-	animation-name:bigconfirm;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
+	padding-top:60px;
+	padding-bottom:60px;
 }
 
 .confirm .header h1 {
-	font-size:4em;
+	font-size:13vw;
+	animation-name:bigconfirm;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+
 }
 
 /*~BODY STYLE~*/
 
 .confirm .body {
 	width:90%;
-	margin:30px auto 150px auto;
+	margin:0px auto;
+	padding-top:30px;
+	padding-bottom: 150px;
 	text-align:center;
 	font-family:Dosis;
 	color:white;
@@ -1060,7 +1064,6 @@
 	0% {
 		font-size:0em;
 		opacity:0;
-		background-color:white;
 	}
 
 	100% {
@@ -1112,7 +1115,6 @@
 	text-align:center;
 	color:white;
 	background-color:#070b0b;
-	height:100%;
 	width:100%;
 	border-top:5px solid black;
 	border-bottom:1px solid black;
