@@ -42,7 +42,7 @@ bandApp.controller("MusicController", ["$scope", "monkees", "monkeeitunes", func
 	$scope.seemoreTitle = "Like What You See?";
 	$scope.seemoreSubtitle = "Find More On...";
 
-	//import data from Monkees service
+	//import and store data from Monkees service for use within the $scope
 	monkees.success(function(data) {
 		$scope.myMonkee = data;
 	});
@@ -76,7 +76,7 @@ bandApp.controller("GigsController", ["$scope", "events", function($scope, event
 	$scope.headerSubtitleInfo = "UP TO DATE AND READY TO ROCK!";
 	$scope.endTitle = "WANT THE MONKEES TO PLAY LIVE AT YOUR EVENT?";
 
-	//import data from Events service
+	//import and store data from Events service for use within the $scope
 	events.success(function(data) {
 		$scope.myEvents = data;
 	});
@@ -91,7 +91,7 @@ bandApp.controller("EventController", ["$scope", "events", "$routeParams", "$sce
 	//give each event an accessible ID and load data specific to that ID
 	events.success(function(data) {
 		$scope.myEvent = data[$routeParams.eventId];
-		//confirm the map URL is a trusted resource
+		//confirm the URL myEvent.map is a trusted resource
 		$scope.myEventMap = $sce.trustAsResourceUrl($scope.myEvent.map);
 	});
 	$scope.currentEventIndex = parseInt($routeParams.eventId);
@@ -189,33 +189,28 @@ bandApp.controller("SubModalController", function($scope, $location) {
 //11. ITUNES SEARCH CONTROLLER
 
 bandApp.controller("iTunesController", function($scope, $http) {
-	//define search function called by form
+
+	//import data from iTunes Search API
 	$scope.searchiTunes = function(artist) {
-		//use the jsonp callback function from the $http service this
 		$http.jsonp("http://itunes.apple.com/search?limit=5", {
 			params: {
 				"callback" : "JSON_CALLBACK",
 				"term" : artist
 			}
-			//returns a promise. when resturned, .then preform action..
 		}).then(onSearchComplete, onError)
-	}
-	//get the data out of the response when search succeeds.
+	};
 
+	//strore data for use within the $scope
 	var onSearchComplete = function(response) {
-		//the response has a few data elements
-		//so we will grab all of that
-		$scope.data = response.data
 
-		//we will also store just the songs into 
-		//a seperate variable for the view to iterate
-		$scope.songs = response.data.results
-	}
+		$scope.data = response.data;
+		$scope.songs = response.data.results;
+	};
 
-	//if there is an error, store that for viewing.
+	//if there is an error store it for viewing
 	var onError = function(reason) {
-		$scope.error = reason
-	}
+		$scope.error = reason;
+	};
 });
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
