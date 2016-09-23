@@ -3,7 +3,7 @@
 
 	<div class="music-top">
 		<div class="header">
-			<h1>hear us out</h1>
+			<h1>{{headerTitle}}</h1>
 		</div>
 	
 	
@@ -30,8 +30,8 @@
 
 		<div class="tab-content">
 			<div id="buymusic" class="tab-pane fade">
-				<h1>Buy Music</h1>
-				<p>Have a scroll through our sound and buy online!</p>
+				<h1>{{musicTitle}}</h1>
+				<p>{{musicSubtitle}}</p>
 
 				<div class="itunes-table">
 					<table>
@@ -71,23 +71,23 @@
 			</div>
 
 			<div id="video" class="tab-pane fade">
-				<h1>Videos</h1>
-				<p>Look back through the years, watch us shake and move!</p>
+				<h1>{{videoTitle}}</h1>
+				<p>{{videoSubtitle}}</p>
 				<iframe width="640" height="380" src="https://www.youtube.com/embed/xvqeSJlgaNk" frameborder="0" allowfullscreen></iframe>
 				
 				<iframe width="640" height="480" src="https://www.youtube.com/embed/kpp-Ry2ZNhY" frameborder="0" allowfullscreen></iframe>
 
 				<iframe width="640" height="480" src="https://www.youtube.com/embed/sUzs5dlLrm0" frameborder="0" allowfullscreen></iframe>
 
-				<h2 class="seemore">Like What You See?</h2>
-				<h3 class="seemore">Find More On...</h3>
+				<h2 class="seemore">{{seemoreTitle}}</h2>
+				<h3 class="seemore">{{seemoreSubtitle}}</h3>
 				<a href="https://www.youtube.com/user/themonkees" target="_blank"><div class="ytplug"></div></a>
 			</div>
 
 			<div id="photos" class="tab-pane fade in active">
-				<h1>Photographs</h1>
-				<p>Check out some of our favourite moments! </br>
-				   Click on the image for more information.</p>
+				<h1>{{photoTitle}}</h1>
+				<p>{{photoSubtitle}}</br>
+				   {{photoSubtitleInfo}}</p>
 
 				<div class="photogrid">
 					<div class="photo" ng-repeat="monkee in myMonkee">
@@ -96,8 +96,8 @@
 						</a>
 					</div>
 				</div>
-				<h2 class="seemore">Like What You See?</h2>
-				<h3 class="seemore">Find More On...</h3>
+				<h2 class="seemore">{{seemoreTitle}}</h2>
+				<h3 class="seemore">{{seemoreSubtitle}}</h3>
 				<a href="https://www.instagram.com/themonkees/" target="_blank"><div class="igplug"></div></a>
 			</div>
 		</div>
