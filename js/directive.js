@@ -33,3 +33,24 @@ bandApp.directive("maillist", function() {
 		restrict: "E"
 	};
 });
+
+bandApp.directive("musicContent", function() {
+	return {
+		templateUrl: "templates/directives/music-content.html",
+		restrict: "E"
+	};
+});
+
+bandApp.directive("videoContent", function() {
+	return {
+		templateUrl: "templates/directives/video-content.html",
+		restrict: "E"
+	};
+});
+
+bandApp.directive("photosContent", function() {
+	return {
+		templateUrl: "templates/directives/photos-content.html",
+		restrict: "E"
+	};
+});
