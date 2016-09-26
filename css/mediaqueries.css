@@ -79,7 +79,7 @@
 	/*~~~animation~~~*/
 	@keyframes blurinbig {
 		0% {
-			font-size:1em;
+			font-size:2vw;
 			opacity:0;
 		}
 		100% {
@@ -140,7 +140,7 @@
 	}
 }
 
-@media (max-width:359px) and (max-height: 386px) {
+@media (max-height: 386px) {
 	.music .book {
 		display: none;
 	}
