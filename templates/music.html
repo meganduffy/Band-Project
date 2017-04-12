@@ -1,35 +1,39 @@
 <monkees-nav></monkees-nav>
 <div class="music">
 
-	<div class="music-top">
+	<div id="musictop" class="music-top noabout">
 		<div class="header">
 			<h1>{{headerTitle}}</h1>
+            <h4>{{ headerSubtitle }}</h4>
 		</div>
-	
-	
-		<div class="paragraph">
+
+
+		<div class="paragraph" style="display:none;">
 			<div class="about">
 				<p>Between October 1966 and November 1967, the Monkees put out four albums. All four went to No. 1. The band had six Top 5 singles -  “Daydream Believer” has been recorded by a wide range of musicians, including Paul Westerberg of the Replacements, the Four Tops, Britpop act Robson & Jerome, dance pop singers Atomic Kitten, Canadian songstress Ann Murray and Japanese all-girl rockers Shonen Knife.</p>
 			</div>
 
-			<div class="sound">
+			<div class="sound" style="display:none">
 				<p>The Monkees use a strong rhythm section of double bass and drums as the anchor for a lead section of brass instruments such as trumpets and trombones. Their music creates a "visceral response" such as feet-tapping or head-nodding to get everyone swinging and dancing the night away!</p>
 				<p>You'll be foxtrotting your way to the grooviest night of your life!</p>
 				<p><span>Just hear us out...</span></p>
 			</div>
 		</div>
-		<a class="btn btn-default btn-lg book" href="#/book">BOOK NOW</a>
+        <div class="about-buttons">
+            <a class="btn btn-default btn-lg about-btn" id="about-btn">ABOUT US</a>
+		    <a class="btn btn-default book" href="#/book">BOOK NOW</a>
+        </div>
 	</div>
 
 	<div class="bigbar">
 		<ul class="nav nav-tabs nav-justified">
-			<li><a data-toggle="tab" data-target="#buymusic">Music</a></li>
+			<li class="active"><a data-toggle="tab" data-target="#buymusic">Music</a></li>
 			<li><a data-toggle="tab" data-target="#video">Videos</a></li>
-			<li class="active"><a data-toggle="tab" data-target="#photos">Photos</a></li>
+			<li><a data-toggle="tab" data-target="#photos">Photos</a></li>
 		</ul>
 
 		<div class="tab-content">
-			<div id="buymusic" class="tab-pane fade">
+			<div id="buymusic" class="tab-pane fade in active">
 				<h1>{{musicTitle}}</h1>
 				<p>{{musicSubtitle}}</p>
 
@@ -64,10 +68,10 @@
 					</table>
 				</div>
 
-				<!--<div class="itunes-search-table">-->
-				<!--	<h1>Or Search iTunes Yourself...</h1>-->
-				<!--	<itunessearch></itunessearch>-->
-				<!--</div>-->
+				<div class="itunes-search-table">
+					<h1>Or Search iTunes Yourself...</h1>
+					<itunessearch></itunessearch>
+				</div>
 			</div>
 
 			<div id="video" class="tab-pane fade">
@@ -84,9 +88,10 @@
 				<a href="https://www.youtube.com/user/themonkees" target="_blank"><div class="ytplug"></div></a>
 			</div>
 
-			<div id="photos" class="tab-pane fade in active">
+			<div id="photos" class="tab-pane fade">
 				<h1>{{photoTitle}}</h1>
-				<p>{{photoSubtitle}}</br>
+				<p>{{photoSubtitle}}
+                    </br>
 				   {{photoSubtitleInfo}}</p>
 
 				<div class="photogrid">

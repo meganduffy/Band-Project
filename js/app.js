@@ -44,3 +44,10 @@ bandApp.config(function($routeProvider) {
 		})
 		.otherwise({ redirectTo: "/"});
 });
+
+// Ensures views are loaded at the top of screen
+angular.module('bandApp').run(["$rootScope", "$anchorScroll" , function ($rootScope, $anchorScroll) {
+    $rootScope.$on("$locationChangeSuccess", function() {
+                $anchorScroll();
+    });
+}]);

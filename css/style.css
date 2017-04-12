@@ -33,7 +33,7 @@
 		7.1 Navigation Bar
 		7.2 Footer 
 		7.3 Subscribe Modal
-		7.4 Maillist Modal
+		7.4 Mail List Modal
 		7.5 iTunes Search*/
 
 /*------------------------------------------------------------------------
@@ -171,7 +171,7 @@
 	background-size:cover;
 	background-color:#c0c0c0;
 	height:13em;
-	margin-bottom:0px;
+	margin-bottom:0;
 }
 
 .home .jumbotron .container {
@@ -195,23 +195,25 @@
 
 /*~MUSIC TOP STYLE~*/
 .music {
-	/*max-width:100%;*/
 	overflow:hidden;
 }
 
 /*~HEADER STYLE~*/
 
-.music .music-top {
-	background:url("../../media/img/mike4.jpeg") center;
-	background-size:cover;
-	height:98vh;
-	margin-top:-20px;
-	opacity:0.85;
-	
+/*~ PRE-"ABOUT US" BUTTON CLICK STYLE ~*/
+.music .noabout {
+    height:98vh;
 }
 
-.music .music-top:hover {
-	opacity:1;
+.music .music-top {
+    background:url("../../media/img/tape-music.jpeg") center;
+	background-size:cover;
+	margin-top:-20px;
+    text-align:center;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .music .header h1 {
@@ -221,32 +223,49 @@
 	font-weight:500;
 	font-size:5em;
 	position:relative;
-	top:90px;
-	margin-bottom:360px;
+	top:30px;
 	color:#fff;
 }
 
+/*~ POST-"ABOUT US" BUTTON CLICK STYLE ~*/
+
+.abouttitle {
+    margin-top:100px;
+}
+
+.music .header h4 {
+    font-family:Roboto;
+    text-transform:uppercase;
+    position:relative;
+    top:30px;
+    color:#fff;
+}
+
+.music .music-top .about-buttons {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.music .music-top .about-buttons #about-btn {
+    margin:10px;
+    padding:15px 30px;
+}
+
+/*~ ABOUT US HIDDEN SECTION ~*/
+
 .music .paragraph {
-	width:99%;
-	display:none;
-	flex-flow:row wrap;
-	align-items: center ;
-	justify-content: space-around;
-	color:#fff;
+    color:#fff;
 	font-family:Roboto;
 	font-weight:700;
 	font-size:1.2em;
-	text-align:center;
-	margin:10px auto;
+	margin:40px auto;
 }
 
-.music .paragraph .about {
-	flex:2;
-	font-size:1em;
-}
-
-.music .paragraph .sound {
-	flex:2;
+.music .paragraph p {
+    background-color:#000;
 }
 
 .music .paragraph .about p {
@@ -261,14 +280,8 @@
 }
 
 .music .paragraph .sound span {
-	color:#382F2B;
-}
-
-.music .music-top .book {
-	margin:5px auto;
-	display:block;
-	width:130px;
-	margin-top: -180px;
+	color:#fff;
+    background-color:#000;
 }
 
 /*~TAB NAV STYLE~*/
@@ -283,6 +296,19 @@
 
 .music .bigbar .nav-tabs > li {
 	zoom:1.8;
+}
+
+.music .bigbar .nav-tabs > li > a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.music .bigbar .nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #fff;
+    background-color: #382f2b;
 }
 
 .music .bigbar .nav-tabs a {
@@ -303,10 +329,6 @@
 .music .tab-content h1 {
 	font-size:4em;
 	color:#000;
-	animation-name:blurinbig;
-	animation-duration: 2s;
-	animation-timing-function: ease;
-	animation-fill-mode: forwards;
 }
 
 .music .tab-content p {
@@ -317,9 +339,7 @@
 
 /*~#BUYMUSIC STYLE~*/
 
-#buymusic {
-	border-top:2px solid silver;
-}
+
 
 #buymusic .itunes-table table {
 	width:90%;
@@ -355,7 +375,7 @@
 	background:url(../../media/img/lights.jpeg) center center fixed;
 	background-size: cover;
 	color:#000;
-	border-top:2px solid silver;
+    padding-bottom:10px;
 }
 
 #video iframe {
@@ -369,26 +389,18 @@
 	margin-top:100px;
 }
 
-#video .seemore h3 {
-	margin-bottom:50px;
-}
-
 #video .ytplug {
 	background:url(../../media/img/plugyt.png) center;
 	background-size: cover;
 	height:100px;
 	width:100px;
 	border-radius: 100%;
-	margin:20px auto;
+	margin: 20px auto;
 	opacity: 0.5;
 }
 
 #video .ytplug:hover {
 	opacity:1;
-}
-
-#photos {
-	border-top:2px solid silver;
 }
 
 /*~#PHOTOS STYLE~*/
@@ -698,7 +710,7 @@
 
 .contact .header {
 	height:98vh;
-	background:url(../../media/img/connectdiv.jpeg) center;
+	background:url(../../media/img/bbwrecord.jpeg) center fixed;
 	background-size:cover;
 	display:flex;
 	flex-flow:column nowrap;
@@ -713,8 +725,16 @@
 	font-family:Roboto;
 	flex:1;
 	position:relative;
-	top:50px;
+	top:90px;
 	margin-bottom:50px;
+}
+
+.contact .header p {
+    font-size:2vw;
+    color:#fff;
+    text-transform:uppercase;
+    font-family:Roboto;
+    flex:1;
 }
 
 .contact .header .links {
@@ -836,7 +856,7 @@
 .contact .mid-section .newsletter {
 	display:flex;
 	flex-flow:row wrap;
-	align-items: center;
+    align-items:center;
 	justify-content: space-around;
 	color:#fff;
 }
@@ -848,14 +868,28 @@
 
 .contact .mid-section .newsletter .head {
 	text-align: right;
+	font-family: Dosis;
 }
 
 .contact .mid-section .newsletter .subform {
-	background:rgba(255,255,255,0.3);
+	background:rgba(255,255,255,0.4);
 	padding:20px;
 	border-radius:15px;
 	text-transform:uppercase;
 	color:#545454;
+}
+
+.contact .mid-section .newsletter .subform #subscribeform #name, #email-sub {
+    width: 30%;
+}
+
+.contact .mid-section .newsletter .subform #subscribeform .form-group {
+    width: 100%;
+}
+
+.contact .mid-section .newsletter .subform #subscribeform .form-group .alert {
+    margin-bottom: 0;
+    padding:5px;
 }
 
 /*~DIRECT STYLE~*/
@@ -865,73 +899,48 @@
 	flex-flow:row wrap;
 	justify-content: space-around;
 	align-items: center;
-	background:url(../../media/img/connectdiv.jpeg) center;
+    background:url(../../media/img/bbwrecord.jpeg) center fixed;
 	background-size:cover;
 	height:300px;
 }
 
-.contact .direct div {
-	height:180px;
-	width:180px;
-	border-radius: 100%;
-	text-align:center;
-	line-height:180px;
-	transition:1s;
+.contact .direct #phone, #skype, #emailcirc {
+    flex:1;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .contact .direct div p {
 	font-family:Arvo;
 	font-size:1.5em;
 	font-weight:bold;
-	color:rgba(255,255,255,0.3);
+	color:#fff;
 	text-transform:uppercase;
 	width:100%;
-	display:none;
-	transition:3s;
+    margin-top:20px;
 }
 
-#phone {
-	background:url(../../media/img/phoneblue.png) center;
+.contact .direct #phone #phonecirc, #skype #skypecirc, #emailcirc #emailcircdiv {
+    height:100px;
+    width:100px;
+    border-radius:100px;
+}
+
+#phone #phonecirc {
+	background:url(../../media/img/call-answer.png) center;
 	background-size:cover;
 }
 
-#skype {
-	background:url(../../media/img/skypeblue.png) center;
+#skype #skypecirc {
+	background:url(../../media/img/skypewhite.png) center;
 	background-size:cover;
 }
 
-#skype p {
-	letter-spacing: 1.5px;
-	font-size:1.2em;
-}
-
-#emailcirc {
-	background:url(../../media/img/atblue.png) center;
+#emailcirc #emailcircdiv {
+	background:url(../../media/img/at-sign.png) center;
 	background-size:cover;
-}
-
-#emailcirc p {
-	font-size:1em;
-	position: relative;
-	right:20px;
-}
-
-.contact .direct #phone:hover, #skype:hover, #emailcirc:hover {
-	background:rgba(255,255,255,0.3);
-}
-
-.contact .direct div:hover p {
-	display:inline;
-	color:#000;
-}
-
-.contact .direct #phone:active, #skype:active, #emailcirc:active {
-	background:rgba(255,255,255,0.3);
-}
-
-.contact .direct div:active p {
-	display:inline;
-	color:#000;
 }
 
 
@@ -1038,19 +1047,11 @@
 
 .confirm .bookconfirm {
 	background:url(../../media/img/book-background2.jpeg) center center;
-	/*height:100vh;*/
 }
 
-.mailconfirm {
-	background:url("../../media/img/cwater.jpg") center;
-	background-size:cover;
-	/*height:100vh;*/
-}
-
-.subscribeconfirm {
+.mailconfirm, .subscribeconfirm {
 	background:url(../../media/img/cwater.jpg) center center;
 	background-size:cover;
-	/*height:100vh;*/
 }
 
 /*~HEADER STYLE*/
@@ -1085,6 +1086,10 @@
 
 .confirm .confirm-body a {
 	margin-top:20px;
+}
+
+.confirm .confirm-body h3 a.music-link:hover {
+    text-decoration:none;
 }
 
 /*ANIMATION*/
@@ -1133,8 +1138,16 @@
 	padding-right:20px;
 }
 
+.navbar-default .nav >li >a:hover {
+	font-weight: 600;
+}
+
 .navbar-default .dropdown {
 	cursor:pointer;
+}
+
+.navbar-default .dropdown.open .dropdown-menu li a:hover {
+    font-weight:600
 }
 
 /* 7.2 FOOTER */	

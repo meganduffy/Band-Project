@@ -32,6 +32,7 @@ bandApp.controller("HomeController", function($scope) {
 
 bandApp.controller("MusicController", ["$scope", "monkees", "monkeeitunes", function($scope, monkees, monkeeitunes) {
 	$scope.headerTitle = "hear us out";
+    $scope.headerSubtitle = "our story, our sound"
 	$scope.musicTitle =  "Buy Music";
 	$scope.musicSubtitle = "Have a scroll through our sound and buy online!";
 	$scope.videoTitle = "Videos";
@@ -50,6 +51,16 @@ bandApp.controller("MusicController", ["$scope", "monkees", "monkeeitunes", func
 		$scope.monkeeInfo = data.results;
 		$scope.numMonkeeResults = data.resultCount;
 	});
+
+    //show about section when ABOUT US button clicked
+
+    $('#about-btn').click(function() {
+        $('#musictop').toggleClass('noabout');
+        $('h1:first').toggleClass('abouttitle');
+        $('.paragraph').toggle();
+        $('.sound').toggle();
+    });
+
 
 }]);
 
@@ -102,6 +113,7 @@ bandApp.controller("EventController", ["$scope", "events", "$routeParams", "$sce
 
 bandApp.controller("ContactController", function($scope, $location) {
 	$scope.title= "Connect With Us";
+	$scope.subtitle= "Join us on social media"
 	$scope.submitted = false;
 
 	//ensure form has been validated on submission and redirect user to confirmation page
@@ -131,7 +143,7 @@ bandApp.controller("BookController", function($scope, $location) {
 			$scope.submitted= true;
 			$location.path("/bookconfirm");
 
-		};
+		}
 	};
 });
 
@@ -158,7 +170,7 @@ bandApp.controller("MailModalController", function($scope, $location) {
 			$("#mailmodal").modal("toggle");
 			$scope.submitted= true;
 			$location.path("/mailconfirm");
-		};
+		}
 	};
 });
 
@@ -179,7 +191,7 @@ bandApp.controller("SubModalController", function($scope, $location) {
 			$("#subscribemodal").modal("toggle");
 			$scope.submitted=true;
 			$location.path("/subscribeconfirm")
-		};
+		}
 	};
 });
 
