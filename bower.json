@@ -1,0 +1,18 @@
+{
+  "name": "band-project",
+  "description": "A simple band website for The Monkees promoting their music and availability for gigs.",
+  "main": "index.html",
+  "authors": [
+    "meganduffy <meganemilyduffy@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularjs",
+    "html",
+    "css",
+    "javascript",
+    "bandsite",
+    "musicsite"
+  ],
+  "homepage": "https://github.com/meganduffy/Band-Project"
+}
