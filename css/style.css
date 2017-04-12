@@ -54,7 +54,7 @@
 /*~HEADER STYLE~*/
 .home .header {
 	height:30em;
-	background:url("media/img/background-position2.jpg") no-repeat;
+	background:url("../../media/img/background-position2.jpg") no-repeat;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
