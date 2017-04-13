@@ -49,9 +49,29 @@ It it styled using a mixture of Bootstrap and Flexbox.
 - [Bootstrap](http://getbootstrap.com/)
     - I used **Bootstrap** to give my project a simple, responsive layout
 - [npm](https://www.npmjs.com/)
-    - I used **npm** to help manage some of the dependencies in my application
+    - I used **npm** to help manage some of the dependencies in my website
 - [bower](https://bower.io/)
-    - **Bower** is used to manage the installation of our libraries and frameworks
+    - **Bower** is used to manage the installation of libraries and frameworks
+
+## Responsive Web Design
+
+I used a variety of methods to ensure the responsiveness of my website. These included:
+
+- Bootstrap
+
+- Flexbox
+
+- Media Queries
+
+### Testing
+
+I used a variety of methods to test the responsiveness of my website. These included:
+
+- Firefox Responsive Design Mode
+
+- [Blisk] (https://blisk.io/)
+
+- Testing In Different Environments
 
 ## Contributing
 

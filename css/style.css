@@ -388,7 +388,7 @@
 .music .tab-content p {
     font-size: 1.5em;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 /*~#BUYMUSIC STYLE~*/
@@ -396,7 +396,7 @@
 #buymusic .itunes-table table {
     width: 90%;
     height: auto;
-    margin: 10px auto;
+    margin: 10px auto 80px auto;
 }
 
 #buymusic .itunes-table th {
@@ -427,7 +427,7 @@
     background: url(../../media/img/lights.jpeg) center center fixed;
     background-size: cover;
     color: #000;
-    padding-bottom: 10px;
+    padding: 10px 0 10px 0;
 }
 
 #video iframe {
@@ -1111,6 +1111,7 @@
 }
 
 .book #submit {
+    margin-top:-45px;
     margin-left: auto;
     margin-right: auto;
 }
