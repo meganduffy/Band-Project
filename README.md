@@ -8,10 +8,8 @@ This is a simple band website for 'The Monkees' promoting their music and availa
 
 ### What does it do?
 
-This website showcases the music of 'The Monkees' and publicises their availability for gigs. Users can use the website
-to view, hear and purchase 'The Monkees' music, videos and photographs, as well as check out their upcoming tour dates. Users can
-also sign up to their Mail List, subscribe to their Newsletter and are provided with all Social Media links so as to follow
-them on different platforms. Event Managers can also use the website to book the 'The Monkees' for corporate and wedding events.
+This website showcases the music of 'The Monkees' and publicises their availability for gigs. Users can use the website to view, hear and purchase 'The Monkees' music, videos and photographs, as well as check out their upcoming tour dates.
+Users can also sign up to their Mail List, subscribe to their Newsletter and are provided with all Social Media links so as to follow them on different platforms. Event Managers can also use the website to book the 'The Monkees' for corporate and wedding events.
 
 ### How does it work?
 
@@ -22,18 +20,18 @@ It it styled using a mixture of Bootstrap and Flexbox.
 
 ### Existing Features
 
--Users can:
-    - Listen to music
-    - Watch videos
-    - View photos
-    - Sample and purchase music via iTunes
-    - Join Mail List
-    - Subscribe to Newsletter
-    - View upcoming gigs
-    - Book 'The Monkees'
-    - Access 'The Monkees' Social Media accounts
-    - Contact them directly via phone, email and Skype
-    - Responsive design with mobile use in mind
+**Users can:**
+- Listen to music
+- Watch videos
+- View photos
+- Sample and purchase music via iTunes
+- Join Mail List
+- Subscribe to Newsletter
+- View upcoming gigs
+- Book 'The Monkees' for commerical gigs
+- Connect with 'The Monkees' Social Media presence
+- Contact them directly via phone, email and Skype
+- Responsive design with mobile use in mind
 
 ### Features Left to Implement
 
@@ -56,22 +54,30 @@ It it styled using a mixture of Bootstrap and Flexbox.
 ## Responsive Web Design
 
 I used a variety of methods to ensure the responsiveness of my website. These included:
+- **Mobile First Design**
 
-- Bootstrap
 
-- Flexbox
+- [**Bootstrap**](http://getbootstrap.com/)
+I used the **Bootstrap** Framework to create tried and trusted sleek, responsive elements.
 
-- Media Queries
+- **Flexbox**
+I used **Flexbox** display to ensure for simple yet powerful design layouts.
+
+- **Media Queries**
+I spent a lot of time writing and re-writing **Media Queries** to optimize the responsiveness of my website based on screen size. It can be a meticulous and tiring process, but is more than worth it to have that perfect resize.
 
 ### Testing
 
 I used a variety of methods to test the responsiveness of my website. These included:
 
-- Firefox Responsive Design Mode
+- [Firefox Responsive Design Mode](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode)
+An essential tool to any developer looking to test the responsiveness of their website, **Firefox Responsive Design Mode** makes it fast and effortless to switch between screen sizes.
 
-- [Blisk] (https://blisk.io/)
+- [Blisk](https://blisk.io/)
+A browser for web developers, **Blisk**, comes prepacked with fully emulated phones and tablets. It shows real time changes to files so you can see exactly how the changes to your file are affecting your site.
 
-- Testing In Different Environments
+- **Testing In Different Environments**
+There is no simulator that could replace simply testing your website in as many enviornments as possible. Using as many different browsers and devices as I could get my hands on was key to weening out design flaws. **Testing in Different Enviornments** is a integral part of garanteeing your website functions correctly for every User.
 
 ## Contributing
 
