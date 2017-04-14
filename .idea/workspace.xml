@@ -7,8 +7,6 @@
     <list default="true" id="fc12695a-939d-46f0-9164-03013d052d6b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mediaqueries.css" afterPath="$PROJECT_DIR$/css/mediaqueries.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <ignored path="Band-Project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,8 +50,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -460,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492113705176</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add more to readme, change gigs calendar color scheme and fix minor style errors">
+      <created>1492173933286</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1492173933286</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -508,7 +513,8 @@
     <MESSAGE value="remove iTunes search bar comment" />
     <MESSAGE value="fix small errors post deploy" />
     <MESSAGE value="add more to readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more to readme" />
+    <MESSAGE value="add more to readme, change gigs calendar color scheme and fix minor style errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="add more to readme, change gigs calendar color scheme and fix minor style errors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -851,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
           <folding />
         </state>
       </provider>

@@ -70,13 +70,13 @@ I used a variety of methods to ensure the responsiveness of my website. These in
 I used a variety of methods to test the responsiveness of my website. These included:
 
 - [Firefox Responsive Design Mode](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode)
-An essential tool to any developer looking to test the responsiveness of their website, **Firefox Responsive Design Mode** makes it fast and effortless to switch between screen sizes.
+    - An essential tool to any developer looking to test the responsiveness of their website, **Firefox Responsive Design Mode** makes it fast and effortless to switch between screen sizes.
 
 - [Blisk](https://blisk.io/)
-A browser for web developers, **Blisk**, comes prepacked with fully emulated phones and tablets. It shows real time changes to files so you can see exactly how the changes to your file are affecting your site.
+    - A browser for web developers, **Blisk**, comes prepacked with fully emulated phones and tablets. It shows real time changes to files so you can see exactly how the changes to your file are affecting your site.
 
 - **Testing In Different Environments**
-There is no simulator that could replace simply testing your website in as many enviornments as possible. Using as many different browsers and devices as I could get my hands on was key to weening out design flaws. **Testing in Different Enviornments** is a integral part of garanteeing your website functions correctly for every User.
+    - There is no simulator that could replace simply testing your website in as many enviornments as possible. Using as many different browsers and devices as I could get my hands on was key to weening out design flaws. **Testing in Different Enviornments** is a integral part of garanteeing your website functions correctly for every User.
 
 ## Contributing
 
