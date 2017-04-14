@@ -13,7 +13,8 @@
 #545454 - Matterhorn Grey
 #222222 - Nero Grey
 #070b0b - Dark Green
-#ff1919 - Scarlet Red
+#89cff0 - Baby Blue
+#89bef0 - Clouded Baby Blue
 #d7e6fa - Solitude Blue */
 
 /*------------------------------------------------------------------------
@@ -184,6 +185,8 @@
 
 .home .main {
     background-color: #000;
+    background: url(../../media/img/cwater.jpg) center fixed;
+    background-size: cover;
     text-align: center;
     position: relative;
     color: #fff;
@@ -216,9 +219,8 @@
     justify-content: space-between;
     text-align: center;
     color: #fff;
-    background: url(../../media/img/cwater.jpg) center;
+    background: url(../../media/img/cwater.jpg) center fixed;
     background-size: cover;
-    background-color: #c0c0c0;
     height: 13em;
     margin-bottom: 0;
 }
@@ -571,7 +573,7 @@
     width: 23%;
     height: 300px;
     margin: 20px 20px;
-    border: 6px solid #ff1919;
+    border: 6px solid #89cff0;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -589,7 +591,7 @@
 }
 
 .gigs .calendar .box .date {
-    background-color: #ff1919;
+    background-color: #89cff0;
     color: #fff;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -602,7 +604,7 @@
 }
 
 .gigs .calendar .box a:hover .date {
-    color: #ff1919;
+    color: #89bef0;
     background-color: #fff;
 }
 
@@ -617,10 +619,6 @@
 
 .gigs .calendar .box .where h2 {
     font-size: 2vw;
-}
-
-.gigs .calendar .box .where:hover {
-    background-color: #d7e6fa;
 }
 
 .gigs .calendar .box .when {
@@ -681,7 +679,7 @@
     justify-content: space-between;
     color: #000;
     max-width: 250px;
-    border: 6px solid #ff1919;
+    border: 6px solid #89cff0;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -690,7 +688,8 @@
 }
 
 .event .details .note .when {
-    background-color: #ff1919;
+    font-family: Arvo, sans-serif, monospace;
+    background-color: #89cff0;
     color: #fff;
     border-radius: 20px 20px 0 0;
     -webkit-border-radius: 20px 20px 0 0;
@@ -698,6 +697,7 @@
 }
 
 .event .details .note .where {
+    font-family: Dosis, sans-serif, monospace;
     background-color: #fff;
     color: #000;
     flex: 2;
@@ -1053,7 +1053,7 @@
 
 .book .book-intro #discount {
     font-size: 15px;
-    color: #f00;
+    color: #000;
     letter-spacing: 4px;
 }
 
@@ -1074,7 +1074,7 @@
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    padding: 25px 25px 10px 25px;
+    padding: 25px 25px 50px 25px;
     position: relative;
     top: 0;
     font-family: Roboto, sans-serif, monospace;
@@ -1111,7 +1111,6 @@
 }
 
 .book #submit {
-    margin-top:-45px;
     margin-left: auto;
     margin-right: auto;
 }

@@ -13,8 +13,7 @@ Users can also sign up to their Mail List, subscribe to their Newsletter and are
 
 ### How does it work?
 
-This website uses the AngularJS Framework to bind data to the view and control behaviour behind the DOM.
-It it styled using a mixture of Bootstrap and Flexbox.
+This website uses the AngularJS Framework to bind data to the view and control behaviour behind the DOM. It it styled using a mixture of Bootstrap and Flexbox.
 
 ## Features
 
@@ -31,13 +30,13 @@ It it styled using a mixture of Bootstrap and Flexbox.
 - Book 'The Monkees' for commerical gigs
 - Connect with 'The Monkees' Social Media presence
 - Contact them directly via phone, email and Skype
-- Responsive design with mobile use in mind
+- View the site easily from any device due to the responsive design with mobile use in mind
 
 ### Features Left to Implement
 
-1. An iTunes Search Bar that allows Users to input specific songs by 'The Monkees' and sample and purchase them.
+- An iTunes Search Bar that allows Users to input specific songs by 'The Monkees' and sample and purchase them.
 
-2. 'Previous Image' and 'Next Image' links on 'image.html' that Users can use to navigate through the Photo section easier.
+- 'Previous Image' and 'Next Image' links on 'image.html' that Users can use to navigate through the Photo section easier.
 
 
 ## Tech Used
@@ -55,16 +54,16 @@ It it styled using a mixture of Bootstrap and Flexbox.
 
 I used a variety of methods to ensure the responsiveness of my website. These included:
 - **Mobile First Design**
-
+    - **Mobile First Design** is a fundamental part of designing for a multi screen world. I build this website with mobile space, functionality and utility as first priority.
 
 - [**Bootstrap**](http://getbootstrap.com/)
-I used the **Bootstrap** Framework to create tried and trusted sleek, responsive elements.
+    - I used the **Bootstrap** Framework to create tried and trusted sleek, responsive elements.
 
 - **Flexbox**
-I used **Flexbox** display to ensure for simple yet powerful design layouts.
+    - I used **Flexbox** display for simple yet powerful design layouts that ensure responsiveness.
 
 - **Media Queries**
-I spent a lot of time writing and re-writing **Media Queries** to optimize the responsiveness of my website based on screen size. It can be a meticulous and tiring process, but is more than worth it to have that perfect resize.
+    - I spent a lot of time writing and re-writing **Media Queries** to optimize the responsiveness of my website based on screen size. It can be a meticulous and tiring process, but is more than worth it to have that perfect resize.
 
 ### Testing
 
