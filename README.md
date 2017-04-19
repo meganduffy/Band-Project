@@ -81,7 +81,7 @@ I used a variety of methods to test the responsiveness of my website. These incl
 ## Contributing
 
 ### Getting the code up and running
-1. Firstly you will need to clone this repository by running the ```git clone <project's Github URL>``` command
+1. Firstly you will need to clone this repository by running the ```git clone https://github.com/meganduffy/Band-Project.git``` command
 2. After you've that you'll need to make sure that you have **npm** and **bower** installed
   1. You can get **npm** by installing Node from [here](https://nodejs.org/en/)
   2. Once you've done this you'll need to run the following command:
