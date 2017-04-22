@@ -52,8 +52,7 @@ bandApp.controller("MusicController", ["$scope", "monkees", "monkeeitunes", func
 		$scope.numMonkeeResults = data.resultCount;
 	});
 
-    //show about section when ABOUT US button clicked
-
+    //toggle about section when ABOUT US button clicked
     $('#about-btn').click(function() {
         $('#musictop').toggleClass('noabout');
         $('h1:first').toggleClass('abouttitle');
@@ -166,7 +165,7 @@ bandApp.controller("MailModalController", function($scope, $location) {
 		$scope.submitted= false;
 
 		if($scope.mailform.$valid) {
-			//remove modal from window when form has been submitted
+			//toggle modal from window when form has been submitted
 			$("#mailmodal").modal("toggle");
 			$scope.submitted= true;
 			$location.path("/mailconfirm");
@@ -187,7 +186,7 @@ bandApp.controller("SubModalController", function($scope, $location) {
 		$scope.submitted=false;
 
 		if($scope.subscribeform.$valid) {
-			//remove modal from window when form has been submitted
+			//toggle modal from window when form has been submitted
 			$("#subscribemodal").modal("toggle");
 			$scope.submitted=true;
 			$location.path("/subscribeconfirm")
@@ -212,7 +211,7 @@ bandApp.controller("iTunesController", function($scope, $http) {
 		}).then(onSearchComplete, onError)
 	};
 
-	//strore data for use within the $scope
+	//store data for use within the $scope
 	var onSearchComplete = function(response) {
 
 		$scope.data = response.data;
