@@ -116,11 +116,12 @@
 							<div class="col-sm-6 form-group" ng-class="{ 'has-error': BookForm.date.$invalid && BookForm.date.$touched}">
 
 								<label for="date">Event Date: </label>
-								<input class="form-control" type="date" name="date" id="date" ng-model="user.date" required />
+								<input class="form-control datepicker" type="date" name="date" id="date" ng-model="user.date" required />
 
 								<!-- error message -->
 								<div class="col-sm-6 form-group alert" ng-messages="BookForm.date.$error" ng-if="BookForm.date.$touched && BookForm.date.$invalid" role="alert">
 									<div ng-message="required">Required Field</div>
+                                    <div ng-message="pattern">If entering manually, input yyyy/mm/dd</div>
 								</div>
 							</div>
 

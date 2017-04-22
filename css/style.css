@@ -861,22 +861,22 @@
 }
 
 .contact #insta {
-    background: url(../../media/img/big-insta.png) center;
-    background-size: cover;
-}
-
-.contact #insta:hover {
     background: url(../../media/img/invertig.png) center;
     background-size: cover;
 }
 
+.contact #insta:hover {
+    background: url(../../media/img/big-insta.png) center;
+    background-size: cover;
+}
+
 .contact #youtube {
-    background: url(../../media/img/big-youtube2.png) center;
+    background: url(../../media/img/invertyt.png) center;
     background-size: cover;
 }
 
 .contact #youtube:hover {
-    background: url(../../media/img/invertyt.png) center;
+    background: url(../../media/img/big-youtube2.png) center;
     background-size: cover;
 }
 
@@ -1115,9 +1115,15 @@
     margin-right: auto;
 }
 
-.alert {
-    font-size: 10px;
-    color: #f00;
+.book form#BookForm .alert {
+    font-size: 15px;
+    color:#fff;
+    margin-bottom: -20px !important;
+    padding: 10px 10px;
+}
+
+.book form#BookForm .alert div {
+    width: 270px !important;
 }
 
 /*------------------------------------------------------------------------
@@ -1322,6 +1328,14 @@
     text-decoration: underline;
     margin-bottom: 5px;
     margin-top: 10px;
+}
+
+.alert {
+    font-size:15px;
+    color: #f00;
+    text-align:left;
+    margin-bottom: -20px !important;
+    padding:0;
 }
 
 /* 7.3 SUBSCRIBE MODAL*/

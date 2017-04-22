@@ -54,9 +54,9 @@
 							<label for="email">Email</label>
 						</div>
 						<div class="col-sm-6 form-group" ng-class="{'has-error': subscribeform.email.$invalid && subscribeform.email.$touched}" id="emailin">
-							<input name="email-sub" class="form-control" type="email" placeholder="joe@joebloggs.com" ng-model="user.email" required />
+							<input name="emailsub" class="form-control" type="email" placeholder="joe@joebloggs.com" ng-model="user.email" required />
 
-							<div class=" form-group alert" ng-messages="subscribeform.email.$error" ng-if="subscribeform.email.$touched && subscribeform.email.$invalid" role="alert">
+							<div class=" form-group alert" ng-messages="subscribeform.emailsub.$error" ng-if="subscribeform.emailsub.$touched && subscribeform.emailsub.$invalid" role="alert">
 							<div ng-message="required">Required Field</div>
 							</div>	
 						</div>
