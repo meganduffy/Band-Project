@@ -1,40 +1,40 @@
-
 <div class="itunessearch" ng-controller="iTunesController">
 
-<!-- show an error if there is a search error-->
-{{ error }}
+    <!-- show an error if there is a search error-->
+    {{ error }}
 
-<!-- add form, use ng-submit directive to call search iTunes, pass the artist-->
+    <!-- add form, use ng-submit directive to call search iTunes, pass the artist-->
 
-	<form name="search" ng-submit="searchiTunes(artist)">
+    <form name="search" ng-submit="searchiTunes(artist)">
 
-<!-- Artist/band required, use the ng-model directive to pass the artist name back into the controller/model-->
+        <!-- Artist/band required, use the ng-model directive to pass the artist name back into the controller/model-->
 
-		<input id="itunes-input" type="search" required placeholder="eg. The Monkees" ng-model="artist" />
-		<input type="submit" value="Search" class="btn btn-sm btn-danger" id="itunes-search-button" />
-	</form>
+        <input id="itunes-input" type="search" required placeholder="eg. The Monkees" ng-model="artist"/>
+        <input type="submit" value="Search" class="btn btn-sm btn-danger" id="itunes-search-button"/>
+    </form>
 
-<!-- ng-show directive to decide when to show results-->
+    <!-- ng-show directive to decide when to show results-->
 
-	<table ng-show="songs">
-		<thead>
-			<tr>
-				<th>Album Artwork</th>
-				<th>Track</th>
-				<th>Album</th>
-				<th>Preview</th>
-				<th>Buy Now</th>
-			</tr>
-		</thead>
-		<tbody>
-			<!-- ng-repeat directive to loop over each song in the songs list. -->
-			<tr ng-repeat="song in songs">
-				<td><img ng-src="{{song.artworkUrl100}}" alt="{{song.collectionName}}" /></td>
-				<td>{{song.trackName}}</td>
-				<td>{{song.collectionName}}</td>
-				<td><a href="{{song.previewUrl}}" target="_blank" class="btn btn-default btn-sm previewbutton">Play Preview</a></td>
-				<td><a href="{{song.trackViewUrl}}" target="_blank" class="btn btn-danger buybutton">Buy Now</a></td>
-			</tr>
-		</tbody>
-	</table>
-</div>
+    <table ng-show="songs">
+        <thead>
+        <tr>
+            <th>Album Artwork</th>
+            <th>Track</th>
+            <th>Album</th>
+            <th>Preview</th>
+            <th>Buy Now</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- ng-repeat directive to loop over each song in the songs list. -->
+        <tr ng-repeat="song in songs">
+            <td><img ng-src="{{ song.artworkUrl100 }}" alt="{{ song.collectionName }}"/></td>
+            <td>{{ song.trackName }}</td>
+            <td>{{ song.collectionName }}</td>
+            <td><a href="{{ song.previewUrl }}" target="_blank" class="btn btn-default btn-sm previewbutton">Play
+                Preview</a></td>
+            <td><a href="{{ song.trackViewUrl }}" target="_blank" class="btn btn-danger buybutton">Buy Now</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div><!--/.itunessearch div-->

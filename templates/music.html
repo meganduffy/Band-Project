@@ -5,25 +5,25 @@
 		<div class="header">
 			<h1>{{headerTitle}}</h1>
             <h4>{{ headerSubtitle }}</h4>
-		</div>
+		</div><!--/.header div-->
 
 
 		<div class="paragraph" style="display:none;">
 			<div class="about">
 				<p>Between October 1966 and November 1967, the Monkees put out four albums. All four went to No. 1. The band had six Top 5 singles -  “Daydream Believer” has been recorded by a wide range of musicians, including Paul Westerberg of the Replacements, the Four Tops, Britpop act Robson & Jerome, dance pop singers Atomic Kitten, Canadian songstress Ann Murray and Japanese all-girl rockers Shonen Knife.</p>
-			</div>
+			</div><!--/.about div-->
 
 			<div class="sound" style="display:none">
 				<p>The Monkees use a strong rhythm section of double bass and drums as the anchor for a lead section of brass instruments such as trumpets and trombones. Their music creates a "visceral response" such as feet-tapping or head-nodding to get everyone swinging and dancing the night away!</p>
 				<p>You'll be foxtrotting your way to the grooviest night of your life!</p>
 				<p><span>Just hear us out...</span></p>
-			</div>
-		</div>
+			</div><!--/.sound div-->
+		</div><!--/.paragraph div-->
         <div class="about-buttons">
             <a class="btn btn-default btn-lg about-btn" id="about-btn">ABOUT US</a>
 		    <a class="btn btn-default book" href="#/book">BOOK NOW</a>
-        </div>
-	</div>
+        </div><!--/.about-buttons div-->
+	</div><!--/#musictop div-->
 
 	<div class="bigbar">
 		<ul class="nav nav-tabs nav-justified">
@@ -34,76 +34,20 @@
 
 		<div class="tab-content">
 			<div id="buymusic" class="tab-pane fade">
-				<h1>{{musicTitle}}</h1>
-				<p>{{musicSubtitle}}</p>
-
-				<div class="itunes-table">
-					<table>
-						<thead>
-							<tr>
-								<th>Album Artwork</th>
-								<th>Track</th>
-								<th>Album</th>
-								<th class="preview">Preview</th>
-								<th>Buy Now</th>
-							</tr>
-						</thead>
-
-						<tbody>
-							<tr>
-								<td class="space"></td>
-								<td class="space"></td>
-								<td class="space"></td>
-								<td class="space"></td>
-								<td class="space"></td>
-							</tr>
-							<tr ng-repeat="info in monkeeInfo | filter : {wrapperType : 'track'}">
-								<td><img ng-src="{{info.artworkUrl100}}" alt="{{info.collectionName}}" /></td>
-								<td>{{info.trackName}}</td>
-								<td class="album">{{info.collectionName}}</td>
-								<td><a href="{{info.previewUrl}}" target="_blank" class="btn btn-default btn-sm previewbutton">Play Preview</a></td>
-								<td><a href="{{info.trackViewUrl}}" target="_blank" class="btn btn-danger buybutton">Buy Now</a></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
+				<music-content></music-content>
+			</div><!--/#buymusic div-->
 
 			<div id="video" class="tab-pane fade">
-				<h1>{{videoTitle}}</h1>
-				<p>{{videoSubtitle}}</p>
-				<iframe width="640" height="380" src="https://www.youtube.com/embed/xvqeSJlgaNk" frameborder="0" allowfullscreen></iframe>
-				
-				<iframe width="640" height="480" src="https://www.youtube.com/embed/kpp-Ry2ZNhY" frameborder="0" allowfullscreen></iframe>
-
-				<iframe width="640" height="480" src="https://www.youtube.com/embed/sUzs5dlLrm0" frameborder="0" allowfullscreen></iframe>
-
-				<h2 class="seemore">{{seemoreTitle}}</h2>
-				<h3 class="seemore">{{seemoreSubtitle}}</h3>
-				<a href="https://www.youtube.com/user/themonkees" target="_blank"><div class="ytplug"></div></a>
-			</div>
+				<video-content></video-content>
+			</div><!--/#video div-->
 
 			<div id="photos" class="tab-pane fade in active">
-				<h1>{{photoTitle}}</h1>
-				<p>{{photoSubtitle}}
-                    </br>
-				   {{photoSubtitleInfo}}</p>
-
-				<div class="photogrid">
-					<div class="photo" ng-repeat="monkee in myMonkee">
-						<a ng-href="#/music/{{$index}}">
-							<img ng-src="{{monkee.image}}" alt="monkee image" target="_self" />
-						</a>
-					</div>
-				</div>
-				<h2 class="seemore">{{seemoreTitle}}</h2>
-				<h3 class="seemore">{{seemoreSubtitle}}</h3>
-				<a href="https://www.instagram.com/themonkees/" target="_blank"><div class="igplug"></div></a>
-			</div>
-		</div>
-	</div>
+                <photos-content></photos-content>
+			</div><!--/#photos div-->
+		</div><!--/.tab-content div-->
+	</div><!--/.bigbar div-->
 	
-</div> 
+</div><!--/.music div-->
 
 
 <monkees-footer></monkees-footer>

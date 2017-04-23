@@ -1279,6 +1279,10 @@
     cursor: pointer;
 }
 
+.navbar-default .dropdown:hover .dropdown-menu {
+    display:block;
+}
+
 .navbar-default .dropdown.open .dropdown-menu li a:hover {
     font-weight: 600
 }

@@ -1,0 +1,34 @@
+<h1>{{ musicTitle }}</h1>
+<p>{{ musicSubtitle }}</p>
+
+<div class="itunes-table">
+    <table>
+        <thead>
+        <tr>
+            <th>Album Artwork</th>
+            <th>Track</th>
+            <th>Album</th>
+            <th class="preview">Preview</th>
+            <th>Buy Now</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td class="space"></td>
+            <td class="space"></td>
+            <td class="space"></td>
+            <td class="space"></td>
+            <td class="space"></td>
+        </tr>
+        <tr ng-repeat="info in monkeeInfo | filter : {wrapperType : 'track'}">
+            <td><img ng-src="{{ info.artworkUrl100 }}" alt="{{ info.collectionName }}"/></td>
+            <td>{{ info.trackName }}</td>
+            <td class="album">{{ info.collectionName }}</td>
+            <td><a href="{{ info.previewUrl }}" target="_blank" class="btn btn-default btn-sm previewbutton">Play
+                Preview</a></td>
+            <td><a href="{{ info.trackViewUrl }}" target="_blank" class="btn btn-danger buybutton">Buy Now</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div><!--/.itunes-table div-->
