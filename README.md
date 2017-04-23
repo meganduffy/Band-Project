@@ -66,7 +66,7 @@ I used a variety of methods to ensure the responsiveness of my website. These in
 - **Flexbox**
     - I used **Flexbox** display for simple yet powerful design layouts that ensure responsiveness. **Flexbox** can come in very handy when you need to devise seemingly straight-forward designs (which easily become tricky using more traditional methods) with just a few lines of code. For example, in this project I utilized **Flexbox** to create a calendar using a gird of date 'notes'. Each section is held together and resizes with screen size thanks to **Flexbox**:
         </br></br>**_Both Calendar Grid and Calendar Date Notes Created with Flexbox_**</br>
-        ![Flex Calendar Display](/screenshots/Project1-flexbox-verticaldisplay.png?raw=true "Vertical Flex Display")
+        ![Flex Calendar Display](/screenshots/Project1-flexbox-calendar.png?raw=true "Vertical Flex Display")
 
 - **Media Queries**
     - I spent a lot of time writing and re-writing **Media Queries** to optimize the responsiveness of my website based on screen size. It can be a meticulous and tiring process, but is more than worth it to have that perfect resize. Font sizes, relatively positioned elements, margins, heights and text alignments all caused trouble in keeping the flow of the website consistent on resizes and required **Media Queries** to iron out the kinnks.
