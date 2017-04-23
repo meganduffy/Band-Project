@@ -5,30 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc12695a-939d-46f0-9164-03013d052d6b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/Project1-RDM.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/Project1-blisk-ipadairretina.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/Project1-bootstrap-collapsednav.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/Project1-bootstrap-fullnav.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/Project1-flexbox-calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/Project1-mediaqueries-1366px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/Project1-mediaqueries-390px.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller.js" afterPath="$PROJECT_DIR$/js/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/directive.js" afterPath="$PROJECT_DIR$/js/directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/service.js" afterPath="$PROJECT_DIR$/js/service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/book.html" afterPath="$PROJECT_DIR$/templates/book.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/confirmations/bookconfirm.html" afterPath="$PROJECT_DIR$/templates/confirmations/bookconfirm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/confirmations/mailconfirm.html" afterPath="$PROJECT_DIR$/templates/confirmations/mailconfirm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/confirmations/subscribeconfirm.html" afterPath="$PROJECT_DIR$/templates/confirmations/subscribeconfirm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/contact.html" afterPath="$PROJECT_DIR$/templates/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/directives/iTunesSearch.html" afterPath="$PROJECT_DIR$/templates/directives/iTunesSearch.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/directives/maillist.html" afterPath="$PROJECT_DIR$/templates/directives/maillist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/directives/monkees-footer.html" afterPath="$PROJECT_DIR$/templates/directives/monkees-footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/directives/monkees-nav.html" afterPath="$PROJECT_DIR$/templates/directives/monkees-nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/directives/music-content.html" afterPath="$PROJECT_DIR$/templates/directives/music-content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/directives/photos-content.html" afterPath="$PROJECT_DIR$/templates/directives/photos-content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/directives/subscribe.html" afterPath="$PROJECT_DIR$/templates/directives/subscribe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/directives/video-content.html" afterPath="$PROJECT_DIR$/templates/directives/video-content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/event.html" afterPath="$PROJECT_DIR$/templates/event.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/gigs.html" afterPath="$PROJECT_DIR$/templates/gigs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="$PROJECT_DIR$/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/image.html" afterPath="$PROJECT_DIR$/templates/image.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/music.html" afterPath="$PROJECT_DIR$/templates/music.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mediaqueries.css" afterPath="$PROJECT_DIR$/css/mediaqueries.css" />
     </list>
     <ignored path="Band-Project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +34,32 @@
     <favorites_list name="Band-Project" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Project1-blisk-ipadairretina.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/screenshots/Project1-blisk-ipadairretina.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Project1-RDM.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/screenshots/Project1-RDM.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,11 +73,8 @@
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/firebase-debug.log" />
         <option value="$USER_HOME$/To-Do/README.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/mediaqueries.css" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/controller.js" />
         <option value="$PROJECT_DIR$/js/service.js" />
         <option value="$PROJECT_DIR$/templates/confirmations/mailconfirm.html" />
         <option value="$PROJECT_DIR$/templates/confirmations/subscribeconfirm.html" />
@@ -88,6 +96,9 @@
         <option value="$PROJECT_DIR$/templates/music.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/templates/directives/monkees-nav.html" />
+        <option value="$PROJECT_DIR$/js/controller.js" />
+        <option value="$PROJECT_DIR$/css/mediaqueries.css" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -161,6 +172,9 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\megan\Band-Project\screenshots" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\megan\Band-Project\css\vendor" />
       <recent name="C:\Users\megan\Band-Project\js\vendor" />
@@ -467,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492954316021</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="dropdown menu appears on hover, move music.html  nav-tab content to directives, add closing tags to all html files, reformat all files and remove any commented out code">
+      <created>1492959404937</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1492959404937</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -530,28 +551,14 @@
     <MESSAGE value="Add specific date format alert to book.html date  input for firefox browsers and change alert style.  Also add validation to subscribe form in conect.html. Remove unused vendor files" />
     <MESSAGE value="add link to &quot;Subscribe&quot; text in footer, optimize controller.js comments and remove unused file" />
     <MESSAGE value="remove commented out lines from css files" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove commented out lines from css files" />
+    <MESSAGE value="dropdown menu appears on hover, move music.html  nav-tab content to directives, add closing tags to all html files, reformat all files and remove any commented out code" />
+    <option name="LAST_COMMIT_MESSAGE" value="dropdown menu appears on hover, move music.html  nav-tab content to directives, add closing tags to all html files, reformat all files and remove any commented out code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/mediaqueries.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2941">
-          <caret line="173" column="17" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19278">
-          <caret line="1134" column="0" selection-start-line="1134" selection-start-column="0" selection-end-line="1137" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -662,14 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="83" column="124" selection-start-line="83" selection-start-column="124" selection-end-line="83" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/vendor/jquery-ui.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -702,26 +701,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/mediaqueries.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="625" column="2" selection-start-line="625" selection-start-column="0" selection-end-line="625" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="225" column="6" selection-start-line="225" selection-start-column="4" selection-end-line="225" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -894,10 +877,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="1281" column="31" selection-start-line="1281" selection-start-column="31" selection-end-line="1281" selection-end-column="31" />
+        <state relative-caret-position="121">
+          <caret line="755" column="8" selection-start-line="755" selection-start-column="4" selection-end-line="755" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mediaqueries.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6564">
+          <caret line="388" column="24" selection-start-line="388" selection-start-column="24" selection-end-line="388" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshots/Project1-RDM.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshots/Project1-blisk-ipadairretina.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
           <folding />
         </state>
       </provider>

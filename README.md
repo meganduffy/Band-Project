@@ -57,26 +57,40 @@ I used a variety of methods to ensure the responsiveness of my website. These in
     - **Mobile First Design** is a fundamental part of designing for a multi screen world. I build this website with mobile space, functionality and utility as first priority.
 
 - [**Bootstrap**](http://getbootstrap.com/)
-    - I used the **Bootstrap** Framework to create tried and trusted sleek, responsive elements.
+    - I used the **Bootstrap** Framework to create tried and trusted sleek, responsive elements. For example, Bootstrap makes it simple to implement stylish a collapsible navbar which responds to screen size:
+        </br></br>**_Uncollapsed navabr on large screen_**</br>
+        ![Uncollapsed Navbar](/screenshots/Project1-bootstrap-fullnav.png?raw=true "Uncollapsed Navbar")
+        </br></br>**_Collapsed navbar on small screen_**</br>
+        ![Collapsed Navbar](/screenshots/Project1-bootstrap-collapsednav.png?raw=true "Collapsed Navbar")
 
 - **Flexbox**
-    - I used **Flexbox** display for simple yet powerful design layouts that ensure responsiveness.
+    - I used **Flexbox** display for simple yet powerful design layouts that ensure responsiveness. **Flexbox** can come in very handy when you need to devise seemingly straight-forward designs (which easily become tricky using more traditional methods) with just a few lines of code. For example, in this project I utilized **Flexbox** to create a calendar using a gird of date 'notes'. Each section is held together and resizes with screen size thanks to **Flexbox**:
+        </br></br>**_Both Calendar Grid and Calendar Date Notes Created with Flexbox_**</br>
+        ![Flex Calendar Display](/screenshots/Project1-flexbox-verticaldisplay.png?raw=true "Vertical Flex Display")
 
 - **Media Queries**
-    - I spent a lot of time writing and re-writing **Media Queries** to optimize the responsiveness of my website based on screen size. It can be a meticulous and tiring process, but is more than worth it to have that perfect resize.
+    - I spent a lot of time writing and re-writing **Media Queries** to optimize the responsiveness of my website based on screen size. It can be a meticulous and tiring process, but is more than worth it to have that perfect resize. Font sizes, relatively positioned elements, margins, heights and text alignments all caused trouble in keeping the flow of the website consistent on resizes and required **Media Queries** to iron out the kinnks.
+        </br></br>**_Media Page with a width of 1366px_**</br></br>
+        ![Media Width 1366](/screenshots/Project1-mediaqueries-1366px.png?raw=true "Media Width 1366")
+        </br></br>**_Media Page with a width of 390px_**</br></br>
+        ![Media Width 390](/screenshots/Project1-mediaqueries-390px.png?raw=true "Media Width 390")
 
 ### Testing
 
 I used a variety of methods to test the responsiveness of my website. These included:
 
 - [Firefox Responsive Design Mode](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode)
-    - An essential tool to any developer looking to test the responsiveness of their website, **Firefox Responsive Design Mode** makes it fast and effortless to switch between screen sizes.
+    - This was an essential tool to testing the responsiveness of my website, **Firefox Responsive Design Mode** makes it fast and effortless to switch between screen sizes and devices.
+        </br></br>**_Firefox Responsive Design Mode simulating an Apple iPhone 6s_**</br>
+        ![Firefox RDM](/screenshots/Project1-RDM.png?raw=true "FirefoxRDM")
 
 - [Blisk](https://blisk.io/)
-    - A browser for web developers, **Blisk**, comes prepacked with fully emulated phones and tablets. It shows real time changes to files so you can see exactly how the changes to your file are affecting your site.
+    - A browser for web developers, **Blisk**, comes prepacked with fully emulated phones and tablets. It shows real time changes to files so I could see exactly how the changes to my code were affecting my site.
+        </br></br>**_Blisk simulating an iPad Air Retina_**</br></br>
+        ![Blisk](/screenshots/Project1-blisk-ipadairretina.png?raw=true "Blisk")
 
 - **Testing In Different Environments**
-    - There is no simulator that could replace simply testing your website in as many enviornments as possible. Using as many different browsers and devices as I could get my hands on was key to weening out design flaws. **Testing in Different Enviornments** is a integral part of garanteeing your website functions correctly for every User.
+    - There is no simulator that could replace simply testing my website in as many environments as possible. Using as many different browsers and devices as I could get my hands on was key to weening out design flaws. **Testing in Different Environments** was a integral part of guaranteeing my website functions correctly for every User.
 
 ## Contributing
 
