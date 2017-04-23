@@ -94,10 +94,10 @@
     text-transform: uppercase;
     color: #fff;
     /*animation*/
-    animation:blurinsmall 2s forwards;
-    -webkit-animation:blurinsmall 2s forwards;
-    -moz-animation:blurinsmall 2s forwards;
-    -o-animation:blurinsmall 2s forwards;
+    animation: blurinsmall 2s forwards;
+    -webkit-animation: blurinsmall 2s forwards;
+    -moz-animation: blurinsmall 2s forwards;
+    -o-animation: blurinsmall 2s forwards;
 }
 
 .home .header .btn-music {
@@ -121,7 +121,9 @@
     100% {
         opacity: 1;
     }
-}@-webkit-keyframes blurinbig {
+}
+
+@-webkit-keyframes blurinbig {
     0% {
         font-size: 2vw;
         opacity: 0;
@@ -129,7 +131,9 @@
     100% {
         opacity: 1;
     }
-}@-moz-keyframes blurinbig {
+}
+
+@-moz-keyframes blurinbig {
     0% {
         font-size: 2vw;
         opacity: 0;
@@ -137,7 +141,9 @@
     100% {
         opacity: 1;
     }
-}@-o-keyframes blurinbig {
+}
+
+@-o-keyframes blurinbig {
     0% {
         font-size: 2vw;
         opacity: 0;
@@ -155,7 +161,9 @@
     100% {
         opacity: 1;
     }
-}@-webkit-keyframes blurinsmall {
+}
+
+@-webkit-keyframes blurinsmall {
     0% {
         font-size: 0.1em;
         opacity: 0;
@@ -163,7 +171,9 @@
     100% {
         opacity: 1;
     }
-}@-moz-keyframes blurinsmall {
+}
+
+@-moz-keyframes blurinsmall {
     0% {
         font-size: 0.1em;
         opacity: 0;
@@ -171,7 +181,9 @@
     100% {
         opacity: 1;
     }
-}@-o-keyframes blurinsmall {
+}
+
+@-o-keyframes blurinsmall {
     0% {
         font-size: 0.1em;
         opacity: 0;
@@ -1117,7 +1129,7 @@
 
 .book form#BookForm .alert {
     font-size: 15px;
-    color:#fff;
+    color: #fff;
     margin-bottom: -20px !important;
     padding: 10px 10px;
 }
@@ -1190,7 +1202,9 @@
     100% {
         opacity: 1;
     }
-}@-webkit-keyframes bigconfirm {
+}
+
+@-webkit-keyframes bigconfirm {
     0% {
         font-size: 0;
         opacity: 0;
@@ -1199,7 +1213,9 @@
     100% {
         opacity: 1;
     }
-}@-moz-keyframes bigconfirm {
+}
+
+@-moz-keyframes bigconfirm {
     0% {
         font-size: 0;
         opacity: 0;
@@ -1208,7 +1224,9 @@
     100% {
         opacity: 1;
     }
-}@-o-keyframes bigconfirm {
+}
+
+@-o-keyframes bigconfirm {
     0% {
         font-size: 0;
         opacity: 0;
@@ -1225,7 +1243,7 @@
 
 /*7. DIRECTIVES*/
 
-/* 7.1 NAVIGATIONBAR */
+/* 7.1 NAVIGATION BAR */
 .navbar-default {
     background-color: #fff;
     opacity: 0.5;
@@ -1331,11 +1349,11 @@
 }
 
 .alert {
-    font-size:15px;
+    font-size: 15px;
     color: #f00;
-    text-align:left;
+    text-align: left;
     margin-bottom: -20px !important;
-    padding:0;
+    padding: 0;
 }
 
 /* 7.3 SUBSCRIBE MODAL*/
@@ -1360,7 +1378,7 @@
     width: 100px;
 }
 
-/* 7.4 MAILLIST MODAL */
+/* 7.4 MAIL LIST MODAL */
 
 .mail-modal {
     color: #000;
@@ -1419,4 +1437,4 @@
 
 /*------------------------------------------------------------------------
 --------------------------------------------------------------------------
---------------------------------------------------------------------------
+------------------------------------------------------------------------*/

@@ -15,7 +15,7 @@
 		7.1 Navigation Bar
 		7.2 Footer 
 		7.3 Subscribe Modal
-		7.4 Maillist Modal
+		7.4 Mail List Modal
 		7.5 iTunes Search*/
 
 /*------------------------------------------------------------------------
@@ -26,79 +26,78 @@
 
 @media (max-width: 480px) {
 
-	.home .header h1 {
-		font-size:3.7em;
-		line-height:90px;
-	}
+    .home .header h1 {
+        font-size: 3.7em;
+        line-height: 90px;
+    }
 }
 
-@media(min-width:768px) and (min-height:1024px) {
+@media (min-width: 768px) and (min-height: 1024px) {
 
-	.home .header {
-		height:40vh;
-	}
+    .home .header {
+        height: 40vh;
+    }
 
-	.home .jumbotron {
-		height:40vh;
-	}
+    .home .jumbotron {
+        height: 40vh;
+    }
 
-	.jumbotron .container {
-		position:relative;
-		top:9vh;
-	}
+    .jumbotron .container {
+        position: relative;
+        top: 9vh;
+    }
 }
 
-@media (min-width:1200px) {
-	.home .header {
-		height:49em;
-	}
+@media (min-width: 1200px) {
+    .home .header {
+        height: 49em;
+    }
 
-	.home .header .container {
-		position:relative;
-		top:90px;
-	}
+    .home .header .container {
+        position: relative;
+        top: 90px;
+    }
 
-	.home .header h1 {
-		font-size:9em;
-		margin-bottom:50px;
-	}
+    .home .header h1 {
+        font-size: 9em;
+        margin-bottom: 50px;
+    }
 
-	.home .header p {
-		font-size:1.5em;
-		margin-bottom:80px;
-	}
+    .home .header p {
+        font-size: 1.5em;
+        margin-bottom: 80px;
+    }
 
-	.home .header .btn-music {
-		top:50px;
-	}
+    .home .header .btn-music {
+        top: 50px;
+    }
 
-	.home .header .btn-book {
-		top:50px;
-	}
+    .home .header .btn-book {
+        top: 50px;
+    }
 
-	/*~~~animation~~~*/
-	@keyframes blurinbig {
-		0% {
-			font-size:2vw;
-			opacity:0;
-		}
-		100% {
-			opacity:1;
-		}
-	}
+    /*~~~animation~~~*/
+    @keyframes blurinbig {
+        0% {
+            font-size: 2vw;
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 
-	.home .main h1 {
-		font-size:4em;
-	}
+    .home .main h1 {
+        font-size: 4em;
+    }
 
-	.home .jumbotron {
-		height:19em;
-		/*text-align:right;*/
-	}
+    .home .jumbotron {
+        height: 19em;
+    }
 
-	.home .jumbotron .container {
-		bottom:10px;
-	}
+    .home .jumbotron .container {
+        bottom: 10px;
+    }
 }
 
 /*------------------------------------------------------------------------
@@ -107,74 +106,71 @@
 
 /*2. MUSIC*/
 
+@media (max-width: 500px) {
 
+    .music .paragraph .about p, .sound p {
+        width: 70%;
+    }
 
-@media (max-width:500px) {
+    #buymusic .itunes-table th {
+        font-size: 1.5em;
+    }
 
-	.music .paragraph .about p, .sound p {
-		width:70%;
-	}
+    #buymusic .itunes-table td {
+        font-size: 0.8em;
+    }
 
-	#buymusic .itunes-table th {
-		font-size:1.5em;
-	}
+    #buymusic .itunes-table img {
+        height: 40px;
+        width: 40px;
+    }
 
-	#buymusic .itunes-table td {
-		font-size:0.8em;
-	}
+    #buymusic .itunes-table .previewbutton {
+        font-size: 0.6em;
+        font-weight: bold;
+    }
 
-	#buymusic .itunes-table img {
-		height:40px;
-		width:40px;
-	}
+    #buymusic .itunes-table .buybutton {
+        font-size: 0.5em;
+        font-weight: bold;
+    }
 
-	#buymusic .itunes-table .previewbutton {
-		font-size:0.6em;
-		font-weight: bold;
-	}
-
-	#buymusic .itunes-table .buybutton {
-		font-size:0.5em;
-		font-weight: bold;
-	}
-
-	#video iframe {
-		width:320px;
-		height:200px;
-	}
+    #video iframe {
+        width: 320px;
+        height: 200px;
+    }
 }
 
-@media (min-width:768px) and (min-height:546px) {
+@media (min-width: 768px) and (min-height: 546px) {
 
-	.music .header h1 {
-		font-size:6em;
-	}
+    .music .header h1 {
+        font-size: 6em;
+    }
 }
 
-@media (min-width:1280px)  and (min-height:546px){
-	.music .header h1 {
-		font-size:8.5em;
+@media (min-width: 1280px)  and (min-height: 546px) {
+    .music .header h1 {
+        font-size: 8.5em;
 
-	}
+    }
 
-	.music .header h4 {
-		font-size:1.5vw;
-	}
+    .music .header h4 {
+        font-size: 1.5vw;
+    }
 }
 
-@media(min-height:1200px) {
-	.music .music-top {
-		height:60vh;
-	}
+@media (min-height: 1200px) {
+    .music .music-top {
+        height: 60vh;
+    }
 }
-
 
 /*2.5 IMAGE*/
 
-@media (min-height:1000px) {
-	.image-page {
-		height:90vh;
-	}
+@media (min-height: 1000px) {
+    .image-page {
+        height: 90vh;
+    }
 }
 
 /*------------------------------------------------------------------------
@@ -183,123 +179,122 @@
 
 /*3. GIGS*/
 
-@media (max-width:450px) {
-	.gigs .header h1 {
-		font-size:17.5vw;
-	}
+@media (max-width: 450px) {
+    .gigs .header h1 {
+        font-size: 17.5vw;
+    }
 
-	.gigs .header #subhead {
-		font-size:4vw;
-	}
+    .gigs .header #subhead {
+        font-size: 4vw;
+    }
 
-	.gigs .calendar {
-		margin:50px 20px;
-	}
+    .gigs .calendar {
+        margin: 50px 20px;
+    }
 
-	.gigs .calendar .box {
-		width:60%;
-	}
+    .gigs .calendar .box {
+        width: 60%;
+    }
 
-	.gigs .calendar .box .date h3 {
-		font-size:5vw;
-	}
+    .gigs .calendar .box .date h3 {
+        font-size: 5vw;
+    }
 
-	.gigs .calendar .box .where h2 {
-		font-size:6vw;
-	}
+    .gigs .calendar .box .where h2 {
+        font-size: 6vw;
+    }
 
-	#lift {
-		margin-top:50px;
-	}
+    #lift {
+        margin-top: 50px;
+    }
 }
 
-@media (min-width:451px) and (max-width:890px) {
-	.gigs .header h1 {
-		font-size:14vw;
-	}
+@media (min-width: 451px) and (max-width: 890px) {
+    .gigs .header h1 {
+        font-size: 14vw;
+    }
 
-	.gigs .header #subhead {
-		font-size:2vw;
-	}
+    .gigs .header #subhead {
+        font-size: 2vw;
+    }
 
-	.gigs .calendar {
-		margin:50px 20px;
-	}
+    .gigs .calendar {
+        margin: 50px 20px;
+    }
 
-	.gigs .calendar .box {
-		width:40%;
-	}
+    .gigs .calendar .box {
+        width: 40%;
+    }
 
-	.gigs .calendar .box .date h3 {
-		font-size:3vw;
-	}
+    .gigs .calendar .box .date h3 {
+        font-size: 3vw;
+    }
 
-	.gigs .calendar .box .where h2 {
-		font-size:4vw;
-	}
+    .gigs .calendar .box .where h2 {
+        font-size: 4vw;
+    }
 
-	#lift {
-		margin-top:50px;
-	}
+    #lift {
+        margin-top: 50px;
+    }
 }
 
-@media (min-width:768px) {
-	#lift {
-		position:relative;
-		bottom:90px;
-	}
+@media (min-width: 768px) {
+    #lift {
+        position: relative;
+        bottom: 90px;
+    }
 
-	#lift p {
-		margin-bottom:-50px;
-	}
+    #lift p {
+        margin-bottom: -50px;
+    }
 }
 
-@media(min-width:1280px) {
+@media (min-width: 1280px) {
 
-	#lift p {
-		margin-bottom:50px;
-	}
+    #lift p {
+        margin-bottom: 50px;
+    }
 }
 
-@media(min-width:1920px) {
-	.gigs .calendar .box .where h2 {
-		font-size:1.5vw;
-	}
+@media (min-width: 1920px) {
+    .gigs .calendar .box .where h2 {
+        font-size: 1.5vw;
+    }
 }
 
 /*3.1 EVENT*/
 
-@media (min-height:1024px) and (max-height:1479px) {
-	.event {
-		height:100vh;
-	}
+@media (min-height: 1024px) and (max-height: 1479px) {
+    .event {
+        height: 100vh;
+    }
 }
 
-@media (min-height:1480px) {
-	.event {
-		height:80vh;
-	}
+@media (min-height: 1480px) {
+    .event {
+        height: 80vh;
+    }
 }
 
-@media(min-height:1920px) {
-	.event {
-		height:110vh;
-	}
+@media (min-height: 1920px) {
+    .event {
+        height: 110vh;
+    }
 }
 
-@media (max-width:920px) {
+@media (max-width: 920px) {
 
-	.event .details {
-		width:90%;
-	}
+    .event .details {
+        width: 90%;
+    }
 }
 
-@media(min-width:1920px) {
-	.event {
-		height:100vh;
-	}
+@media (min-width: 1920px) {
+    .event {
+        height: 100vh;
+    }
 }
-
 
 /*------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -307,161 +302,164 @@
 
 /*4. CONTACT*/
 
-@media (max-height:565px) {
+@media (max-height: 565px) {
     .contact .header h1 {
-        margin-top:60px;
+        margin-top: 60px;
     }
+
     .contact .header p {
         margin-top: 30px;
     }
-	.contact .header .links {
-		margin-top:90px;
-	}
+
+    .contact .header .links {
+        margin-top: 90px;
+    }
 }
 
-@media (max-width:350px) {
+@media (max-width: 350px) {
     .contact .header h1 {
         margin-top: 80px;
     }
-	#emailcirc p {
-		right:0;
-	}
+
+    #emailcirc p {
+        right: 0;
+    }
 }
 
-@media (max-width:520px) {
+@media (max-width: 520px) {
 
-	.contact .header h1 {
-		font-size:15vw;
-		text-align:center;
-	}
+    .contact .header h1 {
+        font-size: 15vw;
+        text-align: center;
+    }
 
-	.contact .header .links {
-		justify-content: center;
-	}
+    .contact .header .links {
+        justify-content: center;
+    }
 
-	.contact .header .links div {
-		height:80px;
-		width:80px;
-	}
+    .contact .header .links div {
+        height: 80px;
+        width: 80px;
+    }
 
-	.contact .mid-section .plugs {
-		flex-flow:column nowrap;
-	}
+    .contact .mid-section .plugs {
+        flex-flow: column nowrap;
+    }
 
-	.contact .mid-section .plugs .bookbox, .mailbox {
-		min-width:80%;
-	}
+    .contact .mid-section .plugs .bookbox, .mailbox {
+        min-width: 80%;
+    }
 
-	.contact .mid-section .plugs .bookbox h1, .mailbox h1 {
-		font-size:8vw;
-	}	
+    .contact .mid-section .plugs .bookbox h1, .mailbox h1 {
+        font-size: 8vw;
+    }
 
-	.contact .mid-section .plugs .bookbox p, .mailbox p {
-		font-size:4vw;
-	}
+    .contact .mid-section .plugs .bookbox p, .mailbox p {
+        font-size: 4vw;
+    }
 
-	.contact .direct #phone #phonecirc, #skype #skypecirc, #emailcirc #emailcircdiv {
-		height:100px;
-		width:100px;
-	}
+    .contact .direct #phone #phonecirc, #skype #skypecirc, #emailcirc #emailcircdiv {
+        height: 100px;
+        width: 100px;
+    }
 
-	.contact .direct div p {
-		font-size:3.5vw;
-	}
+    .contact .direct div p {
+        font-size: 3.5vw;
+    }
 
-	#skype p {
-		font-size:3.5vw;
-	}
+    #skype p {
+        font-size: 3.5vw;
+    }
 
-	#emailcirc p {
-		font-size:2vw;
-		right:10px;
-	}
+    #emailcirc p {
+        font-size: 2vw;
+        right: 10px;
+    }
 }
 
-@media (max-width:607px) {
+@media (max-width: 607px) {
 
     .contact .header p {
         font-size: 4vw;
-        margin-top:50px;
+        margin-top: 50px;
     }
 
-	.contact .mid-section .newsletter .head {
-		text-align:center;
-		margin-bottom:0px;
-	}
+    .contact .mid-section .newsletter .head {
+        text-align: center;
+        margin-bottom: 0px;
+    }
 }
 
-@media (min-width:521px) and (max-width:820px) {
+@media (min-width: 521px) and (max-width: 820px) {
 
     .contact .header p {
         font-size: 3vw;
     }
 
-	.contact .header .links {
-		justify-content: center;
-	}
+    .contact .header .links {
+        justify-content: center;
+    }
 
-	.contact .header .links div {
-		height:100px;
-		width:100px;
-	}
+    .contact .header .links div {
+        height: 100px;
+        width: 100px;
+    }
 
-	.contact .mid-section .plugs {
-		flex-flow:column nowrap;
-	}
+    .contact .mid-section .plugs {
+        flex-flow: column nowrap;
+    }
 
-	.contact .mid-section .plugs .bookbox, .mailbox {
-		min-width:80%;
-	}
+    .contact .mid-section .plugs .bookbox, .mailbox {
+        min-width: 80%;
+    }
 
-	.contact .mid-section .plugs .bookbox h1, .mailbox h1 {
-		font-size:6vw;
-	}	
+    .contact .mid-section .plugs .bookbox h1, .mailbox h1 {
+        font-size: 6vw;
+    }
 
-	.contact .mid-section .plugs .bookbox p, .mailbox p {
-		font-size:2vw;
-	}
+    .contact .mid-section .plugs .bookbox p, .mailbox p {
+        font-size: 2vw;
+    }
 
-	.contact .direct #phone #phonecirc, #skype #skypecirc, #emailcirc #emailcircdiv {
-		height:100px;
-		width:100px;
-		line-height:100px;
-	}
+    .contact .direct #phone #phonecirc, #skype #skypecirc, #emailcirc #emailcircdiv {
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+    }
 
-	#phone p {
-		font-size:1.6vw;
-	}
+    #phone p {
+        font-size: 1.6vw;
+    }
 
-	#emailcirc p, #skype p {
-		font-size:1.4vw;
-	}
+    #emailcirc p, #skype p {
+        font-size: 1.4vw;
+    }
 
-	#skype p {
-		letter-spacing:1px;
-	}
+    #skype p {
+        letter-spacing: 1px;
+    }
 }
 
-@media (min-width:768px) and (min-height:745px) {
-	.contact .header {
-		height:60vh;
-	}
+@media (min-width: 768px) and (min-height: 745px) {
+    .contact .header {
+        height: 60vh;
+    }
 
-	#phonecirc p {
-		font-size:1vw;
-	}
+    #phonecirc p {
+        font-size: 1vw;
+    }
 }
 
-@media (min-height:760px) and (max-width:850px) {
-	.contact .header {
-		height:50vh;
-	}
+@media (min-height: 760px) and (max-width: 850px) {
+    .contact .header {
+        height: 50vh;
+    }
 }
 
-@media (min-width:1500px) {
-	.contact .header {
-		height:70vh;
-		}
+@media (min-width: 1500px) {
+    .contact .header {
+        height: 70vh;
+    }
 }
 
 /*------------------------------------------------------------------------
@@ -470,38 +468,38 @@
 
 /*5.BOOK*/
 
-@media (min-width:770px) and (max-width:1280px) {
-	.book .page {
-		margin-top:-70px;
-	}
+@media (min-width: 770px) and (max-width: 1280px) {
+    .book .page {
+        margin-top: -70px;
+    }
 }
 
+@media (min-width: 768px) {
+    .book #visa {
+        position: relative;
+        bottom: 15px;
+        left: 25px;
+    }
 
-@media (min-width:768px) {
-	.book #visa {
-		position:relative;
-		bottom:15px;
-		left:25px;
-	}
+    .book #americanexpress {
+        position: relative;
+        bottom: 15px;
+        left: 25px;
+    }
 
-	.book #americanexpress {
-		position:relative;
-		bottom:15px;
-		left:25px;
-	}
-	.book #submit {
-		position: relative;
-		left:220px;
-		top:20px;
-		width:100px;
-	}
+    .book #submit {
+        position: relative;
+        left: 220px;
+        top: 20px;
+        width: 100px;
+    }
 }
 
-@media (max-width:670px) {
-	.book-form #container {
-		width:80%;
-		height:80%;
-	}
+@media (max-width: 670px) {
+    .book-form #container {
+        width: 80%;
+        height: 80%;
+    }
 }
 
 /*------------------------------------------------------------------------
@@ -510,10 +508,10 @@
 
 /*6. CONFIRMS*/
 
-@media (min-height:857px) {
-	.confirm .confirm-body {
-		height:90vh;
-	}
+@media (min-height: 857px) {
+    .confirm .confirm-body {
+        height: 90vh;
+    }
 }
 
 /*------------------------------------------------------------------------
@@ -524,106 +522,105 @@
 
 /*7.1 NAVIGATION BAR */
 
-/*7.2 FOOTER */ 
+/*7.2 FOOTER */
 
-
-@media (max-width:660px) {
-	.footer .container {
-		height:180px;
-	}
+@media (max-width: 660px) {
+    .footer .container {
+        height: 180px;
+    }
 }
 
 /*7.3 SUBSCRIBE MODAL*/
 
-@media (min-width:1050px) {
-	.subscribe-modal .modal-body {
-		font-size:2em;
-		width:100%;
-		margin:0 auto 0 220px;
-	}
+@media (min-width: 1050px) {
+    .subscribe-modal .modal-body {
+        font-size: 2em;
+        width: 100%;
+        margin: 0 auto 0 220px;
+    }
 
-	.subscribe-modal .modal-body label {
-		margin:1em auto;
-		font-size:1em;
-	}
+    .subscribe-modal .modal-body label {
+        margin: 1em auto;
+        font-size: 1em;
+    }
 
-	.subscribe-modal .redbtn {
-		width:100px;
-		position:relative;
-		right:60px;
-	}
+    .subscribe-modal .redbtn {
+        width: 100px;
+        position: relative;
+        right: 60px;
+    }
 
 }
 
-@media (min-width:766px) and (max-width:1049px) {
-	.subscribe-modal .modal-body {
-		
-		margin:0 auto 0 150px;
-	}
+@media (min-width: 766px) and (max-width: 1049px) {
+    .subscribe-modal .modal-body {
 
-	.subscribe-modal .redbtn {
-		position:relative;
-		right:100px;
-	}
+        margin: 0 auto 0 150px;
+    }
+
+    .subscribe-modal .redbtn {
+        position: relative;
+        right: 100px;
+    }
 }
 
-/*7.4 MAILLIST MODAL */
+/*7.4 MAIL LIST MODAL */
 
-@media (min-width:991px) {
-	.mail-modal .modal-body {
-		font-size:24px;
-	}
-	.mail-modal .modal-body label {
-		margin:1em auto;
-		/*font-size:1em;*/
-	}
+@media (min-width: 991px) {
+    .mail-modal .modal-body {
+        font-size: 24px;
+    }
 
-	.mail-modal .form-group {
-		margin:0 auto 0 220px;
-	}
+    .mail-modal .modal-body label {
+        margin: 1em auto;
+    }
 
-	.mail-modal .redbtn {
-		margin-top:1em;
-	}
+    .mail-modal .form-group {
+        margin: 0 auto 0 220px;
+    }
+
+    .mail-modal .redbtn {
+        margin-top: 1em;
+    }
 }
 
-@media (min-width:766px) and (max-width:990px) {
-	.mail-modal .form-group {
-		margin:0 auto 0 150px;
-	}
+@media (min-width: 766px) and (max-width: 990px) {
+    .mail-modal .form-group {
+        margin: 0 auto 0 150px;
+    }
 }
 
 /*7.5 iTUNES SEARCH*/
 
-@media (max-width:500px) {
-	.itunessearch th {
-		font-size:1.5em;
-	}
+@media (max-width: 500px) {
+    .itunessearch th {
+        font-size: 1.5em;
+    }
 
-	.itunessearch td {
-		font-size:1em;
-	}
+    .itunessearch td {
+        font-size: 1em;
+    }
 
-	.itunessearch img {
-		height:60px;
-		width:60px;
-	}
+    .itunessearch img {
+        height: 60px;
+        width: 60px;
+    }
 
-	.itunessearch .previewbutton {
-		font-size:0.6em;
-		font-weight: bold;
-	}
+    .itunessearch .previewbutton {
+        font-size: 0.6em;
+        font-weight: bold;
+    }
 
-	.itunessearch .buybutton {
-		font-size:0.5em;
-		font-weight: bold;
-	}
+    .itunessearch .buybutton {
+        font-size: 0.5em;
+        font-weight: bold;
+    }
 }
 
-@media (max-width:370px) {
-	.itunessearch #itunes-input {
-		width:200px;
-	}
+@media (max-width: 370px) {
+    .itunessearch #itunes-input {
+        width: 200px;
+    }
 }
 
 /*------------------------------------------------------------------------
