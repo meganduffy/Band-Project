@@ -70,9 +70,9 @@ I used a variety of methods to ensure the responsiveness of my website. These in
 
 - **Media Queries**
     - I spent a lot of time writing and re-writing **Media Queries** to optimize the responsiveness of my website based on screen size. It can be a meticulous and tiring process, but is more than worth it to have that perfect resize. Font sizes, relatively positioned elements, margins, heights and text alignments all caused trouble in keeping the flow of the website consistent on resizes and required **Media Queries** to iron out the kinnks.
-        </br></br>**_Media Page with a width of 1366px_**</br></br>
+        </br></br>**_Media Page with a width of 1366px_**</br>
         ![Media Width 1366](/screenshots/Project1-mediaqueries-1366px.png?raw=true "Media Width 1366")
-        </br></br>**_Media Page with a width of 390px_**</br></br>
+        </br></br>**_Media Page with a width of 390px_**</br>
         ![Media Width 390](/screenshots/Project1-mediaqueries-390px.png?raw=true "Media Width 390")
 
 ### Testing
@@ -86,7 +86,7 @@ I used a variety of methods to test the responsiveness of my website. These incl
 
 - [Blisk](https://blisk.io/)
     - A browser for web developers, **Blisk**, comes prepacked with fully emulated phones and tablets. It shows real time changes to files so I could see exactly how the changes to my code were affecting my site.
-        </br></br>**_Blisk simulating an iPad Air Retina_**</br></br>
+        </br></br>**_Blisk simulating an iPad Air Retina_**</br>
         ![Blisk](/screenshots/Project1-blisk-ipadairretina.png?raw=true "Blisk")
 
 - **Testing In Different Environments**
