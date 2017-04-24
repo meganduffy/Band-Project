@@ -80,6 +80,7 @@
                                  ng-if="subscribeform.emailsub.$touched && subscribeform.emailsub.$invalid"
                                  role="alert">
                                 <div ng-message="required">Required Field</div>
+                                <div ng-pattern="required" style="text-transform:none">Example: joe@joebloggs.com</div>
                             </div>
                         </div>
                     </div>

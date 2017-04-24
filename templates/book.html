@@ -77,6 +77,7 @@
                                 <div class="col-sm-6 form-group alert" ng-messages="BookForm.email.$error"
                                      ng-if="BookForm.email.$touched && BookForm.email.$invalid" role="alert">
                                     <div ng-message="required">Required Field</div>
+                                    <div ng-pattern="required">Example: joe@joebloggs.com</div>
                                 </div>
                             </div>
                         </div>
