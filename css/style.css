@@ -80,7 +80,7 @@
     text-transform: uppercase;
     position: relative;
     top: 25px;
-    /*animation*/
+
     animation: blurinbig 3s ease forwards;
     -webkit-animation: blurinbig 3s ease forwards;
     -moz-animation: blurinbig 3s ease forwards;
@@ -93,7 +93,7 @@
     letter-spacing: 9px;
     text-transform: uppercase;
     color: #fff;
-    /*animation*/
+
     animation: blurinsmall 2s forwards;
     -webkit-animation: blurinsmall 2s forwards;
     -moz-animation: blurinsmall 2s forwards;
@@ -1165,6 +1165,7 @@
 
 .confirm .header h1 {
     font-size: 13vw;
+
     animation: bigconfirm 2s forwards;
     -webkit-animation: bigconfirm 2s forwards;
     -moz-animation: bigconfirm 2s forwards;
