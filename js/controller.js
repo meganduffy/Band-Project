@@ -117,11 +117,14 @@ bandApp.controller("ContactController", function ($scope, $location) {
 
     //ensure form has been validated on submission and redirect user to confirmation page
     $scope.formsubmit = function () {
-        $scope.submitted = false;
 
         if ($scope.subscribeform.$valid) {
-            $scope.sumbitted = true;
+            $scope.submitted = true;
             $location.path("/subscribeconfirm");
+        }
+
+        else {
+            $scope.submitted = false;
         }
     };
 });
@@ -136,12 +139,14 @@ bandApp.controller("BookController", function ($scope, $location) {
 
     //ensure form has been validated on submission and redirect user to confirmation page
     $scope.formsubmit = function () {
-        $scope.submitted = false;
 
         if ($scope.BookForm.$valid) {
             $scope.submitted = true;
             $location.path("/bookconfirm");
+        }
 
+        else {
+            $scope.submitted = false;
         }
     };
 });
@@ -162,13 +167,17 @@ bandApp.controller("MailModalController", function ($scope, $location) {
 
     //ensure form has been validated on submission and redirect user to confirmation page
     $scope.formsubmit = function () {
-        $scope.submitted = false;
+
 
         if ($scope.mailform.$valid) {
-            //toggle modal from window when form has been submitted
-            $("#mailmodal").modal("toggle");
+            //hide modal from window when form has been submitted
+            $("#mailmodal").modal("hide");
             $scope.submitted = true;
             $location.path("/mailconfirm");
+        }
+
+        else {
+            $scope.submitted = false;
         }
     };
 });
@@ -183,13 +192,16 @@ bandApp.controller("SubModalController", function ($scope, $location) {
 
     //ensure form has been validated on submission and redirect user to confirmation page
     $scope.formsubmit = function () {
-        $scope.submitted = false;
 
         if ($scope.subscribeform.$valid) {
-            //toggle modal from window when form has been submitted
-            $("#subscribemodal").modal("toggle");
+            //hide modal from window when form has been submitted
+            $("#subscribemodal").modal("hide");
             $scope.submitted = true;
             $location.path("/subscribeconfirm")
+        }
+
+        else {
+            $scope.submitted = false;
         }
     };
 });
