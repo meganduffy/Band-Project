@@ -4,7 +4,7 @@
 
 ### What is this website for?
 
-This is a simple band website for 'The Monkees' promoting their music and availability for gigs.
+This is a simple band website for 'The Monkees' promoting their music and availability for gigs. You can view the website here at [**project1-themonkees.firebaseapp.com**](https://project1-themonkees.firebaseapp.com/#/).
 
 ### What does it do?
 
